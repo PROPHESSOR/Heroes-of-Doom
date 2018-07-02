@@ -8,7 +8,7 @@ Actor PROPHESSOR : DoomPlayer 15025 {
 	Player.JumpZ 8
 	// Player.SpawnClass 1
 	Player.UseRange 72
-	Player.ViewBob 1
+	// Player.ViewBob 1 // TODO: GZDoom Only
 	Player.ViewHeight 52
 	Player.SoundClass "prophessor"
 	
@@ -102,7 +102,7 @@ Actor IronDroog : DoomPlayer 15026 {
 	/*Player.Portrait "CHUBA1"*/
 	// Player.SpawnClass 2
 	Player.UseRange 48
-	Player.ViewBob 0.8
+	// Player.ViewBob 0.8 // TODO: GZDoom Only
 	Player.ViewHeight 48
 	Player.SoundClass "irondroog"
 	
@@ -193,7 +193,7 @@ Actor MarzoLeon: DoomPlayer 15027 {
 	Player.JumpZ 10
 	// Player.SpawnClass 3
 	Player.UseRange 64
-	Player.ViewBob 1
+	// Player.ViewBob 1 // TODO: GZDoom Only
 	Player.ViewHeight 41
 	Player.SoundClass "marzoleon"
 	
@@ -286,8 +286,8 @@ Actor Chaser : DoomPlayer 15028 {
 	Player.GruntSpeed 10
 	Player.MaxHealth 25
 	// Player.SpawnClass 4
-	Player.UseRange 32
-	Player.ViewBob 1.5
+	Player.UseRange 38
+	// Player.ViewBob 1.5 // TODO: GZDoom Only
 	Player.ViewHeight 35
 	Player.SoundClass "chaser"
 

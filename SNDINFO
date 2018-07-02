@@ -39,6 +39,10 @@ $playersound	irondroog	male	w_pkup		sprites/classes/irondroog/sounds/iswpnup		//
 $playersound	irondroog	male	p_pkup		sprites/classes/irondroog/sounds/isgetpow	// Pickup powerup
 $playersound	irondroog	male	i_pkup		sprites/classes/irondroog/sounds/isitemup	// Pickup item
 $playersound	irondroog	male	k_pkup		sprites/classes/irondroog/sounds/isitemup	// Pickup key
+irondroog/donation			sprites/classes/irondroog/sounds/ISWPNUP
+irondroog/powerup			sprites/classes/irondroog/sounds/ISGETPOW
+ending/irondroog			sprites/classes/irondroog/sounds/ISBGDTH2
+ending/irondroog2			sprites/classes/irondroog/sounds/ISBOSDTD
 
 //===========================================================================
 //
@@ -58,6 +62,8 @@ $playersounddup	marzoleon	male	*land		*grunt
 $playersound	marzoleon	male	*jump		msjump
 $playersound	marzoleon	male	*fist		mspunch
 $playersound	marzoleon	male	*usefail	msnoway
+marzoleon/fist1				sprites/classes/marzoleon/sounds/MSTDSCH
+marzoleon/fist2				sprites/classes/marzoleon/sounds/MSHADKN
 
 
 //===========================================================================
@@ -79,3 +85,14 @@ $playersound	chaser	male	*jump		csjump
 $playersound	chaser	male	*fist		cspunch
 $playersound	chaser	male	*usefail	csnoway
 chaser/aaaa		sprites/classes/chaser/sounds/CSAAAAAA
+
+
+//===========================================================================
+//
+// Exit sounds
+//
+//===========================================================================
+
+//$random menu/quit1 { player/male/death1 demon/pain grunt/pain misc/gibbed misc/teleport grunt/sight1 grunt/sight3 demon/melee }
+$random menu/quit2 { ending/irondroog marzoleon/fist2 ending/irondroog2 knight/sight baron/sight }
+// vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swing knight/death baby/active demon/melee
