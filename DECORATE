@@ -23,11 +23,10 @@ Actor PROPHESSOR : DoomPlayer {
 	Player.ClearColorSet 6
 	Player.ClearColorSet 7
 
+    Player.StartItem "Fist"
 	Player.StartItem "PlasmaRifle"
 	
 	Player.StartItem "Cell", 128
-
-
 
     States {
         Spawn:
@@ -110,6 +109,7 @@ Actor IronDroog : DoomPlayer {
 	Player.ClearColorSet 6
 	Player.ClearColorSet 7
 	
+    Player.StartItem "Fist"
 	Player.StartItem "SuperShotgun"
 	
 	Player.StartItem "Shell", 24
@@ -164,7 +164,7 @@ Actor IronDroog : DoomPlayer {
 			CHUB STUVWX 5
 			CHUB Y -1
 			Stop
-	}
+    }
 }
 
 Actor MarzoLeon: DoomPlayer {
@@ -192,6 +192,7 @@ Actor MarzoLeon: DoomPlayer {
 	Player.ClearColorSet 6
 	Player.ClearColorSet 7
 	
+    Player.StartItem "Fist"
 	Player.StartItem "Chaingun"
 	Player.StartItem "Clip", 100
 
@@ -275,6 +276,7 @@ Actor Chaser : DoomPlayer {
 	Player.ClearColorSet 6
 	Player.ClearColorSet 7
 	
+    Player.StartItem "Fist"
 	Player.StartItem "BFG9000"
 	
 	Player.StartItem "Cell", 256
