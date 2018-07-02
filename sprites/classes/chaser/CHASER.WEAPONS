@@ -72,11 +72,11 @@ Actor ChaserBFG : BFG9000 {
 			BFGF AAAA 0 Bright A_SetPitch( Pitch + FRandom( -1.35, 1.35 ) )
 			BFGF AAAA 0 Bright A_Recoil( FRandom( 10.02, 10.35 ) )
 			BFGF AAAA 0 Bright A_Quake( 1, 6, 0, 0 )
+			BFGF B 0 Bright A_Light2
 			BFGF B 0 Bright A_SetBlend( "44FF44", 0.5, Random( 20, 35 ) )
-			BFGF B 0 Bright A_SetPitch( Pitch - FRandom( 3.5, 5 ) )
+			BFGF B 0 Bright A_SetPitch( Pitch - 30/* FRandom( 30.5, 50 ) */ )
 			BFGF B 0 Bright A_Recoil( FRandom( 10.5, 20.5 ) )
 			BFGF B 0 Bright A_Quake( 1, 6, 0, 0 )
-			BFGF B 0 Bright A_Light2
 			Goto LightDone
 	}
 }
