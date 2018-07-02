@@ -100,3 +100,26 @@ Actor BFGSpawner replaces BFG9000 {
 			Stop
 	}
 }
+
+Actor EpicSaxGun : Weapon {
+	States {
+		Ready:
+			MISG A 1 A_WeaponReady
+			Loop
+		Deselect:
+			MISG A 1 A_Lower
+			Loop
+		Select:
+			MISG A 1 A_Raise
+			Loop
+		Fire:
+			MISG A 0 A_PlaySound("other/saxgun", CHAN_WEAPON, 1, 1)
+			Goto Start
+		Start:
+			MISG AAAA 2 A_SetPitch( Pitch + 1 )
+			MISG AAAA 2 A_SetPitch( Pitch - 1 )
+			MISG AAAA 2 A_SetPitch( Pitch + 1 )
+			MISG AAAA 2 A_SetPitch( Pitch - 1 )
+			Loop
+	}
+}
