@@ -1,0 +1,37 @@
+// Arms in the hands of Chaser
+
+Actor ChaserFist : Fist {
+	Inventory.RestrictedTo "Chaser"
+}
+
+Actor ChaserChainsaw : Chainsaw {
+	Inventory.RestrictedTo "Chaser"
+}
+
+Actor ChaserPistol : Pistol {
+	Inventory.RestrictedTo "Chaser"
+}
+
+Actor ChaserShotgun : Shotgun {
+	Inventory.RestrictedTo "Chaser"
+}
+
+Actor ChaserSSG : SuperShotgun {
+	Inventory.RestrictedTo "Chaser"
+}
+
+Actor ChaserChaingun : Chaingun {
+	Inventory.RestrictedTo "Chaser"
+}
+
+Actor ChaserRL : RocketLauncher {
+	Inventory.RestrictedTo "Chaser"
+}
+
+Actor ChaserPlasmagun : PlasmaRifle {
+	Inventory.RestrictedTo "Chaser"
+}
+
+Actor ChaserBFG : BFG9000 {
+	Inventory.RestrictedTo "Chaser"
+}

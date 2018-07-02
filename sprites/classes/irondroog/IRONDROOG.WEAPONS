@@ -1,0 +1,37 @@
+// Arms in the hands of Iron Droog
+
+Actor IronDroogFist : Fist {
+	Inventory.RestrictedTo "IronDroog"
+}
+
+Actor IronDroogChainsaw : Chainsaw {
+	Inventory.RestrictedTo "IronDroog"
+}
+
+Actor IronDroogPistol : Pistol {
+	Inventory.RestrictedTo "IronDroog"
+}
+
+Actor IronDroogShotgun : Shotgun {
+	Inventory.RestrictedTo "IronDroog"
+}
+
+Actor IronDroogSSG : SuperShotgun {
+	Inventory.RestrictedTo "IronDroog"
+}
+
+Actor IronDroogChaingun : Chaingun {
+	Inventory.RestrictedTo "IronDroog"
+}
+
+Actor IronDroogRL : RocketLauncher {
+	Inventory.RestrictedTo "IronDroog"
+}
+
+Actor IronDroogPlasmagun : PlasmaRifle {
+	Inventory.RestrictedTo "IronDroog"
+}
+
+Actor IronDroogBFG : BFG9000 {
+	Inventory.RestrictedTo "IronDroog"
+}

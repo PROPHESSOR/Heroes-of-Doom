@@ -1,0 +1,102 @@
+#include "sprites/classes/prophessor/PROPHESSOR.WEAPONS"
+#include "sprites/classes/irondroog/IRONDROOG.WEAPONS"
+#include "sprites/classes/marzoleon/MARZOLEON.WEAPONS"
+#include "sprites/classes/chaser/CHASER.WEAPONS"
+
+// Spawners spawn three types of weapon for every class
+
+Actor ChainsawSpawner replaces Chainsaw {
+	States {
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_SpawnItemEx( "ProphessorChainsaw" )
+			TNT1 A 0 A_SpawnItemEx( "IronDroogChainsaw" )
+			TNT1 A 0 A_SpawnItemEx( "MarzoLeonChainsaw" )
+			TNT1 A 0 A_SpawnItemEx( "ChaserChainsaw" )
+			Stop
+	}
+}
+
+Actor PistolSpawner replaces Pistol {
+	States {
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_SpawnItemEx( "ProphessorPistol" )
+			TNT1 A 0 A_SpawnItemEx( "IronDroogPistol" )
+			TNT1 A 0 A_SpawnItemEx( "MarzoLeonPistol" )
+			TNT1 A 0 A_SpawnItemEx( "ChaserPistol" )
+			Stop
+	}
+}
+
+Actor ShotgunSpawner replaces Shotgun {
+	States {
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_SpawnItemEx( "ProphessorShotgun" )
+			TNT1 A 0 A_SpawnItemEx( "IronDroogShotgun" )
+			TNT1 A 0 A_SpawnItemEx( "MarzoLeonShotgun" )
+			TNT1 A 0 A_SpawnItemEx( "ChaserShotgun" )
+			Stop
+	}
+}
+
+Actor SSGSpawner replaces SuperShotgun {
+	States {
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_SpawnItemEx( "ProphessorSSG" )
+			TNT1 A 0 A_SpawnItemEx( "IronDroogSSG" )
+			TNT1 A 0 A_SpawnItemEx( "MarzoLeonSSG" )
+			TNT1 A 0 A_SpawnItemEx( "ChaserSSG" )
+			Stop
+	}
+}
+
+Actor ChaingunSpawner replaces Chaingun {
+	States {
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_SpawnItemEx( "ProphessorChaingun" )
+			TNT1 A 0 A_SpawnItemEx( "IronDroogChaingun" )
+			TNT1 A 0 A_SpawnItemEx( "MarzoLeonChaingun" )
+			TNT1 A 0 A_SpawnItemEx( "ChaserChaingun" )
+			Stop
+	}
+}
+
+Actor RLSpawner replaces RocketLauncher {
+	States {
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_SpawnItemEx( "ProphessorRL" )
+			TNT1 A 0 A_SpawnItemEx( "IronDroogRL" )
+			TNT1 A 0 A_SpawnItemEx( "MarzoLeonRL" )
+			TNT1 A 0 A_SpawnItemEx( "ChaserRL" )
+			Stop
+	}
+}
+
+Actor PlasmagunSpawner replaces PlasmaRifle {
+	States {
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_SpawnItemEx( "ProphessorPlasmagun" )
+			TNT1 A 0 A_SpawnItemEx( "IronDroogPlasmagun" )
+			TNT1 A 0 A_SpawnItemEx( "MarzoLeonPlasmagun" )
+			TNT1 A 0 A_SpawnItemEx( "ChaserPlasmagun" )
+			Stop
+	}
+}
+
+Actor BFGSpawner replaces BFG9000 {
+	States {
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_SpawnItemEx( "ProphessorBFG" )
+			TNT1 A 0 A_SpawnItemEx( "IronDroogBFG" )
+			TNT1 A 0 A_SpawnItemEx( "MarzoLeonBFG" )
+			TNT1 A 0 A_SpawnItemEx( "ChaserBFG" )
+			Stop
+	}
+}

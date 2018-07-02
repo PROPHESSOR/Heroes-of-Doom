@@ -1,0 +1,37 @@
+// Arms in the hands of MarzoLeon
+
+Actor MarzoLeonFist : Fist {
+	Inventory.RestrictedTo "MarzoLeon"
+}
+
+Actor MarzoLeonChainsaw : Chainsaw {
+	Inventory.RestrictedTo "MarzoLeon"
+}
+
+Actor MarzoLeonPistol : Pistol {
+	Inventory.RestrictedTo "MarzoLeon"
+}
+
+Actor MarzoLeonShotgun : Shotgun {
+	Inventory.RestrictedTo "MarzoLeon"
+}
+
+Actor MarzoLeonSSG : SuperShotgun {
+	Inventory.RestrictedTo "MarzoLeon"
+}
+
+Actor MarzoLeonChaingun : Chaingun {
+	Inventory.RestrictedTo "MarzoLeon"
+}
+
+Actor MarzoLeonRL : RocketLauncher {
+	Inventory.RestrictedTo "MarzoLeon"
+}
+
+Actor MarzoLeonPlasmagun : PlasmaRifle {
+	Inventory.RestrictedTo "MarzoLeon"
+}
+
+Actor MarzoLeonBFG : BFG9000 {
+	Inventory.RestrictedTo "MarzoLeon"
+}

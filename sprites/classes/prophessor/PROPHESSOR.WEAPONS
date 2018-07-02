@@ -1,0 +1,37 @@
+// Arms in the hands of PROPHESSOR
+
+Actor ProphessorFist : Fist {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
+
+Actor ProphessorChainsaw : Chainsaw {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
+
+Actor ProphessorPistol : Pistol {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
+
+Actor ProphessorShotgun : Shotgun {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
+
+Actor ProphessorSSG : SuperShotgun {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
+
+Actor ProphessorChaingun : Chaingun {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
+
+Actor ProphessorRL : RocketLauncher {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
+
+Actor ProphessorPlasmagun : PlasmaRifle {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
+
+Actor ProphessorBFG : BFG9000 {
+	Inventory.RestrictedTo "PROPHESSOR"
+}
