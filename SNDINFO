@@ -1,0 +1,80 @@
+//===========================================================================
+//
+// PROPHESSOR
+//
+//===========================================================================
+
+$playersound	prophessor	male	*death		pspldeth
+$playersound	prophessor	male	*xdeath		pspdiehi
+$playersound	prophessor	male	*gibbed		psslop
+$playersound	prophessor	male	*pain100	psplpain
+$playersounddup	prophessor	male	*pain75		*pain100
+$playersounddup	prophessor	male	*pain50		*pain100
+$playersounddup	prophessor	male	*pain25		*pain100
+$playersound	prophessor	male	*grunt		psoof
+$playersounddup	prophessor	male	*land		*grunt
+$playersound	prophessor	male	*jump		psjump
+$playersound	prophessor	male	*fist		pspunch
+$playersound	prophessor	male	*usefail	psnoway
+
+//===========================================================================
+//
+// Iron Droog
+//
+//===========================================================================
+
+$playersound	irondroog	male	*death		sprites/classes/irondroog/sounds/ISPLDETH
+$playersound	irondroog	male	*xdeath		sprites/classes/irondroog/sounds/ISPLDETH
+$playersound	irondroog	male	*gibbed		sprites/classes/irondroog/sounds/ISPLDETH
+$playersound	irondroog	male	*pain100	sprites/classes/irondroog/sounds/ISPLPAIN
+$playersounddup	irondroog	male	*pain75		*pain100
+$playersounddup	irondroog	male	*pain50		*pain100
+$playersounddup	irondroog	male	*pain25		*pain100
+$playersound	irondroog	male	*grunt		sprites/classes/irondroog/sounds/isoof
+$playersounddup	irondroog	male	*land		*grunt
+$playersound	irondroog	male	*jump		sprites/classes/irondroog/sounds/isjump
+$playersound	irondroog	male	*fist		sprites/classes/irondroog/sounds/ispunch
+$playersound	irondroog	male	*usefail	sprites/classes/irondroog/sounds/isnoway
+$playersound	irondroog	male	w_pkup		sprites/classes/irondroog/sounds/iswpnup		// Pickup weapon
+$playersound	irondroog	male	p_pkup		sprites/classes/irondroog/sounds/isgetpow	// Pickup powerup
+$playersound	irondroog	male	i_pkup		sprites/classes/irondroog/sounds/isitemup	// Pickup item
+$playersound	irondroog	male	k_pkup		sprites/classes/irondroog/sounds/isitemup	// Pickup key
+
+//===========================================================================
+//
+// MarzoLeon
+//
+//===========================================================================
+
+$playersound	marzoleon	male	*death		mspldeth
+$playersound	marzoleon	male	*xdeath		mspdiehi
+$playersound	marzoleon	male	*gibbed		msslop
+$playersound	marzoleon	male	*pain100	msplpain
+$playersounddup	marzoleon	male	*pain75		*pain100
+$playersounddup	marzoleon	male	*pain50		*pain100
+$playersounddup	marzoleon	male	*pain25		*pain100
+$playersound	marzoleon	male	*grunt		msoof
+$playersounddup	marzoleon	male	*land		*grunt
+$playersound	marzoleon	male	*jump		msjump
+$playersound	marzoleon	male	*fist		mspunch
+$playersound	marzoleon	male	*usefail	msnoway
+
+
+//===========================================================================
+//
+// Chaser
+//
+//===========================================================================
+
+$playersound	chaser	male	*death		sprites/classes/chaser/sounds/cspldeth
+$playersound	chaser	male	*xdeath		sprites/classes/chaser/sounds/cspldeth
+$playersound	chaser	male	*gibbed		csslop
+$playersound	chaser	male	*pain100	csplpain
+$playersounddup	chaser	male	*pain75		*pain100
+$playersounddup	chaser	male	*pain50		*pain100
+$playersounddup	chaser	male	*pain25		*pain100
+$playersound	chaser	male	*grunt		csoof
+$playersounddup	chaser	male	*land		*grunt
+$playersound	chaser	male	*jump		csjump
+$playersound	chaser	male	*fist		cspunch
+$playersound	chaser	male	*usefail	csnoway
