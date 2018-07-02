@@ -281,9 +281,9 @@ Actor Chaser : DoomPlayer {
 
 	Player.DisplayName "Chaser"
 	Player.InvulnerabilityMode "Ghost"
-	Player.JumpZ 2
-	Player.FallingScreamSpeed 0, 5
-	Player.GruntSpeed 5
+	Player.JumpZ 5
+	Player.FallingScreamSpeed 0, 10
+	Player.GruntSpeed 10
 	Player.MaxHealth 25
 	Player.SpawnClass 4
 	Player.UseRange 32

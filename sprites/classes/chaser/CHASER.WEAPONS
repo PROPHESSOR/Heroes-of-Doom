@@ -6,6 +6,25 @@ Actor ChaserFist : Fist {
 
 Actor ChaserChainsaw : Chainsaw {
 	Inventory.RestrictedTo "Chaser"
+
+	States {
+		Fire:
+			SAWG AB 2 A_Saw
+			SAWG A 0 A_SetAngle( FRandom( 2.2, -2.2 ) + Angle )
+			SAWG A 0 A_SetPitch( FRandom( 2.2, -2.5 ) + Pitch )
+			SAWG AB 2 A_Saw
+			SAWG A 0 A_SetAngle( FRandom( 2.2, -2.2 ) + Angle )
+			SAWG A 0 A_SetPitch( FRandom( 2.2, -2.5 ) + Pitch )
+			SAWG AB 2 A_Saw
+			SAWG A 0 A_SetAngle( FRandom( 2.2, -2.2 ) + Angle )
+			SAWG A 0 A_SetPitch( FRandom( 2.2, -2.5 ) + Pitch )
+			SAWG AB 2 A_Saw
+			SAWG A 0 A_SetAngle( FRandom( 2.2, -2.2 ) + Angle )
+			SAWG A 0 A_SetPitch( FRandom( 2.2, -2.5 ) + Pitch )
+
+			SAWG B 0 A_ReFire
+			Goto Ready
+	}
 }
 
 Actor ChaserPistol : Pistol {
@@ -30,8 +49,34 @@ Actor ChaserRL : RocketLauncher {
 
 Actor ChaserPlasmagun : PlasmaRifle {
 	Inventory.RestrictedTo "Chaser"
+
+	States {
+		Fire:
+			PLSG A 8 A_FirePlasma
+			BFGF AAAA 0 Bright A_SetAngle( Angle + FRandom( -1.5, 1.5 ) )
+			BFGF AAAA 0 Bright A_SetPitch( Pitch + FRandom( -1.35, 1.35 ) )
+			BFGF AAAA 0 Bright A_Recoil( FRandom( 0.02, 0.35 ) )
+			PLSG B 20 A_ReFire
+			Goto Ready
+	}
 }
 
 Actor ChaserBFG : BFG9000 {
 	Inventory.RestrictedTo "Chaser"
+
+	States {
+		Flash:
+			BFGF A 3 Bright A_Light1
+			BFGF A 0 A_PlaySound( "chaser/aaaa", CHAN_5, 1, 0 )
+			BFGF AAAA 0 Bright A_SetAngle( Angle + FRandom( -1.5, 1.5 ) )
+			BFGF AAAA 0 Bright A_SetPitch( Pitch + FRandom( -1.35, 1.35 ) )
+			BFGF AAAA 0 Bright A_Recoil( FRandom( 10.02, 10.35 ) )
+			BFGF AAAA 0 Bright A_Quake( 1, 6, 0, 0 )
+			BFGF B 0 Bright A_SetBlend( "44FF44", 0.9, Random( 20, 35 ) )
+			BFGF B 0 Bright A_SetPitch( Pitch - FRandom( 3.5, 5 ) )
+			BFGF B 0 Bright A_Recoil( FRandom( 10.5, 20.5 ) )
+			BFGF B 0 Bright A_Quake( 1, 6, 0, 0 )
+			BFGF B 0 Bright A_Light2
+			Goto LightDone
+	}
 }

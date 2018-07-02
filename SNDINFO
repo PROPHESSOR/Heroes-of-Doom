@@ -78,3 +78,4 @@ $playersounddup	chaser	male	*land		*grunt
 $playersound	chaser	male	*jump		csjump
 $playersound	chaser	male	*fist		cspunch
 $playersound	chaser	male	*usefail	csnoway
+chaser/aaaa		sprites/classes/chaser/sounds/CSAAAAAA
