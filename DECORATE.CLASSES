@@ -1,4 +1,4 @@
-Actor PROPHESSOR : DoomPlayer {
+Actor PROPHESSOR : DoomPlayer 15025 {
 	Mass 100
 	Health 100
 	Speed 1.5
@@ -6,7 +6,7 @@ Actor PROPHESSOR : DoomPlayer {
 	Player.DisplayName "PROPHESSOR"
 	Player.InvulnerabilityMode "Reflective"
 	Player.JumpZ 8
-	Player.SpawnClass 1
+	// Player.SpawnClass 1
 	Player.UseRange 72
 	Player.ViewBob 1
 	Player.ViewHeight 52
@@ -89,7 +89,7 @@ Actor PROPHESSOR : DoomPlayer {
     }
 }
 
-Actor IronDroog : DoomPlayer {
+Actor IronDroog : DoomPlayer 15026 {
 	Mass 200
 	Health 125
 	Speed 0.9
@@ -100,7 +100,7 @@ Actor IronDroog : DoomPlayer {
 	Player.JumpZ 7
 	Player.MaxHealth 150
 	/*Player.Portrait "CHUBA1"*/
-	Player.SpawnClass 2
+	// Player.SpawnClass 2
 	Player.UseRange 48
 	Player.ViewBob 0.8
 	Player.ViewHeight 48
@@ -183,7 +183,7 @@ Actor IronDroog : DoomPlayer {
     }
 }
 
-Actor MarzoLeon: DoomPlayer {
+Actor MarzoLeon: DoomPlayer 15027 {
 	Mass 100
 	Health 100
 	Speed 1
@@ -191,7 +191,7 @@ Actor MarzoLeon: DoomPlayer {
 	Player.DisplayName "MarzoLeon"
 	Player.InvulnerabilityMode "Reflective"
 	Player.JumpZ 10
-	Player.SpawnClass 3
+	// Player.SpawnClass 3
 	Player.UseRange 64
 	Player.ViewBob 1
 	Player.ViewHeight 41
@@ -274,7 +274,7 @@ Actor MarzoLeon: DoomPlayer {
     }
 }
 
-Actor Chaser : DoomPlayer {
+Actor Chaser : DoomPlayer 15028 {
 	Mass 25
 	Health 10
 	Speed 0.3
@@ -285,7 +285,7 @@ Actor Chaser : DoomPlayer {
 	Player.FallingScreamSpeed 0, 10
 	Player.GruntSpeed 10
 	Player.MaxHealth 25
-	Player.SpawnClass 4
+	// Player.SpawnClass 4
 	Player.UseRange 32
 	Player.ViewBob 1.5
 	Player.ViewHeight 35
