@@ -1,9 +1,0 @@
-{
-	Name 	= "IronDroog"
-	Class 	= "IronDroog"
-	Sprite 	= "CHUB"
-	CrouchSprite = "CHUB"
-	Hidden 	= False
-	Gender	= Male
-	Color	= 66 00 00
-}
