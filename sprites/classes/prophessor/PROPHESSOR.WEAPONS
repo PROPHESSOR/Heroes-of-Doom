@@ -15,7 +15,9 @@ Actor ProphessorPistol : Pistol {
 	States {
 		Fire:
 			PISG A 4
-			PISG B 15 A_SpawnItemEx("Backpack", 100, 0, 10, random(10, 20), 0, 0)
+			PISG B 1 A_FireBullets (5.6, 0, 1, 100, "BulletPuff")
+			PISG C 1 A_GunFlash
+			PISG C 15 A_SpawnItemEx("Backpack", 100, 0, 10, random(10, 20), 0, 0)
 			PISG C 4
 			PISG B 5 A_ReFire
 			Goto Ready

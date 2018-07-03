@@ -11,7 +11,7 @@ Actor PROPHESSOR : DoomPlayer 15025 {
 	Player.UseRange 72
 	// Player.ViewBob 1 // TODO: GZDoom Only
 	Player.ViewHeight 52
-	Player.SoundClass "prophessor"
+	Player.SoundClass "player" // TODO: prophessor
 	
     Translation "112:119=214:217", "120:125=216:223", "124:127=232:235" 
     Player.ColorRange 0, 0
@@ -198,7 +198,7 @@ Actor MarzoLeon: DoomPlayer 15027 {
 	Player.UseRange 64
 	// Player.ViewBob 1 // TODO: GZDoom Only
 	Player.ViewHeight 41
-	Player.SoundClass "marzoleon"
+	Player.SoundClass "player" // TODO: marzoleon
 	
     Translation "112:127=173:191"
     Player.ColorRange 0, 0
@@ -293,7 +293,7 @@ Actor Chaser : DoomPlayer 15028 {
 	Player.UseRange 38
 	// Player.ViewBob 1.5 // TODO: GZDoom Only
 	Player.ViewHeight 35
-	Player.SoundClass "chaser"
+	Player.SoundClass "player" // TODO: chaser
 
     Player.ColorRange 0, 0
 	Player.ColorSet 0, "Green",         0x70, 0x7F,  0x72
@@ -313,9 +313,9 @@ Actor Chaser : DoomPlayer 15028 {
 	Player.WeaponSlot 6, ChaserPlasmagun
 	Player.WeaponSlot 7, ChaserBFG
 	
+	Player.StartItem "ChaserBFG"
     Player.StartItem "ChaserFist"
     Player.StartItem "ChaserPistol"
-	Player.StartItem "ChaserBFG"
 	
 	Player.StartItem "Cell", 256
 
