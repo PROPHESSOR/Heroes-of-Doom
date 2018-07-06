@@ -76,6 +76,7 @@ $playersound	marzoleon	male	*fist		mspunch
 $playersound	marzoleon	male	*usefail	msnoway
 marzoleon/fist1				sprites/classes/marzoleon/sounds/MSTDSCH
 marzoleon/fist2				sprites/classes/marzoleon/sounds/MSHADKN
+marzoleon/haha				sprites/classes/marzoleon/sounds/MSHAHA
 
 
 //===========================================================================

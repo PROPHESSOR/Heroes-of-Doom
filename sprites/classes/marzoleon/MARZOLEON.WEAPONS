@@ -25,6 +25,23 @@ Actor MarzoLeonFist : Fist {
 
 Actor MarzoLeonChainsaw : Chainsaw {
 	Inventory.RestrictedTo "MarzoLeon"
+	Weapon.Kickback 5
+
+	States {
+		Fire:
+			SAWG D 0 A_PlaySound("marzoleon/haha", CHAN_5, 1.0)
+			SAWG D 25 A_PlaySound("weapons/sawfull", CHAN_WEAPON, 0.8)
+			Goto Hold
+		Hold:
+			SAWG AB 2 A_Saw("weapons/sawfull", "weapons/sawhit", 25)
+			SAWG AAA 0 A_SetAngle(FRandom(2.2, -2.2) + Angle)
+			SAWG AAA 0 A_Recoil(-2.0)
+			SAWG AAA 0 A_Quake(6, 12, 0, 128, "weapons/sawhit")
+			SAWG AB 2 A_Saw("weapons/sawfull", "weapons/sawhit", 25)
+			SAWG AAA 0 A_Recoil(-2.0)
+			SAWG B 0 A_ReFire
+			Goto Ready
+	}
 }
 
 Actor MarzoLeonPistol : Pistol {
