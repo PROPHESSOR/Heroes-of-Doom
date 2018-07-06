@@ -5,6 +5,15 @@
  *https://opensource.org/licenses/MIT
  */
 
+// Powerups
+
+Actor Invulnerability: InvulnerabilitySphere {
+    Powerup.Duration 0x7FFFFFFF
+    Powerup.Color None
+}
+
+// Booleans
+
 Actor HeroicTaunt : Inventory {
     Inventory.MaxAmount 1
 }

@@ -7,6 +7,6 @@
 
 addkeysection "Heroes of DooM - Keys" HODKeys
 
-    addmenukey "Taunt" taunt
-    alias taunt "pukename HeroicTaunt"
-    defaultbind U taunt
+    addmenukey "Taunt" htaunt
+    alias htaunt "pukename HeroicTaunt"
+    defaultbind U htaunt

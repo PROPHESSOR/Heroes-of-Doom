@@ -98,7 +98,10 @@ $playersound	chaser	male	*fist		cspunch
 $playersound	chaser	male	*usefail	csnoway
 chaser/aaaa		sprites/classes/chaser/sounds/CSAAAAAA
 chaser/taunt1			sprites/classes/chaser/sounds/CTAUNT1
-$random		chaser/taunt		{ chaser/taunt1 }
+chaser/taunt2			sprites/classes/chaser/sounds/CTAUNT2
+chaser/taunt3			sprites/classes/chaser/sounds/CTAUNT3
+chaser/taunt4			sprites/classes/chaser/sounds/CTAUNT4
+$random		chaser/taunt		{ chaser/taunt1 chaser/taunt2 chaser/taunt3 chaser/taunt4 }
 
 
 //===========================================================================
@@ -107,10 +110,6 @@ $random		chaser/taunt		{ chaser/taunt1 }
 //
 //===========================================================================
 
-//$random menu/quit1 { player/male/death1 demon/pain grunt/pain misc/gibbed misc/teleport grunt/sight1 grunt/sight3 demon/melee }
-$random menu/quit2 { ending/irondroog marzoleon/fist2 ending/irondroog2 knight/sight baron/sight }
-// vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swing knight/death baby/active demon/melee
-
-
+$random menu/quit2 { ending/irondroog marzoleon/fist2 ending/irondroog2 chaser/taunt4 irondroog/taunt5 }
 
 other/saxgun	DSSAXGUN
