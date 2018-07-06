@@ -46,8 +46,15 @@ $playersound	irondroog	male	i_pkup		sprites/classes/irondroog/sounds/isitemup	//
 $playersound	irondroog	male	k_pkup		sprites/classes/irondroog/sounds/isitemup	// Pickup key
 irondroog/donation			sprites/classes/irondroog/sounds/ISWPNUP
 irondroog/powerup			sprites/classes/irondroog/sounds/ISGETPOW
+irondroog/taunt1			sprites/classes/irondroog/sounds/ITAUNT1
+irondroog/taunt2			sprites/classes/irondroog/sounds/ITAUNT2
+irondroog/taunt3			sprites/classes/irondroog/sounds/ITAUNT3
+irondroog/taunt4			sprites/classes/irondroog/sounds/ITAUNT4
+irondroog/taunt5			sprites/classes/irondroog/sounds/ITAUNT5
 ending/irondroog			sprites/classes/irondroog/sounds/ISBGDTH2
 ending/irondroog2			sprites/classes/irondroog/sounds/ISBOSDTD
+
+$random		irondroog/taunt		{ irondroog/taunt1 irondroog/taunt2 irondroog/taunt3 irondroog/taunt4 irondroog/taunt5 }
 
 //===========================================================================
 //
@@ -90,6 +97,8 @@ $playersound	chaser	male	*jump		csjump
 $playersound	chaser	male	*fist		cspunch
 $playersound	chaser	male	*usefail	csnoway
 chaser/aaaa		sprites/classes/chaser/sounds/CSAAAAAA
+chaser/taunt1			sprites/classes/chaser/sounds/CTAUNT1
+$random		chaser/taunt		{ chaser/taunt1 }
 
 
 //===========================================================================

@@ -1,0 +1,12 @@
+/**
+ * Copyright (c) 2018 PROPHESSOR
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+addkeysection "Heroes of DooM - Keys" HODKeys
+
+    addmenukey "Taunt" taunt
+    alias taunt "pukename HeroicTaunt"
+    defaultbind U taunt
