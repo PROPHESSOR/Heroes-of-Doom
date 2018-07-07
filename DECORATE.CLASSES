@@ -99,7 +99,7 @@ Actor PROPHESSOR : DoomPlayer 15025 {
 			PROP Y -1
 			Stop
 		Kick:
-			CHUB A 0 A_GiveInventory("Kick")
+			CHUB A 0 A_GiveInventory("ProphessorKick")
 			CHUB A 0 A_TakeInventory("HeroicKick", 1)
 			Goto Spawn
 		Taunt:
@@ -205,7 +205,7 @@ Actor IronDroog : DoomPlayer 15026 {
 			CHUB Y -1
 			Stop
 		Kick:
-			CHUB A 0 A_GiveInventory("Kick")
+			CHUB A 0 A_GiveInventory("IronDroogKick")
 			CHUB A 0 A_TakeInventory("HeroicKick", 1)
 			Goto Spawn
 		Taunt:
@@ -413,7 +413,7 @@ Actor Chaser : DoomPlayer 15028 {
 			TARD Y -1
 			Stop
 		Kick:
-			CHUB A 0 A_GiveInventory("Kick")
+			CHUB A 0 A_GiveInventory("ChaserKick")
 			CHUB A 0 A_TakeInventory("HeroicKick", 1)
 			Goto Spawn
 		Taunt:

@@ -11,6 +11,35 @@ Actor IronDroogFist : Fist {
 	Inventory.RestrictedTo "IronDroog"
 }
 
+Actor IronDroogKick : Kick {
+	Inventory.RestrictedTo "IronDroog"
+	Weapon.Kickback 500
+
+	States {
+		Ready:
+			KICK A 0 A_WeaponReady
+			Goto Fire
+		Deselect:
+			KICK A 0 A_Lower
+			Loop
+		Select:
+			KICK A 0 A_Raise
+			Loop
+		Fire:
+			KICK B 1
+			KICK C 1
+			KICK D 1
+			KICK E 1 A_PlaySound("weapon/kick", CHAN_5, 1.0, 0.0)
+			KICK F 1
+			KICK G 1 
+			KICK H 4 A_CustomPunch(20, false, 0, "BulletPuff", 64, 0, 0, "", "weapon/kickdown", "weapon/kickmiss")
+			KICK I 3 A_Recoil(2)
+			KICK G 1 
+			KICK B 1 A_TakeInventory("IronDroogKick")
+			Stop
+	}
+}
+
 Actor IronDroogChainsaw : Chainsaw {
 	Inventory.RestrictedTo "IronDroog"
 }
