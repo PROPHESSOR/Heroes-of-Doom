@@ -114,3 +114,6 @@ $random		chaser/taunt		{ chaser/taunt1 chaser/taunt2 chaser/taunt3 chaser/taunt4
 $random menu/quit2 { ending/irondroog marzoleon/fist2 ending/irondroog2 chaser/taunt4 irondroog/taunt5 }
 
 other/saxgun	DSSAXGUN
+weapon/kick		KICK
+weapon/kickmiss	DSSKESWG
+weapon/kickdown	DSSKEPCH
