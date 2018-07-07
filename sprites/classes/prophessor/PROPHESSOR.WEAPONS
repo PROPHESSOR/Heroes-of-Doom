@@ -79,4 +79,11 @@ Actor ProphessorPlasmagun : PlasmaRifle {
 Actor ProphessorBFG : BFG9000 {
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.AmmoUse 25
+
+	States {
+		Ready:
+			BFGG A 0 ACS_NamedExecute("HeroicKick", 0, 0)
+			BFGG A 1 A_WeaponReady
+			Loop
+	}
 }

@@ -17,3 +17,7 @@ Actor Invulnerability: InvulnerabilitySphere {
 Actor HeroicTaunt : Inventory {
     Inventory.MaxAmount 1
 }
+
+Actor HeroicKick : Inventory {
+    Inventory.MaxAmount 1
+}

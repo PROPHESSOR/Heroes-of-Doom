@@ -10,3 +10,13 @@
 Script "HeroicTaunt" NET {
 	GiveInventory("HeroicTaunt", 1);
 }
+
+Script "HeroicKick" NET {
+	GiveInventory("HeroicKick", 1);
+	// switch (PlayerClass(PlayerNumber())) {
+		// default:
+			
+			// print(s:"[ERROR]: Unknown player class", s:PlayerClass(PlayerNumber()));
+			// break;
+	// }
+}

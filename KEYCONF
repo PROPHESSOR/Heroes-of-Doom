@@ -1,12 +1,17 @@
-/**
- * Copyright (c) 2018 PROPHESSOR
- * 
- * This software is released under the MIT License.
- * https://opensource.org/licenses/MIT
- */
+// Copyright (c) 2018 PROPHESSOR
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
 
 addkeysection "Heroes of DooM - Keys" HODKeys
 
-    addmenukey "Taunt" htaunt
-    alias htaunt "pukename HeroicTaunt"
-    defaultbind U htaunt
+	// Brutal doom compatible kick
+	addmenukey "Kick" kickem
+	alias kickem "pukename HeroicKick"
+	defaultbind Q kickem
+
+	// Brutal doom compatible taunt
+	addmenukey "Taunt" brutaltaunt
+	alias brutaltaunt "pukename HeroicTaunt"
+	defaultbind U brutaltaunt

@@ -47,10 +47,13 @@ Actor PROPHESSOR : DoomPlayer 15025 {
 
 	States {
 		Spawn:
-			PROP A -1
+			PROP A 1 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			PROP A 1 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			PROP A 2
 			Loop
 		See:
-			PROP ABCD 4 
+			PROP AB 4 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			PROP CD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
 			Loop
 		Missile:
 			PROP E 12
@@ -95,6 +98,14 @@ Actor PROPHESSOR : DoomPlayer 15025 {
 			PROP STUVWX 5
 			PROP Y -1
 			Stop
+		Kick:
+			CHUB A 0 A_GiveInventory("Kick")
+			CHUB A 0 A_TakeInventory("HeroicKick", 1)
+			Goto Spawn
+		Taunt:
+			CHUB A 0 A_PlaySound("prophessor/taunt", CHAN_5, 1.0, 0.0)
+			CHUB A 0 A_TakeInventory("HeroicTaunt", 1)
+			Goto Spawn
 	}
 }
 
@@ -142,10 +153,13 @@ Actor IronDroog : DoomPlayer 15026 {
 	
 	States {
 		Spawn:
-			CHUB A -1 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			CHUB A 1 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			CHUB A 1 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			CHUB A 2
 			Loop
 		See:
-			CHUB ABCD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			CHUB AB 4 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			CHUB CD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
 			Loop
 		Missile:
 			CHUB E 12
@@ -190,6 +204,10 @@ Actor IronDroog : DoomPlayer 15026 {
 			CHUB STUVWX 5
 			CHUB Y -1
 			Stop
+		Kick:
+			CHUB A 0 A_GiveInventory("Kick")
+			CHUB A 0 A_TakeInventory("HeroicKick", 1)
+			Goto Spawn
 		Taunt:
 			CHUB A 0 A_PlaySound("irondroog/taunt", CHAN_5, 1.0, 0.0)
 			CHUB A 0 A_TakeInventory("HeroicTaunt", 1)
@@ -238,10 +256,13 @@ Actor MarzoLeon: DoomPlayer 15027 {
 
 	States {
 		Spawn:
-			MRZO A -1
+			MRZO A 1 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			MRZO A 1 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			MRZO A 2
 			Loop
 		See:
-			MRZO ABCD 4 
+			MRZO AB 4 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			MRZO CD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
 			Loop
 		Missile:
 			MRZO E 12
@@ -286,6 +307,14 @@ Actor MarzoLeon: DoomPlayer 15027 {
 			MRZO STUVWX 5
 			MRZO Y -1
 			Stop
+		Kick:
+			CHUB A 0 A_GiveInventory("Kick")
+			CHUB A 0 A_TakeInventory("HeroicKick", 1)
+			Goto Spawn
+		Taunt:
+			CHUB A 0 A_PlaySound("marzoleon/taunt", CHAN_5, 1.0, 0.0)
+			CHUB A 0 A_TakeInventory("HeroicTaunt", 1)
+			Goto Spawn
 	}
 }
 
@@ -332,10 +361,13 @@ Actor Chaser : DoomPlayer 15028 {
 
 	States {
 		Spawn:
-			TARD A -1 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			TARD A 1 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			TARD A 1 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			TARD A 2
 			Loop
 		See:
-			TARD ABCD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			TARD AB 4 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			TARD CD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
 			Loop
 		Missile:
 			TARD E 12
@@ -380,9 +412,13 @@ Actor Chaser : DoomPlayer 15028 {
 			TARD STUVWX 5
 			TARD Y -1
 			Stop
+		Kick:
+			CHUB A 0 A_GiveInventory("Kick")
+			CHUB A 0 A_TakeInventory("HeroicKick", 1)
+			Goto Spawn
 		Taunt:
-			TARD A 0 A_PlaySound("chaser/taunt", CHAN_5, 1.0, 0.0)
-			TARD A 0 A_TakeInventory("HeroicTaunt", 1)
+			CHUB A 0 A_PlaySound("chaser/taunt", CHAN_5, 1.0, 0.0)
+			CHUB A 0 A_TakeInventory("HeroicTaunt", 1)
 			Goto Spawn
 	}
 }
