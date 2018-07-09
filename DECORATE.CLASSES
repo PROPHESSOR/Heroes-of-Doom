@@ -333,7 +333,7 @@ Actor Chaser : DoomPlayer 15028 {
 	Player.UseRange 38
 	// Player.ViewBob 1.5 // TODO: GZDoom Only
 	Player.ViewHeight 35
-	Player.SoundClass "player" // TODO: chaser
+	Player.SoundClass "chaser"
 
 	Player.ColorRange 0, 0
 	Player.ColorSet 0, "Green",         0x70, 0x7F,  0x72
