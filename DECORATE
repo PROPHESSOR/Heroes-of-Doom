@@ -7,4 +7,5 @@
 
 #include "DECORATE.SYSTEM"
 #include "DECORATE.WEAPONS"
+#include "DECORATE.ITEMS"
 #include "DECORATE.CLASSES"

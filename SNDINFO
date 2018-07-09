@@ -22,6 +22,8 @@ $playersound	prophessor	male	*jump		psjump
 $playersound	prophessor	male	*fist		pspunch
 $playersound	prophessor	male	*usefail	psnoway
 
+prophessor/sphere								sprites/classes/prophessor/sounds/PSSPHR
+
 //===========================================================================
 //
 // Iron Droog
@@ -52,6 +54,7 @@ irondroog/taunt3			sprites/classes/irondroog/sounds/ITAUNT3
 irondroog/taunt4			sprites/classes/irondroog/sounds/ITAUNT4
 irondroog/taunt5			sprites/classes/irondroog/sounds/ITAUNT5
 irondroog/kick				sprites/classes/irondroog/sounds/ISKICK
+irondroog/sphere			sprites/classes/irondroog/sounds/ISSPHR
 ending/irondroog			sprites/classes/irondroog/sounds/ISBGDTH2
 ending/irondroog2			sprites/classes/irondroog/sounds/ISBOSDTD
 
@@ -78,6 +81,7 @@ $playersound	marzoleon	male	*usefail	msnoway
 marzoleon/fist1				sprites/classes/marzoleon/sounds/MSTDSCH
 marzoleon/fist2				sprites/classes/marzoleon/sounds/MSHADKN
 marzoleon/haha				sprites/classes/marzoleon/sounds/MSHAHA
+marzoleon/sphere			sprites/classes/marzoleon/sounds/MSSPHR
 
 
 //===========================================================================
@@ -103,6 +107,8 @@ chaser/taunt1			sprites/classes/chaser/sounds/CTAUNT1
 chaser/taunt2			sprites/classes/chaser/sounds/CTAUNT2
 chaser/taunt3			sprites/classes/chaser/sounds/CTAUNT3
 chaser/taunt4			sprites/classes/chaser/sounds/CTAUNT4
+chaser/sphere			sprites/classes/chaser/sounds/CSSPHR
+
 $random		chaser/taunt		{ chaser/taunt1 chaser/taunt2 chaser/taunt3 chaser/taunt4 }
 
 

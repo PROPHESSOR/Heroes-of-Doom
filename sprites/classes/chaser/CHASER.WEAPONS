@@ -121,6 +121,7 @@ Actor ChaserPlasmagun : PlasmaRifle {
 Actor ChaserBFG : BFG9000 {
 	Inventory.RestrictedTo "Chaser"
 	Weapon.SelectionOrder 1
+	Weapon.AmmoUse 20
 
 	States {
 		Fire:

@@ -1,0 +1,26 @@
+/**
+ *Copyright (c) 2018 PROPHESSOR
+ *
+ *This software is released under the MIT License.
+ *https://opensource.org/licenses/MIT
+ */
+
+Actor PROPHESSORSphere : Megasphere {
+	-INVENTORY.ALWAYSPICKUP
+
+	Inventory.RestrictedTo "prophessor"
+	Inventory.PickupMessage "PROPHESSOR Sphere!"
+	Inventory.PickupSound "prophessor/sphere"
+
+	States {
+		Spawn:
+			MEGA ABCD 6 Bright
+			Loop
+		Pickup:
+			TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1)
+			TNT1 A 0 A_GiveInventory("MegasphereHealth", 1)
+			TNT1 A 0 A_GiveInventory("InfiniteAmmo", 1)
+			TNT1 A 0 A_GiveInventory("TimeFreeze", 1)
+			Stop
+	}
+}

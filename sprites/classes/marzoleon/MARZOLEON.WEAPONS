@@ -15,7 +15,7 @@ Actor MarzoLeonFist : Fist {
 		Fire:
 			PUNG B 4
 			TNT1 A 0 A_PlaySound("marzoleon/fist1", CHAN_5)
-			PUNG C 4 A_CustomPunch(125)
+			PUNG C 4 A_CustomPunch(175)
 			PUNG D 15
 			PUNG C 4 A_PlaySound("marzoleon/fist2", CHAN_5)
 			PUNG B 5 A_ReFire
