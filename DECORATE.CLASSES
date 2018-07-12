@@ -357,7 +357,7 @@ Actor Chaser : DoomPlayer 15028 {
 	Player.StartItem "ChaserFist"
 	Player.StartItem "ChaserPistol"
 	
-	Player.StartItem "Cell", 256
+	Player.StartItem "Cell", 300
 
 	States {
 		Spawn:

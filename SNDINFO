@@ -143,6 +143,7 @@ chaser/taunt14			sprites/classes/chaser/sounds/CTAUNT14
 chaser/weapons/ssg/hit1		sprites/classes/chaser/sounds/weapons/ssg/CHHIT1
 chaser/weapons/ssg/hit2		sprites/classes/chaser/sounds/weapons/ssg/CHHIT2
 chaser/weapons/ssg/close	sprites/classes/chaser/sounds/weapons/ssg/CHCLOSE
+chaser/weapons/bfg/ball		sprites/classes/chaser/sounds/weapons/bfg/DSCFGBL
 
 chaser/sphere			sprites/classes/chaser/sounds/CSSPHR
 
