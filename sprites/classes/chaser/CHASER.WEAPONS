@@ -83,6 +83,41 @@ Actor ChaserShotgun : Shotgun {
 
 Actor ChaserSSG : SuperShotgun {
 	Inventory.RestrictedTo "Chaser"
+
+	States {
+		Fire:
+			SHT2 A 3
+			SHT2 A 7 A_FireShotgun2
+			SHT2 B 7
+			SHT2 C 7 A_CheckReload
+			SHT2 D 7 A_OpenShotgun2
+			CCHT E 5 
+			CCHT F 0 A_PlaySound("chaser/weapons/ssg/hit", 6, 1.0)
+			CCHT FFG 5
+			CCHT HHHH 5
+			CCHT I 0 A_PlaySound("chaser/weapons/ssg/hit", 5, 1.0)
+			CCHT I 5
+			CCHT JJJ 5
+			CCHT F 0 A_PlaySound("chaser/weapons/ssg/hit", 6, 1.0)
+			CCHT FG 5
+			CCHT F 0 A_PlaySound("chaser/eee", CHAN_7)
+			CCHT HH 5
+			CCHT I 0 A_PlaySound("chaser/weapons/ssg/hit", 5, 1.0)
+			CCHT I 5 
+			CCHT HHHHHHH 5
+			CCHT F 0 A_PlaySound("chaser/weapons/ssg/hit", 6, 1.0)
+			CCHT FG 3
+			CCHT F 0 A_PlaySound("chaser/weapons/ssg/hit", 6, 1.0)
+			CCHT FG 3
+			CCHT HH 5
+			CCHT I 0 A_PlaySound("chaser/weapons/ssg/hit",5, 1.0)
+			CCHT IIJJKKLLMM 5
+			CCHT I 0 A_PlaySound("chaser/blin", CHAN_7)
+			CCHT D 0 A_PlaySound("chaser/weapons/ssg/close",5,0.8)
+			SHT2 DBCCCBB 3
+			SHT2 A 5 A_ReFire
+			Goto Ready
+	}
 }
 
 Actor ChaserChaingun : Chaingun {

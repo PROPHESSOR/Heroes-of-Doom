@@ -105,17 +105,20 @@ $playersound	chaser	male	*pain100	sprites/classes/chaser/sounds/CSBLIN
 $playersounddup	chaser	male	*pain75		*pain100
 $playersounddup	chaser	male	*pain50		*pain100
 $playersounddup	chaser	male	*pain25		*pain100
-$playersound	chaser	male	*grunt		sprites/classes/chaser/sounds/CSEBLN
+$playersound	chaser	male	*grunt		sprites/classes/chaser/sounds/CSBLIN
 $playersounddup	chaser	male	*land		*grunt
-$playersound	chaser	male	*jump		sprites/classes/chaser/sounds/CSEEE
+$playersound	chaser	male	*jump		sprites/classes/chaser/sounds/CSE
 $playersound	chaser	male	*fist		DSSKESWG
-$playersound	chaser	male	*usefail	sprites/classes/chaser/sounds/CSEEE
+$playersound	chaser	male	*usefail	sprites/classes/chaser/sounds/CSE
+
 chaser/aaaa				sprites/classes/chaser/sounds/CSAAAAAA
-chaser/eeee				sprites/classes/chaser/sounds/CSEEE
+chaser/eeee				sprites/classes/chaser/sounds/CSE
 chaser/ahrinet			sprites/classes/chaser/sounds/CSAHR
 chaser/nahrena			sprites/classes/chaser/sounds/CSNHRN
 chaser/oyblin			sprites/classes/chaser/sounds/CSBLIN
 chaser/eeeblin			sprites/classes/chaser/sounds/CSEBLN
+chaser/eee				sprites/classes/chaser/sounds/CSEEE
+chaser/blin				sprites/classes/chaser/sounds/CSBLN
 
 chaser/pickup1			sprites/classes/chaser/sounds/CSITEMUP
 chaser/pickup2			sprites/classes/chaser/sounds/CSNISHK
@@ -136,6 +139,10 @@ chaser/taunt11			sprites/classes/chaser/sounds/CTAUNT11
 chaser/taunt12			sprites/classes/chaser/sounds/CTAUNT12
 chaser/taunt13			sprites/classes/chaser/sounds/CTAUNT13
 chaser/taunt14			sprites/classes/chaser/sounds/CTAUNT14
+
+chaser/weapons/ssg/hit1		sprites/classes/chaser/sounds/weapons/ssg/CHHIT1
+chaser/weapons/ssg/hit2		sprites/classes/chaser/sounds/weapons/ssg/CHHIT2
+chaser/weapons/ssg/close	sprites/classes/chaser/sounds/weapons/ssg/CHCLOSE
 
 chaser/sphere			sprites/classes/chaser/sounds/CSSPHR
 
@@ -162,6 +169,10 @@ $random		chaser/taunt		{
 	chaser/taunt14
 }
 
+$random chaser/weapons/ssg/hit {
+	chaser/weapons/ssg/hit1
+	chaser/weapons/ssg/hit2
+}
 
 //===========================================================================
 //
