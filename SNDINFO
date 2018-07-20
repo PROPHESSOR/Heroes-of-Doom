@@ -9,20 +9,60 @@
 //
 //===========================================================================
 
-$playersound	prophessor	male	*death		pspldeth
-$playersound	prophessor	male	*xdeath		pspdiehi
+$playersound	prophessor	male	*death		sprites/classes/prophessor/sounds/PSDIE
+$playersound	prophessor	male	*xdeath		sprites/classes/prophessor/sounds/PSDIE
 $playersound	prophessor	male	*gibbed		psslop
-$playersound	prophessor	male	*pain100	psplpain
+$playersound	prophessor	male	*pain100	sprites/classes/prophessor/sounds/PSLND2
 $playersounddup	prophessor	male	*pain75		*pain100
 $playersounddup	prophessor	male	*pain50		*pain100
 $playersounddup	prophessor	male	*pain25		*pain100
-$playersound	prophessor	male	*grunt		psoof
+$playersound	prophessor	male	*grunt		sprites/classes/prophessor/sounds/PSLND1
 $playersounddup	prophessor	male	*land		*grunt
-$playersound	prophessor	male	*jump		psjump
-$playersound	prophessor	male	*fist		pspunch
-$playersound	prophessor	male	*usefail	psnoway
+$playersound	prophessor	male	*jump		sprites/classes/prophessor/sounds/PSTAUNT4
+$playersound	prophessor	male	*fist		sprites/classes/prophessor/sounds/PSFIST
+$playersound	prophessor	male	*usefail	sprites/classes/prophessor/sounds/PSUSE1
 
-prophessor/sphere								sprites/classes/prophessor/sounds/PSSPHR
+prophessor/sphere			sprites/classes/prophessor/sounds/PSSPHR
+prophessor/0fps				sprites/classes/prophessor/sounds/PS0FPS
+prophessor/secret			sprites/classes/prophessor/sounds/PSSECRET
+prophessor/o				sprites/classes/prophessor/sounds/PSO
+prophessor/fist				sprites/classes/prophessor/sounds/PSFIST
+prophessor/kick				sprites/classes/prophessor/sounds/PSKICK
+prophessor/armor			sprites/classes/prophessor/sounds/PSARMOR
+prophessor/die				sprites/classes/prophessor/sounds/PSDIE
+
+
+prophessor/hren1			sprites/classes/prophessor/sounds/PSUSE1
+prophessor/hren2			sprites/classes/prophessor/sounds/PSUSE2
+
+prophessor/taunt1			sprites/classes/prophessor/sounds/PSTAUNT1
+prophessor/taunt2			sprites/classes/prophessor/sounds/PSTAUNT2
+prophessor/taunt3			sprites/classes/prophessor/sounds/PSTAUNT3
+prophessor/taunt4			sprites/classes/prophessor/sounds/PSTAUNT4
+prophessor/taunt5			sprites/classes/prophessor/sounds/PSTAUNT5
+
+prophessor/land1			sprites/classes/prophessor/sounds/PSLND1
+prophessor/land2			sprites/classes/prophessor/sounds/PSLND2
+
+
+$random		prophessor/taunt {
+	prophessor/0fps
+	prophessor/taunt1
+	prophessor/taunt2
+	prophessor/taunt3
+	prophessor/taunt4
+	prophessor/taunt5
+}
+
+$random		prophessor/land {
+	prophessor/land1
+	prophessor/land2
+}
+
+$random		prophessor/pickup {
+	prophessor/o
+	prophessor/armor
+}
 
 //===========================================================================
 //
@@ -71,6 +111,10 @@ $random		irondroog/taunt		{
 	irondroog/taunt5
 }
 
+$random		irondroog/pickup {
+	irondroog/donation
+}
+
 //===========================================================================
 //
 // MarzoLeon
@@ -93,6 +137,16 @@ marzoleon/fist1				sprites/classes/marzoleon/sounds/MSTDSCH
 marzoleon/fist2				sprites/classes/marzoleon/sounds/MSHADKN
 marzoleon/haha				sprites/classes/marzoleon/sounds/MSHAHA
 marzoleon/sphere			sprites/classes/marzoleon/sounds/MSSPHR
+marzoleon/nahya				sprites/classes/marzoleon/sounds/MSHYA
+marzoleon/chivo				sprites/classes/marzoleon/sounds/MSCVO
+
+$random marzoleon/taunt {
+	marzoleon/nahya
+}
+
+$random marzoleon/pickup {
+	marzoleon/nahya
+}
 
 
 //===========================================================================
@@ -191,6 +245,7 @@ $random menu/quit2 {
 	irondroog/taunt5
 	chaser/taunt09
 	chaser/taunt13
+	marzoleon/nahya
 }
 
 other/saxgun	DSSAXGUN

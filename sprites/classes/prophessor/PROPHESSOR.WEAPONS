@@ -9,11 +9,13 @@
 
 Actor ProphessorFist : Fist {
 	Inventory.RestrictedTo "PROPHESSOR"
+	Inventory.PickupSound "prophessor/pickup"
 }
 
 Actor ProphessorKick : Kick {
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.Kickback 228
+	Inventory.PickupSound "prophessor/pickup"
 
 	States {	
 		Ready:
@@ -31,8 +33,8 @@ Actor ProphessorKick : Kick {
 			KICK M 1
 			KICK N 1 A_PlaySound("weapon/kick", CHAN_5, 1.0, 0.0)
 			KICK O 1
-			KICK P 1 
-			KICK Q 1 A_CustomPunch(11, false, 0, "BulletPuff", 64, 0, 0, "", "weapon/kickdown", "weapon/kickmiss")
+			KICK P 1 A_CustomPunch(0, false, 0, "BulletPuff", 0, 0, 0, "", "weapon/kickdown")
+			KICK Q 1 A_CustomPunch(11, false, 0, "BulletPuff", 64, 0, 0, "", "prophessor/kick", "weapon/kickmiss")
 			KICK R 3 A_Recoil(4)
 			KICK S 1 
 			KICK T 1 A_TakeInventory("ProphessorKick")
@@ -42,11 +44,13 @@ Actor ProphessorKick : Kick {
 
 Actor ProphessorChainsaw : Chainsaw {
 	Inventory.RestrictedTo "PROPHESSOR"
+	Inventory.PickupSound "prophessor/pickup"
 }
 
 Actor ProphessorPistol : Pistol {
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.AmmoUse 100
+	Inventory.PickupSound "prophessor/pickup"
 
 	States {
 		Fire:
@@ -62,14 +66,17 @@ Actor ProphessorPistol : Pistol {
 
 Actor ProphessorShotgun : Shotgun {
 	Inventory.RestrictedTo "PROPHESSOR"
+	Inventory.PickupSound "prophessor/pickup"
 }
 
 Actor ProphessorSSG : SuperShotgun {
 	Inventory.RestrictedTo "PROPHESSOR"
+	Inventory.PickupSound "prophessor/pickup"
 }
 
 Actor ProphessorChaingun : Chaingun {
 	Inventory.RestrictedTo "PROPHESSOR"
+	Inventory.PickupSound "prophessor/pickup"
 
 	States {
 		Fire:
@@ -81,6 +88,7 @@ Actor ProphessorChaingun : Chaingun {
 
 Actor ProphessorRL : RocketLauncher {
 	Inventory.RestrictedTo "PROPHESSOR"
+	Inventory.PickupSound "prophessor/pickup"
 
 	States {
 		Fire:
@@ -95,6 +103,7 @@ Actor ProphessorRL : RocketLauncher {
 Actor ProphessorPlasmagun : PlasmaRifle {
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.AmmoUse 1
+	Inventory.PickupSound "prophessor/pickup"
 
 	States {
 		Ready:
@@ -125,6 +134,7 @@ Actor ProphessorPlasmagun : PlasmaRifle {
 Actor ProphessorBFG : BFG9000 {
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.AmmoUse 25
+	Inventory.PickupSound "prophessor/pickup"
 
 	States {
 		Ready:

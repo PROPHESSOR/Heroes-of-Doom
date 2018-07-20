@@ -18,7 +18,7 @@ Actor PROPHESSOR : DoomPlayer 15025 {
 	Player.UseRange 72
 	// Player.ViewBob 1 // TODO: GZDoom Only
 	Player.ViewHeight 52
-	Player.SoundClass "player" // TODO: prophessor
+	Player.SoundClass "prophessor"
 	
 	Translation "112:119=214:217", "120:125=216:223", "124:127=232:235" 
 	Player.ColorRange 0, 0
@@ -320,7 +320,7 @@ Actor MarzoLeon: DoomPlayer 15027 {
 
 Actor Chaser : DoomPlayer 15028 {
 	Mass 25
-	Health 10
+	Health 25
 	Speed 0.3
 
 	Player.DisplayName "Chaser"
@@ -328,7 +328,7 @@ Actor Chaser : DoomPlayer 15028 {
 	Player.JumpZ 5
 	Player.FallingScreamSpeed 0, 10
 	Player.GruntSpeed 10
-	Player.MaxHealth 25
+	Player.MaxHealth 50
 	// Player.SpawnClass 4
 	Player.UseRange 38
 	// Player.ViewBob 1.5 // TODO: GZDoom Only

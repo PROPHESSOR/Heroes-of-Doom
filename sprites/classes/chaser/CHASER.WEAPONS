@@ -10,6 +10,7 @@
 Actor ChaserFist : Fist {
 	Inventory.RestrictedTo "Chaser"
 	Weapon.Kickback 0
+	Inventory.PickupSound "chaser/pickup"
 
 	States {	
 		Fire:
@@ -24,6 +25,7 @@ Actor ChaserFist : Fist {
 Actor ChaserKick : Kick {
 	Inventory.RestrictedTo "Chaser"
 	Weapon.Kickback 0
+	Inventory.PickupSound "chaser/pickup"
 
 	States {	
 		Ready:
@@ -52,6 +54,7 @@ Actor ChaserKick : Kick {
 
 Actor ChaserChainsaw : Chainsaw {
 	Inventory.RestrictedTo "Chaser"
+	Inventory.PickupSound "chaser/pickup"
 
 	States {
 		Fire:
@@ -75,10 +78,12 @@ Actor ChaserChainsaw : Chainsaw {
 
 Actor ChaserPistol : Pistol {
 	Inventory.RestrictedTo "Chaser"
+	Inventory.PickupSound "chaser/pickup"
 }
 
 Actor ChaserShotgun : Shotgun {
 	Inventory.RestrictedTo "Chaser"
+	Inventory.PickupSound "chaser/pickup"
 
 	States {
 		Fire:
@@ -97,6 +102,7 @@ Actor ChaserShotgun : Shotgun {
 
 Actor ChaserSSG : SuperShotgun {
 	Inventory.RestrictedTo "Chaser"
+	Inventory.PickupSound "chaser/pickup"
 
 	States {
 		Fire:
@@ -136,10 +142,12 @@ Actor ChaserSSG : SuperShotgun {
 
 Actor ChaserChaingun : Chaingun {
 	Inventory.RestrictedTo "Chaser"
+	Inventory.PickupSound "chaser/pickup"
 }
 
 Actor ChaserRL : RocketLauncher {
 	Inventory.RestrictedTo "Chaser"
+	Inventory.PickupSound "chaser/pickup"
 
 	States {
 		Fire:
@@ -155,6 +163,7 @@ Actor ChaserRL : RocketLauncher {
 
 Actor ChaserPlasmagun : PlasmaRifle {
 	Inventory.RestrictedTo "Chaser"
+	Inventory.PickupSound "chaser/pickup"
 
 	States {
 		Fire:
@@ -168,21 +177,21 @@ Actor ChaserPlasmagun : PlasmaRifle {
 }
 
 Actor CFG9000Ball {
+	PROJECTILE
 	+FORCERADIUSDMG
 	+THRUSPECIES
 
+	Speed 10 // 18
 	Radius 20
 	Height 30
 	Damage 500
-	Speed 10 // 18
 	Alpha 0.95
 	Scale 2.0
-	RenderStyle Translucent
 	Alpha 0.85
-	PROJECTILE
+	DeathSound ""
 	Species "Player"
 	Obituary "$OB_MPBFG_BOOM"
-	DeathSound ""
+	RenderStyle Translucent
 
 	States {
 		Spawn:
@@ -255,6 +264,7 @@ Actor ChaserBFG : BFG9000 {
 	Inventory.RestrictedTo "Chaser"
 	Weapon.SelectionOrder 1
 	Weapon.AmmoUse 100
+	Inventory.PickupSound "chaser/pickup"
 
 	States {
 		Fire:

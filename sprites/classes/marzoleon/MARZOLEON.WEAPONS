@@ -10,6 +10,7 @@
 Actor MarzoLeonFist : Fist {
 	Inventory.RestrictedTo "MarzoLeon"
 	Weapon.Kickback 1000
+	Inventory.PickupSound "marzoleon/pickup"
 
 	States {
 		Fire:
@@ -26,6 +27,7 @@ Actor MarzoLeonFist : Fist {
 Actor MarzoLeonChainsaw : Chainsaw {
 	Inventory.RestrictedTo "MarzoLeon"
 	Weapon.Kickback 5
+	Inventory.PickupSound "marzoleon/pickup"
 
 	States {
 		Fire:
@@ -48,6 +50,7 @@ Actor MarzoLeonPistol : Pistol {
 	+NOAUTOFIRE
 
 	Inventory.RestrictedTo "MarzoLeon"
+	Inventory.PickupSound "marzoleon/pickup"
 
 	States {
 		Fire:
@@ -68,14 +71,17 @@ Actor MarzoLeonPistol : Pistol {
 
 Actor MarzoLeonShotgun : Shotgun {
 	Inventory.RestrictedTo "MarzoLeon"
+	Inventory.PickupSound "marzoleon/pickup"
 }
 
 Actor MarzoLeonSSG : SuperShotgun {
 	Inventory.RestrictedTo "MarzoLeon"
+	Inventory.PickupSound "marzoleon/pickup"
 }
 
 Actor MarzoLeonChaingun : Chaingun {
 	Inventory.RestrictedTo "MarzoLeon"
+	Inventory.PickupSound "marzoleon/pickup"
 
 	States {
 		Fire:
@@ -92,12 +98,15 @@ Actor MarzoLeonChaingun : Chaingun {
 
 Actor MarzoLeonRL : RocketLauncher {
 	Inventory.RestrictedTo "MarzoLeon"
+	Inventory.PickupSound "marzoleon/pickup"
 }
 
 Actor MarzoLeonPlasmagun : PlasmaRifle {
 	Inventory.RestrictedTo "MarzoLeon"
+	Inventory.PickupSound "marzoleon/pickup"
 }
 
 Actor MarzoLeonBFG : BFG9000 {
 	Inventory.RestrictedTo "MarzoLeon"
+	Inventory.PickupSound "marzoleon/pickup"
 }
