@@ -8,4 +8,5 @@
 #include "DECORATE.SYSTEM"
 #include "DECORATE.WEAPONS"
 #include "DECORATE.ITEMS"
+#include "DECORATE.MONSTERS"
 #include "DECORATE.CLASSES"

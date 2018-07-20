@@ -228,8 +228,6 @@ ACTOR PlayerDTBFGProjectileAttack {
 	+NOTARGET
 	+FRIENDLY
 	+NOCLIP
-	Obituary "%o had no chance against %k's Demon Tech BFG10K."
-	MissileType "PlayerDTBFGRailgunSlug"
 
 	States {
 		Spawn:

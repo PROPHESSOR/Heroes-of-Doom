@@ -60,6 +60,9 @@ irondroog/sphere			sprites/classes/irondroog/sounds/ISSPHR
 ending/irondroog			sprites/classes/irondroog/sounds/ISBGDTH2
 ending/irondroog2			sprites/classes/irondroog/sounds/ISBOSDTD
 
+irondroog/weapons/ssg/load	sprites/classes/irondroog/sounds/weapons/ssg/LCSGLOAD
+irondroog/weapons/ssg/hit	sprites/classes/irondroog/sounds/weapons/ssg/LCSGALTF
+
 $random		irondroog/taunt		{
 	irondroog/taunt1
 	irondroog/taunt2
@@ -194,3 +197,4 @@ other/saxgun	DSSAXGUN
 weapon/kick		KICK
 weapon/kickmiss	DSSKESWG
 weapon/kickdown	DSSKEPCH
+explosion/big	DSLMIEX

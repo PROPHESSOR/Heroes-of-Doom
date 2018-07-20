@@ -68,22 +68,33 @@ Actor IronDroogShotgun : Shotgun {
 
 Actor IronDroogSSG : SuperShotgun {
 	Inventory.RestrictedTo "IronDroog"
+	Weapon.Kickback 500
+	Weapon.AmmoUse 4
 
 	States {
+		Select:
+			LSEL ABCDEFGHIJKLMNNNN 1 A_Raise
+			Loop
+		Deselect:
+			LSEL NMLKJIHGFEDCBAAAA 1 A_Lower
+			Loop
+		Ready:
+			LCSG A 1 A_WeaponReady
+			Loop
 		Fire:
-		SHT2 A 3
-		SHT2 A 0 A_FireBullets (11.2, 7.1, 20, 15, "BulletPuff")
-		SHT2 A 0 A_PlaySound ("weapons/sshotf", CHAN_WEAPON)
-		SHT2 A 5 A_GunFlash
-		SHT2 B 5
-		SHT2 C 5 A_CheckReload
-		SHT2 D 5 A_OpenShotgun2
-		SHT2 E 5
-		SHT2 F 5 A_LoadShotgun2
-		SHT2 G 4
-		SHT2 H 4 A_CloseShotgun2
-		SHT2 A 3 A_ReFire
-		Goto Ready
+			LCSG A 3
+			LCSG A 0 A_FireBullets (11.2, 7.1, 40, 15, "BulletPuff")
+			LCSG A 0 A_PlaySound ("irondroog/weapons/ssg/hit", CHAN_WEAPON)
+			LCSG XY 3 Bright A_Recoil(FRandom(0.5, 1.0))
+			LCSG B 5
+			LCSG C 5 A_CheckReload
+			LCSG D 5 A_PlaySound ("weapons/sshoto", CHAN_WEAPON)
+			LCSG E 5
+			LCSG F 5 A_PlaySound ("weapons/sshotl", CHAN_WEAPON)
+			LCSG G 4
+			LCSG H 4 A_PlaySound ("irondroog/weapons/ssg/load", CHAN_WEAPON)
+			LCSG A 3 A_ReFire
+			Goto Ready
 	}
 }
 
