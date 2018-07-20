@@ -8,11 +8,15 @@
 // Arms in the hands of PROPHESSOR
 
 Actor ProphessorFist : Fist {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Inventory.PickupSound "prophessor/pickup"
 }
 
 Actor ProphessorKick : Kick {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.Kickback 228
 	Inventory.PickupSound "prophessor/pickup"
@@ -43,11 +47,15 @@ Actor ProphessorKick : Kick {
 }
 
 Actor ProphessorChainsaw : Chainsaw {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Inventory.PickupSound "prophessor/pickup"
 }
 
 Actor ProphessorPistol : Pistol {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.AmmoUse 100
 	Inventory.PickupSound "prophessor/pickup"
@@ -65,16 +73,22 @@ Actor ProphessorPistol : Pistol {
 }
 
 Actor ProphessorShotgun : Shotgun {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Inventory.PickupSound "prophessor/pickup"
 }
 
 Actor ProphessorSSG : SuperShotgun {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Inventory.PickupSound "prophessor/pickup"
 }
 
 Actor ProphessorChaingun : Chaingun {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Inventory.PickupSound "prophessor/pickup"
 
@@ -87,6 +101,8 @@ Actor ProphessorChaingun : Chaingun {
 }
 
 Actor ProphessorRL : RocketLauncher {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Inventory.PickupSound "prophessor/pickup"
 
@@ -101,6 +117,8 @@ Actor ProphessorRL : RocketLauncher {
 }
 
 Actor ProphessorPlasmagun : PlasmaRifle {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.AmmoUse 1
 	Inventory.PickupSound "prophessor/pickup"
@@ -132,6 +150,8 @@ Actor ProphessorPlasmagun : PlasmaRifle {
 }
 
 Actor ProphessorBFG : BFG9000 {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.AmmoUse 25
 	Inventory.PickupSound "prophessor/pickup"

@@ -8,12 +8,18 @@
 // Arms in the hands of Iron Droog
 
 Actor IronDroogFist : Fist {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
+	Inventory.PickupSound "irondroog/pickup"
 }
 
 Actor IronDroogKick : Kick {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
 	Weapon.Kickback 500
+	Inventory.PickupSound "irondroog/pickup"
 
 	States {
 		Ready:
@@ -41,15 +47,24 @@ Actor IronDroogKick : Kick {
 }
 
 Actor IronDroogChainsaw : Chainsaw {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
+	Inventory.PickupSound "irondroog/pickup"
 }
 
 Actor IronDroogPistol : Pistol {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
+	Inventory.PickupSound "irondroog/pickup"
 }
 
 Actor IronDroogShotgun : Shotgun {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
+	Inventory.PickupSound "irondroog/pickup"
 
 	States {
 		Fire:
@@ -67,9 +82,12 @@ Actor IronDroogShotgun : Shotgun {
 }
 
 Actor IronDroogSSG : SuperShotgun {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
 	Weapon.Kickback 500
 	Weapon.AmmoUse 4
+	Inventory.PickupSound "irondroog/pickup"
 
 	States {
 		Select:
@@ -99,17 +117,29 @@ Actor IronDroogSSG : SuperShotgun {
 }
 
 Actor IronDroogChaingun : Chaingun {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
+	Inventory.PickupSound "irondroog/pickup"
 }
 
 Actor IronDroogRL : RocketLauncher {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
+	Inventory.PickupSound "irondroog/pickup"
 }
 
 Actor IronDroogPlasmagun : PlasmaRifle {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
+	Inventory.PickupSound "irondroog/pickup"
 }
 
 Actor IronDroogBFG : BFG9000 {
+	+INVENTORY.RESTRICTABSOLUTELY
+
 	Inventory.RestrictedTo "IronDroog"
+	Inventory.PickupSound "irondroog/pickup"
 }

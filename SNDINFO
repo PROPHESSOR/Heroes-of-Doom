@@ -246,6 +246,7 @@ $random menu/quit2 {
 	chaser/taunt09
 	chaser/taunt13
 	marzoleon/nahya
+	prophessor/taunt4
 }
 
 other/saxgun	DSSAXGUN
