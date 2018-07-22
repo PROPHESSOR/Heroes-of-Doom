@@ -422,3 +422,106 @@ Actor Chaser : DoomPlayer 15028 {
 			Goto Spawn
 	}
 }
+
+Actor Nomakh : DoomPlayer 15029 {
+	Mass 200
+	Health 125
+	Speed 1.0
+
+	Player.DisplayName "Nomakh Thunder"
+	Player.Face "NTF"
+	Player.InvulnerabilityMode "Reflective"
+	Player.JumpZ 5
+	Player.MaxHealth 150
+	Player.UseRange 50
+	// Player.ViewBob 0.8 // TODO: GZDoom Only
+	Player.ViewHeight 48
+	Player.SoundClass "player"
+	
+	Translation "112:127=182:191"
+	Player.ColorRange 0, 0
+	Player.ClearColorSet 1
+	Player.ClearColorSet 2
+	Player.ClearColorSet 3
+	Player.ClearColorSet 4
+	Player.ClearColorSet 5
+	Player.ClearColorSet 6
+	Player.ClearColorSet 7
+
+	Player.WeaponSlot 1, NomakhFist, NomakhChainsaw
+	Player.WeaponSlot 2, NomakhPistol
+	Player.WeaponSlot 3, NomakhShotgun, NomakhSSG
+	Player.WeaponSlot 4, NomakhChaingun
+	Player.WeaponSlot 5, NomakhRL
+	Player.WeaponSlot 6, NomakhPlasmagun
+	Player.WeaponSlot 7, NomakhBFG
+	
+	Player.StartItem "NomakhChaingun"
+	Player.StartItem "NomakhPistol"
+	Player.StartItem "NomakhFist"
+	
+	Player.StartItem "Clip", 999
+	
+	States {
+		Spawn:
+			CHMR A 1 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			CHMR A 1 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			CHMR A 2
+			Loop
+		See:
+			CHMR AB 4 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			CHMR CD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			Loop
+		Missile:
+			CHMR E 12
+			Goto Spawn
+		Melee:
+			CHMR F 6 BRIGHT
+			Goto Missile
+		Pain:
+			CHMR G 4 
+			CHMR G 4 A_Pain
+			Goto Spawn
+		Death:
+			CHMR H 0 A_PlayerSkinCheck("AltSkinDeath")
+			Death1:
+			CHMR H 10
+			CHMR I 10 A_PlayerScream
+			CHMR J 10 A_NoBlocking
+			CHMR KLM 10
+			CHMR N -1
+			Stop
+		XDeath:
+			CHMR O 0 A_PlayerSkinCheck("AltSkinXDeath")
+		XDeath1:
+			CHMR O 5
+			CHMR P 5 A_XScream
+			CHMR Q 5 A_NoBlocking
+			CHMR RSTUV 5
+			CHMR W -1
+			Stop
+		AltSkinDeath:
+			CHMR H 6
+			CHMR I 6 A_PlayerScream
+			CHMR JK 6
+			CHMR L 6 A_NoBlocking
+			CHMR MNO 6
+			CHMR P -1
+			Stop
+		AltSkinXDeath:
+			CHMR Q 5 A_PlayerScream
+			CHMR R 0 A_NoBlocking
+			CHMR R 5 A_SkullPop
+			CHMR STUVWX 5
+			CHMR Y -1
+			Stop
+		Kick:
+			CHMR A 0 A_GiveInventory("NomakhKick")
+			CHMR A 0 A_TakeInventory("HeroicKick", 1)
+			Goto Spawn
+		Taunt:
+			CHMR A 0 A_PlaySound("nomakh/taunt", CHAN_5, 1.0, 0.0)
+			CHMR A 0 A_TakeInventory("HeroicTaunt", 1)
+			Goto Spawn
+	}
+}

@@ -4,5 +4,5 @@
 // https://opensource.org/licenses/MIT
 
 GameInfo {
-	PlayerClasses = "PROPHESSOR", "IronDroog", "MarzoLeon", "Chaser"
+	PlayerClasses = "PROPHESSOR", "IronDroog", "MarzoLeon", "Chaser", "Nomakh"
 }

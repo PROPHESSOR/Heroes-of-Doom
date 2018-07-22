@@ -17,6 +17,7 @@ Actor ChainsawSpawner replaces Chainsaw {
 			TNT1 A 0 A_SpawnItemEx( "IronDroogChainsaw" )
 			TNT1 A 0 A_SpawnItemEx( "MarzoLeonChainsaw" )
 			TNT1 A 0 A_SpawnItemEx( "ChaserChainsaw" )
+			TNT1 A 0 A_SpawnItemEx( "NomakhChainsaw" )
 			Stop
 	}
 }
@@ -29,6 +30,7 @@ Actor PistolSpawner replaces Pistol {
 			TNT1 A 0 A_SpawnItemEx( "IronDroogPistol" )
 			TNT1 A 0 A_SpawnItemEx( "MarzoLeonPistol" )
 			TNT1 A 0 A_SpawnItemEx( "ChaserPistol" )
+			TNT1 A 0 A_SpawnItemEx( "NomakhPistol" )
 			Stop
 	}
 }
@@ -41,6 +43,7 @@ Actor ShotgunSpawner replaces Shotgun {
 			TNT1 A 0 A_SpawnItemEx( "IronDroogShotgun" )
 			TNT1 A 0 A_SpawnItemEx( "MarzoLeonShotgun" )
 			TNT1 A 0 A_SpawnItemEx( "ChaserShotgun" )
+			TNT1 A 0 A_SpawnItemEx( "NomakhShotgun" )
 			Stop
 	}
 }
@@ -53,6 +56,7 @@ Actor SSGSpawner replaces SuperShotgun {
 			TNT1 A 0 A_SpawnItemEx( "IronDroogSSG" )
 			TNT1 A 0 A_SpawnItemEx( "MarzoLeonSSG" )
 			TNT1 A 0 A_SpawnItemEx( "ChaserSSG" )
+			TNT1 A 0 A_SpawnItemEx( "NomakhSSG" )
 			Stop
 	}
 }
@@ -65,6 +69,7 @@ Actor ChaingunSpawner replaces Chaingun {
 			TNT1 A 0 A_SpawnItemEx( "IronDroogChaingun" )
 			TNT1 A 0 A_SpawnItemEx( "MarzoLeonChaingun" )
 			TNT1 A 0 A_SpawnItemEx( "ChaserChaingun" )
+			TNT1 A 0 A_SpawnItemEx( "NomakhChaingun" )
 			Stop
 	}
 }
@@ -77,6 +82,7 @@ Actor RLSpawner replaces RocketLauncher {
 			TNT1 A 0 A_SpawnItemEx( "IronDroogRL" )
 			TNT1 A 0 A_SpawnItemEx( "MarzoLeonRL" )
 			TNT1 A 0 A_SpawnItemEx( "ChaserRL" )
+			TNT1 A 0 A_SpawnItemEx( "NomakhRL" )
 			Stop
 	}
 }
@@ -89,6 +95,7 @@ Actor PlasmagunSpawner replaces PlasmaRifle {
 			TNT1 A 0 A_SpawnItemEx( "IronDroogPlasmagun" )
 			TNT1 A 0 A_SpawnItemEx( "MarzoLeonPlasmagun" )
 			TNT1 A 0 A_SpawnItemEx( "ChaserPlasmagun" )
+			TNT1 A 0 A_SpawnItemEx( "NomakhPlasmagun" )
 			Stop
 	}
 }
@@ -101,6 +108,7 @@ Actor BFGSpawner replaces BFG9000 {
 			TNT1 A 0 A_SpawnItemEx( "IronDroogBFG" )
 			TNT1 A 0 A_SpawnItemEx( "MarzoLeonBFG" )
 			TNT1 A 0 A_SpawnItemEx( "ChaserBFG" )
+			TNT1 A 0 A_SpawnItemEx( "NomakhBFG" )
 			Stop
 	}
 }
@@ -165,3 +173,4 @@ Actor EpicSaxGun : Weapon {
 #include "sprites/classes/irondroog/IRONDROOG.WEAPONS"
 #include "sprites/classes/marzoleon/MARZOLEON.WEAPONS"
 #include "sprites/classes/chaser/CHASER.WEAPONS"
+#include "sprites/classes/nomakh/NOMAKH.WEAPONS"

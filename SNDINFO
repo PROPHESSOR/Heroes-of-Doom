@@ -232,6 +232,30 @@ $random chaser/weapons/ssg/hit {
 	chaser/weapons/ssg/hit2
 }
 
+
+//===========================================================================
+//
+// Nomakh Thunder
+//
+//===========================================================================
+
+$playersound	nomakh	male	*death		sprites/classes/nomakh/sounds/NSPLDETH
+$playersound	nomakh	male	*xdeath		sprites/classes/nomakh/sounds/NSPLDETH
+$playersound	nomakh	male	*gibbed		sprites/classes/nomakh/sounds/NSPLDETH
+$playersound	nomakh	male	*pain100	sprites/classes/nomakh/sounds/NSPLPAIN
+$playersounddup	nomakh	male	*pain75		*pain100
+$playersounddup	nomakh	male	*pain50		*pain100
+$playersounddup	nomakh	male	*pain25		*pain100
+$playersound	nomakh	male	*grunt		sprites/classes/nomakh/sounds/Nsoof
+$playersounddup	nomakh	male	*land		*grunt
+$playersound	nomakh	male	*jump		sprites/classes/nomakh/sounds/nsjump
+$playersound	nomakh	male	*fist		sprites/classes/nomakh/sounds/nspunch
+$playersound	nomakh	male	*usefail	sprites/classes/nomakh/sounds/nsnoway
+
+nomakh/weapons/chaingun/start				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTAT
+nomakh/weapons/chaingun/stop				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTOP
+nomakh/weapons/chaingun/fire				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMFIRE
+
 //===========================================================================
 //
 // Exit sounds

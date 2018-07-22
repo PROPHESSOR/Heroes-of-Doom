@@ -81,3 +81,23 @@ Actor HeroicTaunt : Inventory {
 Actor HeroicKick : Inventory {
 	Inventory.MaxAmount 1
 }
+
+Actor PROPHESSORTag : Inventory {
+	Inventory.MaxAmount 1
+}
+
+Actor IronDroogTag : Inventory {
+	Inventory.MaxAmount 1
+}
+
+Actor MarzoLeonTag : Inventory {
+	Inventory.MaxAmount 1
+}
+
+Actor ChaserTag : Inventory {
+	Inventory.MaxAmount 1
+}
+
+Actor NomakhTag : Inventory {
+	Inventory.MaxAmount 1
+}
