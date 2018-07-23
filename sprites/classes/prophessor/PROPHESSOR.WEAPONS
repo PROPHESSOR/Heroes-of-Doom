@@ -37,7 +37,7 @@ Actor ProphessorKick : Kick {
 			KICK M 1
 			KICK N 1 A_PlaySound("weapon/kick", CHAN_5, 1.0, 0.0)
 			KICK O 1
-			KICK P 1 A_CustomPunch(0, false, 0, "BulletPuff", 0, 0, 0, "", "weapon/kickdown")
+			KICK P 1 A_CustomPunch(0, false, 0, "BulletPuff", 64, 0, 0, "", "weapon/kickdown")
 			KICK Q 1 A_CustomPunch(11, false, 0, "BulletPuff", 64, 0, 0, "", "prophessor/kick", "weapon/kickmiss")
 			KICK R 3 A_Recoil(4)
 			KICK S 1 

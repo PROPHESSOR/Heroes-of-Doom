@@ -239,22 +239,71 @@ $random chaser/weapons/ssg/hit {
 //
 //===========================================================================
 
-$playersound	nomakh	male	*death		sprites/classes/nomakh/sounds/NSPLDETH
-$playersound	nomakh	male	*xdeath		sprites/classes/nomakh/sounds/NSPLDETH
-$playersound	nomakh	male	*gibbed		sprites/classes/nomakh/sounds/NSPLDETH
-$playersound	nomakh	male	*pain100	sprites/classes/nomakh/sounds/NSPLPAIN
+$playersound	nomakh	male	*death		sprites/classes/nomakh/sounds/NSDIE
+$playersound	nomakh	male	*xdeath		sprites/classes/nomakh/sounds/NSDIE
+$playersound	nomakh	male	*gibbed		sprites/classes/nomakh/sounds/NSDIE
+$playersound	nomakh	male	*pain100	sprites/classes/nomakh/sounds/NSPAIN
 $playersounddup	nomakh	male	*pain75		*pain100
 $playersounddup	nomakh	male	*pain50		*pain100
 $playersounddup	nomakh	male	*pain25		*pain100
 $playersound	nomakh	male	*grunt		sprites/classes/nomakh/sounds/Nsoof
 $playersounddup	nomakh	male	*land		*grunt
 $playersound	nomakh	male	*jump		sprites/classes/nomakh/sounds/nsjump
-$playersound	nomakh	male	*fist		sprites/classes/nomakh/sounds/nspunch
-$playersound	nomakh	male	*usefail	sprites/classes/nomakh/sounds/nsnoway
+$playersound	nomakh	male	*fist		sprites/classes/nomakh/sounds/NSBOOM
+$playersound	nomakh	male	*usefail	sprites/classes/nomakh/sounds/NSNOWAY
+
+nomakh/hren1					sprites/classes/nomakh/sounds/NSNOWAY
+nomakh/boom						sprites/classes/nomakh/sounds/NSBOOM
+nomakh/cheza					sprites/classes/nomakh/sounds/NSPICKUP
+nomakh/chivo					sprites/classes/nomakh/sounds/NSWTF
+nomakh/down						sprites/classes/nomakh/sounds/NSDOWN
+nomakh/omg						sprites/classes/nomakh/sounds/NSOMG
+
+nomakh/die1						sprites/classes/nomakh/sounds/NSDIE
+
+nomakh/taunt1					sprites/classes/nomakh/sounds/NSTAUNT1
+nomakh/taunt2					sprites/classes/nomakh/sounds/NSTAUNT2
+nomakh/taunt3					sprites/classes/nomakh/sounds/NSTAUNT3
+nomakh/taunt4					sprites/classes/nomakh/sounds/NSTAUNT4
+nomakh/taunt5					sprites/classes/nomakh/sounds/NSTAUNT5
+nomakh/taunt6					sprites/classes/nomakh/sounds/NSTAUNT6
+nomakh/taunt7					sprites/classes/nomakh/sounds/NSTAUNT7
+nomakh/taunt8					sprites/classes/nomakh/sounds/NSTAUNT8
+nomakh/taunt9					sprites/classes/nomakh/sounds/NSTAUNT9
+nomakh/taunt10					sprites/classes/nomakh/sounds/NSTAUNT10
+nomakh/taunt11					sprites/classes/nomakh/sounds/NSTAUNT11
+nomakh/taunt12					sprites/classes/nomakh/sounds/NSTAUNT12
+nomakh/taunt13					sprites/classes/nomakh/sounds/NSTAUNT13
+nomakh/taunt14					sprites/classes/nomakh/sounds/NSTAUNT14
+nomakh/taunt15					sprites/classes/nomakh/sounds/NSTAUNT15
 
 nomakh/weapons/chaingun/start				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTAT
 nomakh/weapons/chaingun/stop				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTOP
 nomakh/weapons/chaingun/fire				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMFIRE
+
+$random	nomakh/taunt {
+	nomakh/taunt1
+	nomakh/taunt2
+	nomakh/taunt3
+	nomakh/taunt4
+	nomakh/taunt5
+	nomakh/taunt6
+	nomakh/taunt7
+	nomakh/taunt8
+	nomakh/taunt9
+	nomakh/taunt10
+	nomakh/taunt11
+	nomakh/taunt12
+	nomakh/taunt13
+	nomakh/taunt14
+	nomakh/taunt15
+	nomakh/down
+	nomakh/omg
+}
+
+$random	nomakh/pickup {
+	nomakh/cheza
+}
 
 //===========================================================================
 //

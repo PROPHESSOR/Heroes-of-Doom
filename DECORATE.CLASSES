@@ -431,14 +431,13 @@ Actor Nomakh : DoomPlayer 15029 {
 	Player.DisplayName "Nomakh Thunder"
 	Player.Face "NTF"
 	Player.InvulnerabilityMode "Reflective"
-	Player.JumpZ 5
+	Player.JumpZ 7
 	Player.MaxHealth 150
 	Player.UseRange 50
 	// Player.ViewBob 0.8 // TODO: GZDoom Only
 	Player.ViewHeight 48
-	Player.SoundClass "player"
+	Player.SoundClass "nomakh"
 	
-	Translation "112:127=182:191"
 	Player.ColorRange 0, 0
 	Player.ClearColorSet 1
 	Player.ClearColorSet 2
