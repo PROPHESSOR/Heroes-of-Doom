@@ -248,9 +248,8 @@ Actor MarzoLeon: DoomPlayer 15027 {
 	Player.WeaponSlot 6, MarzoLeonPlasmagun
 	Player.WeaponSlot 7, MarzoLeonBFG
 	
-	Player.StartItem "MarzoLeonChaingun"
-	Player.StartItem "MarzoLeonPistol"
 	Player.StartItem "MarzoLeonFist"
+	Player.StartItem "MarzoLeonPistol"
 
 	Player.StartItem "Clip", 100
 
