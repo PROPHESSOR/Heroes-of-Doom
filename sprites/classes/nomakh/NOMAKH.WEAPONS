@@ -54,7 +54,7 @@ Actor NomakhChainsaw : Chainsaw {
 	Inventory.PickupSound "nomakh/pickup"
 }
 
-ACTOR NomakhPistol : Weapon {
+Actor NomakhPistol : Weapon {
 	+INVENTORY.RESTRICTABSOLUTELY
 	+NOALERT
 
