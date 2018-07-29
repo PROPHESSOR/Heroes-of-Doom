@@ -291,6 +291,9 @@ nomakh/weapons/ssg/Deploy					sprites/classes/nomakh/sounds/weapons/ssg/QUADDEPL
 nomakh/weapons/ssg/Alt						sprites/classes/nomakh/sounds/weapons/ssg/QUADALT
 nomakh/weapons/ssg/Mode						sprites/classes/nomakh/sounds/weapons/ssg/QUADMODE
 
+nomakh/weapons/pistol/up						sprites/classes/nomakh/sounds/weapons/pistol/BERNUP
+nomakh/weapons/pistol/fire						sprites/classes/nomakh/sounds/weapons/pistol/BERNFIRE
+
 $random	nomakh/taunt {
 	nomakh/taunt1
 	nomakh/taunt2

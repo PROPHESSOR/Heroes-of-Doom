@@ -54,11 +54,69 @@ Actor NomakhChainsaw : Chainsaw {
 	Inventory.PickupSound "nomakh/pickup"
 }
 
-Actor NomakhPistol : Pistol {
+ACTOR NomakhPistol : Weapon {
 	+INVENTORY.RESTRICTABSOLUTELY
+	+NOALERT
 
 	Inventory.RestrictedTo "Nomakh"
 	Inventory.PickupSound "nomakh/pickup"
+
+	Tag "Silver Hornet"
+	Inventory.PickupSound "misc/w_pkup"
+	Inventory.PickupMessage "Picked up the revolver"
+	Obituary "%k mistook %o with a tree."
+
+	Weapon.UpSound "nomakh/weapons/pistol/up"
+	Weapon.SelectionOrder 5
+	Weapon.AmmoType "Clip"
+	Weapon.AmmoGive 0
+	Weapon.AmmoUse 5
+	Weapon.AmmoType2 "Clip"
+	Weapon.Kickback 100
+	Weapon.SlotNumber 2
+
+	States {
+		Ready:
+			HRNG A 1 A_WeaponReady
+			Loop
+		Deselect:
+			TNT1 A 0 A_ZoomFactor(1)
+			HRNG A 1 A_Lower
+			HRNG A 0 A_Lower
+			Loop
+		Select:
+			HRNG AAAAAAA 0 A_Raise(12)
+			HRNG ABCABC 2
+			Loop
+		Fire:
+			HRNF A 0 A_PlaySound("nomakh/weapons/pistol/fire",0)
+			HRNF A 0 A_Recoil(1)
+			HRNF A 0 A_ZoomFactor(0.7)
+			
+			HRNF A 0 A_FireBullets(2.0, 0.75, 1, 60, "BulletPuff")
+
+			HRNF A 0 A_Light2
+			HRNF A 0 A_ZoomFactor(0.98)
+			HRNF A 1 Bright A_SetPitch(pitch-0.75)
+			HRNF A 0 Bright A_SetAngle(angle-0.75)
+			HRNF A 0 A_ZoomFactor(0.985)
+			HRNF B 1 Bright A_SetPitch(pitch-0.5)
+			HRNF B 0 Bright A_SetAngle(angle-0.5)
+			PISF A 0 A_Light1
+			HRNR A 1 A_ZoomFactor(0.99)
+			HRNR B 1 A_ZoomFactor(0.995)
+			HRNR C 1 A_ZoomFactor(1)
+			HRNR C 0 A_Light0
+			HRNR DEFGHI 1
+			HRNG A 1
+			HRNG BC 1
+			HRNG A 1
+			HRNG A 3 A_ReFire
+			Goto Ready
+		Spawn:
+			PIST A -1
+			Stop
+	}
 }
 
 Actor NomakhShotgun : Shotgun {
@@ -67,13 +125,6 @@ Actor NomakhShotgun : Shotgun {
 	Inventory.RestrictedTo "Nomakh"
 	Inventory.PickupSound "nomakh/pickup"
 }
-
-// Actor NomakhSSG : SuperShotgun {
-// 	+INVENTORY.RESTRICTABSOLUTELY
-
-// 	Inventory.RestrictedTo "Nomakh"
-// 	Inventory.PickupSound "nomakh/pickup"
-// }
 
 /*
 	CREDITS:
