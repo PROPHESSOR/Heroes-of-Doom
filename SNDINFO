@@ -345,3 +345,7 @@ weapon/kick		KICK
 weapon/kickmiss	DSSKESWG
 weapon/kickdown	DSSKEPCH
 explosion/big	DSLMIEX
+
+timefreeze/effect1 TIMEFRZ1
+timefreeze/effect2 TIMEFRZ2
+timefreeze/effect3 TIMEFRZ3

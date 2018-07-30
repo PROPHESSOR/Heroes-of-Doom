@@ -19,6 +19,7 @@ Actor PROPHESSOR : DoomPlayer 15025 {
 	// Player.ViewBob 1 // TODO: GZDoom Only
 	Player.ViewHeight 52
 	Player.SoundClass "prophessor"
+	DamageFactor "Railgun", 0
 	
 	Translation "112:119=214:217", "120:125=216:223", "124:127=232:235" 
 	Player.ColorRange 0, 0
@@ -136,6 +137,7 @@ Actor IronDroog : DoomPlayer 15026 {
 	Player.ClearColorSet 5
 	Player.ClearColorSet 6
 	Player.ClearColorSet 7
+	DamageFactor "Railgun", 0
 
 	Player.WeaponSlot 1, IronDroogFist, IronDroogChainsaw
 	Player.WeaponSlot 2, IronDroogPistol
@@ -239,6 +241,7 @@ Actor MarzoLeon: DoomPlayer 15027 {
 	Player.ClearColorSet 5
 	Player.ClearColorSet 6
 	Player.ClearColorSet 7
+	DamageFactor "Railgun", 0
 
 	Player.WeaponSlot 1, MarzoLeonFist, MarzoLeonChainsaw
 	Player.WeaponSlot 2, MarzoLeonPistol
@@ -343,6 +346,7 @@ Actor Chaser : DoomPlayer 15028 {
 	Player.ClearColorSet 5
 	Player.ClearColorSet 6
 	Player.ClearColorSet 7
+	DamageFactor "Railgun", 0
 
 	Player.WeaponSlot 1, ChaserFist, ChaserChainsaw
 	Player.WeaponSlot 2, ChaserPistol
@@ -445,6 +449,7 @@ Actor Nomakh : DoomPlayer 15029 {
 	Player.ClearColorSet 5
 	Player.ClearColorSet 6
 	Player.ClearColorSet 7
+	DamageFactor "Railgun", 0
 
 	Player.WeaponSlot 1, NomakhFist, NomakhChainsaw
 	Player.WeaponSlot 2, NomakhPistol
