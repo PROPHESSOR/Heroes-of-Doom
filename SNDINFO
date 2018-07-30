@@ -44,6 +44,10 @@ prophessor/taunt5			sprites/classes/prophessor/sounds/PSTAUNT5
 prophessor/land1			sprites/classes/prophessor/sounds/PSLND1
 prophessor/land2			sprites/classes/prophessor/sounds/PSLND2
 
+prophessor/weapons/shotgun/reload			sprites/classes/prophessor/sounds/weapons/shotgun/DSASHUP
+prophessor/weapons/shotgun/fire				sprites/classes/prophessor/sounds/weapons/shotgun/DSASGFR
+prophessor/weapons/shotgun/click			sprites/classes/prophessor/sounds/weapons/shotgun/DSCLICKY
+
 
 $random		prophessor/taunt {
 	prophessor/0fps
