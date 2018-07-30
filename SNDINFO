@@ -30,6 +30,7 @@ prophessor/fist				sprites/classes/prophessor/sounds/PSFIST
 prophessor/kick				sprites/classes/prophessor/sounds/PSKICK
 prophessor/armor			sprites/classes/prophessor/sounds/PSARMOR
 prophessor/die				sprites/classes/prophessor/sounds/PSDIE
+prophessor/ahrinet			sprites/classes/prophessor/sounds/PSAHR
 
 
 prophessor/hren1			sprites/classes/prophessor/sounds/PSUSE1
