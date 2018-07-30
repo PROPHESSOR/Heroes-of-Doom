@@ -1,0 +1,110 @@
+// Copyright (c) 2018 PROPHESSOR
+// Based on HUD from Complex Doom v26a2 Copyright (c) Daedalus
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
+//================
+// Fullscreen HUD
+//================
+
+Height 32;
+MonoSpaceFonts True, "0";
+
+StatusBar FullScreen, FullScreenOffsets {	
+	DrawMugShot 5, 88, -38;
+	
+	InInventory PowerStrength {
+		DrawImage "PSTRA0", 22, -4, CenterBottom; 
+	}
+	InInventory Not PowerStrength {
+		DrawImage "MEDIA0", 22, -4, CenterBottom;
+	}
+	
+    DrawNumber 3, HUDFONT_DOOM, DarkGrey, Health, DrawShadow, 84, -22, 0;
+	DrawNumber 3, HUDFONT_DOOM, Gold	, Health, WhenNotZero, DrawShadow, 84, -22, 0, Red, 25, Green, 51;
+	
+    DrawImage ArmorIcon, 22, -27, CenterBottom;
+    DrawNumber 3, HUDFONT_DOOM, Green, Armor, WhenNotZero, DrawShadow, 84, -41, 0, Red, 50, Blue, 151;
+
+	UsesAmmo {
+		DrawImage AmmoIcon1, -16, -6, CenterBottom;
+		DrawNumber 3, HUDFONT_DOOM, DarkGrey, Ammo1, DrawShadow, -27, -22, 0;
+		DrawNumber 3, HUDFONT_DOOM, Gold	, Ammo1, DrawShadow, -27, -22, 0, Red, 4, Green, 9;
+	}
+	
+	DrawImage "HDCPA0", -14, -62;
+	DrawNumber 3, INDEXFONT, White, Ammo Clip, -16, -62;	
+	DrawImage "HDSLA0", -16, -55;
+	DrawNumber 3, INDEXFONT, White, Ammo Shell, -16, -55;
+	DrawImage "HDRKA0", -15, -48;
+	DrawNumber 3, INDEXFONT, White, Ammo RocketAmmo, -16, -48;
+	DrawImage "HDCLA0", -14, -41;
+	DrawNumber 3, INDEXFONT, White, Ammo Cell, -16, -41;
+
+    DrawSwitchableImage WeaponSlot 2, "HUDNUM2", "HU2NUM2", -53, -30; 
+    DrawSwitchableImage WeaponSlot 3, "HUDNUM3", "HU2NUM3", -45, -30;
+    DrawSwitchableImage WeaponSlot 4, "HUDNUM4", "HU2NUM4", -37, -30;
+    DrawSwitchableImage WeaponSlot 5, "HUDNUM5", "HU2NUM5", -29, -30;
+    DrawSwitchableImage WeaponSlot 6, "HUDNUM6", "HU2NUM6", -21, -30;
+    DrawSwitchableImage WeaponSlot 7, "HUDNUM7", "HU2NUM7", -13, -30;
+
+	DrawSwitchableImage BlueCard && BlueSkull, "", "STKEYS0", "STKEYS3", "STKEYS6", -14, 4;
+	DrawSwitchableImage YellowCard && YellowSkull, "", "STKEYS1", "STKEYS4", "STKEYS7", -14, 13;
+	DrawSwitchableImage RedCard && RedSkull, "", "STKEYS2", "STKEYS5", "STKEYS8", -14, 22;
+	
+	DrawSelectedInventory INDEXFONT, -102, -32, -70, -12, White;
+}
+
+StatusBar InventoryFullscreen, FullScreenOffsets {
+   DrawInventoryBar Doom, NoArrows, Translucent, 6, INDEXFONT, -96 + Center, 0, -68 + Center, 2, White;
+}
+
+//===================
+// Standard Doom HUD
+//===================
+StatusBar Normal {
+	DrawImage "STBAR", 0, 168;
+	DrawImage "STTPRCNT", 90, 171;
+	DrawImage "STTPRCNT", 221, 171;
+	DrawNumber 3, HUDFONT_DOOM, untranslated, ammo1, 44, 171;
+	DrawNumber 3, HUDFONT_DOOM, untranslated, health, 90, 171;
+	DrawNumber 3, HUDFONT_DOOM, untranslated, armor, 221, 171;
+
+	//keys
+	DrawSwitchableImage keyslot 2 && 5, "nullimage", "STKEYS0", "STKEYS3", "STKEYS6", 239, 171;
+	DrawSwitchableImage keyslot 3 && 6, "nullimage", "STKEYS1", "STKEYS4", "STKEYS7", 239, 181;
+	DrawSwitchableImage keyslot 1 && 4, "nullimage", "STKEYS2", "STKEYS5", "STKEYS8", 239, 191;
+
+	DrawNumber 3, INDEXFONT_DOOM, untranslated, ammo(Clip), 288, 173;
+	DrawNumber 3, INDEXFONT_DOOM, untranslated, ammo(Shell), 288, 179;
+	DrawNumber 3, INDEXFONT_DOOM, untranslated, ammo(RocketAmmo), 288, 185;
+	DrawNumber 3, INDEXFONT_DOOM, untranslated, ammo(Cell), 288, 191;
+
+	DrawNumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Clip), 314, 173;
+	DrawNumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Shell), 314, 179;
+	DrawNumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(RocketAmmo), 314, 185;
+	DrawNumber 3, INDEXFONT_DOOM, untranslated, ammocapacity(Cell), 314, 191;
+	GameMode Deathmatch, Teamgame {
+		DrawNumber 2, HUDFONT_DOOM, untranslated, frags, 138, 171;
+	}
+	GameMode Cooperative, singleplayer {
+		DrawImage "STARMS", 104, 168;
+		DrawSwitchableImage weaponslot 2, "STGNUM2", "STYSNUM2", 111, 172; 
+		DrawSwitchableImage weaponslot 3, "STGNUM3", "STYSNUM3", 123, 172;
+		DrawSwitchableImage weaponslot 4, "STGNUM4", "STYSNUM4", 135, 172;
+		DrawSwitchableImage weaponslot 5, "STGNUM5", "STYSNUM5", 111, 182;
+		DrawSwitchableImage weaponslot 6, "STGNUM6", "STYSNUM6", 123, 182;
+		DrawSwitchableImage weaponslot 7, "STGNUM7", "STYSNUM7", 135, 182;
+	}
+	gamemode Cooperative, Deathmatch, Teamgame {
+		DrawImage translatable "STFBANY", 143, 169;
+	}
+	drawselectedinventory alternateonempty, INDEXFONT, 143, 168 {
+		DrawMugShot "STF", 5, 143, 168;
+	}
+}
+
+StatusBar Inventory, FullScreenOffsets {
+   DrawInventoryBar Doom, NoArrows, Translucent, 6, INDEXFONT, -96 + Center, 0, -68 + Center, 2, White;
+}
