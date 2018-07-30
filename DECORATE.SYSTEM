@@ -51,7 +51,7 @@ Actor TimeFreeze : PowerTimeFreezer {
 }
 
 Actor Buddha : PowerBuddha {
-	Powerup.Duration -60
+	Powerup.Duration -30
 }
 
 Actor Rage : PowerDoubleFiringSpeed {
