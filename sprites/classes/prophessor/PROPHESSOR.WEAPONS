@@ -71,7 +71,7 @@ Actor ProphessorPistol : Pistol {
 	}
 }
 
-Actor ProphessorShotgun : Weapon 19345 {
+Actor ProphessorShotgun : Weapon {
 	+NOALERT
 	+INVENTORY.RESTRICTABSOLUTELY
 	+WEAPON.AMMO_OPTIONAL
@@ -127,7 +127,7 @@ Actor ProphessorShotgun : Weapon 19345 {
 			SMAK E 4
 			Goto Ready
 		Spawn:
-			SMAP A -1
+			SHOT A -1
 			Stop
 	}
 }

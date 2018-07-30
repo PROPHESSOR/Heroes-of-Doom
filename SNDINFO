@@ -404,6 +404,15 @@ $random menu/quit2 {
 	chaser/taunt13
 	marzoleon/nahya
 	prophessor/taunt4
+	nomakh/chivo
+	nomakh/die1
+	nomakh/nein
+	nomakh/omg
+	nomakh/cybr
+	nomakh/how
+	nomakh/ohhi
+	nomakh/monster
+	nomakh/waaat
 }
 
 other/saxgun	DSSAXGUN
