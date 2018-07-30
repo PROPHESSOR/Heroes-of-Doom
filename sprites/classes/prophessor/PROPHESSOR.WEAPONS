@@ -208,11 +208,4 @@ Actor ProphessorBFG : BFG9000 {
 	Inventory.RestrictedTo "PROPHESSOR"
 	Weapon.AmmoUse 25
 	Inventory.PickupSound "prophessor/pickup"
-
-	States {
-		Ready:
-			BFGG A 0 ACS_NamedExecute("HeroicKick", 0, 0)
-			BFGG A 1 A_WeaponReady
-			Loop
-	}
 }
