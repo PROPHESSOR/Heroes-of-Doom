@@ -108,6 +108,11 @@ ending/irondroog2			sprites/classes/irondroog/sounds/ISBOSDTD
 irondroog/weapons/ssg/load	sprites/classes/irondroog/sounds/weapons/ssg/LCSGLOAD
 irondroog/weapons/ssg/hit	sprites/classes/irondroog/sounds/weapons/ssg/LCSGALTF
 
+irondroog/weapons/chaingun/fire		sprites/classes/irondroog/sounds/weapons/chaingun/LMCGFIRE
+irondroog/weapons/chaingun/start	sprites/classes/irondroog/sounds/weapons/chaingun/LMCSTART
+irondroog/weapons/chaingun/stop		sprites/classes/irondroog/sounds/weapons/chaingun/LMCGSTOP
+irondroog/weapons/chaingun/loop		sprites/classes/irondroog/sounds/weapons/chaingun/LMCGLOOP
+
 $random		irondroog/taunt		{
 	irondroog/taunt1
 	irondroog/taunt2
