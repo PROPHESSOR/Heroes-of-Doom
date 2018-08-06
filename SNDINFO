@@ -78,27 +78,62 @@ $random		prophessor/pickup {
 $playersound	irondroog	male	*death		sprites/classes/irondroog/sounds/ISPLDETH
 $playersound	irondroog	male	*xdeath		sprites/classes/irondroog/sounds/ISPLDETH
 $playersound	irondroog	male	*gibbed		sprites/classes/irondroog/sounds/ISPLDETH
-$playersound	irondroog	male	*pain100	sprites/classes/irondroog/sounds/ISPLPAIN
+$playeralias	irondroog	male	*pain100	irondroog/pain
 $playersounddup	irondroog	male	*pain75		*pain100
 $playersounddup	irondroog	male	*pain50		*pain100
 $playersounddup	irondroog	male	*pain25		*pain100
 $playersound	irondroog	male	*grunt		sprites/classes/irondroog/sounds/isoof
 $playersounddup	irondroog	male	*land		*grunt
-$playersound	irondroog	male	*jump		sprites/classes/irondroog/sounds/isjump
-$playersound	irondroog	male	*fist		DSSKEPCH
+$playeralias	irondroog	male	*jump		irondroog/jump
+$playeralias	irondroog	male	*fist		irondroog/boom
 $playersound	irondroog	male	*usefail	sprites/classes/irondroog/sounds/isnoway
-$playersound	irondroog	male	w_pkup		sprites/classes/irondroog/sounds/iswpnup		// Pickup weapon
-$playersound	irondroog	male	p_pkup		sprites/classes/irondroog/sounds/isgetpow	// Pickup powerup
-$playersound	irondroog	male	i_pkup		sprites/classes/irondroog/sounds/isitemup	// Pickup item
-$playersound	irondroog	male	k_pkup		sprites/classes/irondroog/sounds/isitemup	// Pickup key
+
 irondroog/donation			sprites/classes/irondroog/sounds/ISWPNUP
 irondroog/powerup			sprites/classes/irondroog/sounds/ISGETPOW
+irondroog/boom				sprites/classes/irondroog/sounds/ISBOOM
+irondroog/eey				sprites/classes/irondroog/sounds/ISEEY
+irondroog/raur				sprites/classes/irondroog/sounds/ISRAUR
+irondroog/shit				sprites/classes/irondroog/sounds/ISSHIT
+irondroog/great				sprites/classes/irondroog/sounds/ISGREAT
+irondroog/stop				sprites/classes/irondroog/sounds/ISSTOP
+irondroog/plasmagun			sprites/classes/irondroog/sounds/ISPLSM
+
+irondroog/hod1				sprites/classes/irondroog/sounds/ISHOD1
+irondroog/hod2				sprites/classes/irondroog/sounds/ISHOD2
+
+irondroog/locked			sprites/classes/irondroog/sounds/ISLOCKED
+
+irondroog/pain1				sprites/classes/irondroog/sounds/ISPLPAIN
 
 irondroog/taunt1			sprites/classes/irondroog/sounds/ITAUNT1
 irondroog/taunt2			sprites/classes/irondroog/sounds/ITAUNT2
 irondroog/taunt3			sprites/classes/irondroog/sounds/ITAUNT3
 irondroog/taunt4			sprites/classes/irondroog/sounds/ITAUNT4
 irondroog/taunt5			sprites/classes/irondroog/sounds/ITAUNT5
+irondroog/taunt6			sprites/classes/irondroog/sounds/ITAUNT6
+irondroog/taunt7			sprites/classes/irondroog/sounds/ITAUNT7
+irondroog/taunt8			sprites/classes/irondroog/sounds/ITAUNT8
+irondroog/taunt9			sprites/classes/irondroog/sounds/ITAUNT9
+irondroog/taunt10			sprites/classes/irondroog/sounds/ITAUNT10
+irondroog/taunt11			sprites/classes/irondroog/sounds/ITAUNT11
+irondroog/taunt12			sprites/classes/irondroog/sounds/ITAUNT12
+
+irondroog/rage1				sprites/classes/irondroog/sounds/ISRAGE
+irondroog/rage2				sprites/classes/irondroog/sounds/ISRAGE2
+
+irondroog/laugh1			sprites/classes/irondroog/sounds/ISLAUGH1
+irondroog/laugh2			sprites/classes/irondroog/sounds/ISLAUGH2
+irondroog/laugh3			sprites/classes/irondroog/sounds/ISLAUGH3
+
+irondroog/jump1				sprites/classes/irondroog/sounds/ISJUMP
+irondroog/jump2				sprites/classes/irondroog/sounds/ISJUMP2
+irondroog/jump3				sprites/classes/irondroog/sounds/ISJUMP3
+irondroog/jump4				sprites/classes/irondroog/sounds/ISJUMP4
+irondroog/jumpgoat			sprites/classes/irondroog/sounds/ISGOAT
+
+irondroog/fast1				sprites/classes/irondroog/sounds/ISFAST1
+irondroog/fast2				sprites/classes/irondroog/sounds/ISFAST2
+irondroog/fast3				sprites/classes/irondroog/sounds/ISFAST3
 
 irondroog/kick				sprites/classes/irondroog/sounds/ISKICK
 irondroog/sphere			sprites/classes/irondroog/sounds/ISSPHR
@@ -113,16 +148,67 @@ irondroog/weapons/chaingun/start	sprites/classes/irondroog/sounds/weapons/chaing
 irondroog/weapons/chaingun/stop		sprites/classes/irondroog/sounds/weapons/chaingun/LMCGSTOP
 irondroog/weapons/chaingun/loop		sprites/classes/irondroog/sounds/weapons/chaingun/LMCGLOOP
 
+$random		irondroog/fast		{
+	irondroog/fast1
+	irondroog/fast2
+	irondroog/fast3
+}
+
+$random		irondroog/rage		{
+	irondroog/rage1
+	irondroog/rage2
+}
+
+$random 	irondroog/jump		{
+	irondroog/jump1
+	irondroog/jump1
+	irondroog/jump1
+	irondroog/jump2
+	irondroog/jump3
+	irondroog/jump4
+	irondroog/jumpgoat
+}
+
 $random		irondroog/taunt		{
 	irondroog/taunt1
 	irondroog/taunt2
 	irondroog/taunt3
 	irondroog/taunt4
 	irondroog/taunt5
+	irondroog/taunt6
+	irondroog/taunt7
+	irondroog/taunt8
+	irondroog/taunt9
+	irondroog/taunt10
+	irondroog/taunt11
+	irondroog/taunt12
+	irondroog/laugh1
+	irondroog/laugh2
+	irondroog/laugh3
+	irondroog/hod1
+	irondroog/hod2
+	irondroog/fast
+	irondroog/great
 }
 
 $random		irondroog/pickup {
 	irondroog/donation
+	irondroog/donation
+	irondroog/plasmagun
+	irondroog/shit
+}
+
+$random		irondroog/pain	{
+	irondroog/pain1
+	irondroog/pain1
+	irondroog/eey
+	irondroog/jump2
+	irondroog/jump3
+	irondroog/jump4
+	irondroog/rage1
+	irondroog/raur
+	irondroog/stop
+	irondroog/taunt12
 }
 
 //===========================================================================
