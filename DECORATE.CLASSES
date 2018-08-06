@@ -223,7 +223,7 @@ Actor MarzoLeon: DoomPlayer 15027 {
 	Player.JumpZ 10
 	Player.UseRange 64
 	Player.ViewHeight 41
-	Player.SoundClass "player" // TODO: marzoleon
+	Player.SoundClass "marzoleon"
 	
 	Translation "112:127=173:191"
 	Player.ColorRange 0, 0
@@ -304,7 +304,7 @@ Actor MarzoLeon: DoomPlayer 15027 {
 			MRZO Y -1
 			Stop
 		Kick:
-			CHUB A 0 A_GiveInventory("Kick")
+			CHUB A 0 A_GiveInventory("MarzoLeonKick")
 			CHUB A 0 A_TakeInventory("HeroicKick", 1)
 			Goto Spawn
 		Taunt:

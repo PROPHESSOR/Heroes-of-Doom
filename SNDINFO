@@ -217,31 +217,101 @@ $random		irondroog/pain	{
 //
 //===========================================================================
 
-$playersound	marzoleon	male	*death		mspldeth
-$playersound	marzoleon	male	*xdeath		mspdiehi
-$playersound	marzoleon	male	*gibbed		msslop
-$playersound	marzoleon	male	*pain100	msplpain
+$playeralias	marzoleon	male	*death		marzoleon/nou
+$playeralias	marzoleon	male	*xdeath		marzoleon/nou
+$playeralias	marzoleon	male	*gibbed		marzoleon/nou
+$playeralias	marzoleon	male	*pain100	marzoleon/pain
 $playersounddup	marzoleon	male	*pain75		*pain100
 $playersounddup	marzoleon	male	*pain50		*pain100
 $playersounddup	marzoleon	male	*pain25		*pain100
 $playersound	marzoleon	male	*grunt		msoof
 $playersounddup	marzoleon	male	*land		*grunt
-$playersound	marzoleon	male	*jump		msjump
-$playersound	marzoleon	male	*fist		mspunch
-$playersound	marzoleon	male	*usefail	msnoway
+$playeralias	marzoleon	male	*jump		marzoleon/jump
+$playeralias	marzoleon	male	*fist		marzoleon/fist
+$playeralias	marzoleon	male	*usefail	marzoleon/ugu
+
 marzoleon/fist1				sprites/classes/marzoleon/sounds/MSTDSCH
-marzoleon/fist2				sprites/classes/marzoleon/sounds/MSHADKN
+marzoleon/fist2				sprites/classes/marzoleon/sounds/MSTSCH1
+marzoleon/fist3				sprites/classes/marzoleon/sounds/MSTSCH2
+marzoleon/hadoken			sprites/classes/marzoleon/sounds/MSHADKN
+
 marzoleon/haha				sprites/classes/marzoleon/sounds/MSHAHA
+marzoleon/nou				sprites/classes/marzoleon/sounds/MSNOU
+marzoleon/hod				sprites/classes/marzoleon/sounds/MSHOD
+marzoleon/hahaa				sprites/classes/marzoleon/sounds/MSPICKP
+marzoleon/food				sprites/classes/marzoleon/sounds/MSFOOD
+marzoleon/na				sprites/classes/marzoleon/sounds/MSNA
+marzoleon/ohoho				sprites/classes/marzoleon/sounds/MSOHOHO
 marzoleon/sphere			sprites/classes/marzoleon/sounds/MSSPHR
 marzoleon/nahya				sprites/classes/marzoleon/sounds/MSHYA
 marzoleon/chivo				sprites/classes/marzoleon/sounds/MSCVO
+marzoleon/maybe				sprites/classes/marzoleon/sounds/MSMYBE
+marzoleon/earrape			sprites/classes/marzoleon/sounds/MSERRP
+
+marzoleon/emoe1				sprites/classes/marzoleon/sounds/MSEMOE1
+marzoleon/emoe2				sprites/classes/marzoleon/sounds/MSEMOE2
+
+marzoleon/jump1				sprites/classes/marzoleon/sounds/MJUMP1
+marzoleon/jump2				sprites/classes/marzoleon/sounds/MJUMP2
+
+marzoleon/taunt1			sprites/classes/marzoleon/sounds/MSTAUNT1
+marzoleon/taunt2			sprites/classes/marzoleon/sounds/MSWEB
+marzoleon/taunt3			sprites/classes/marzoleon/sounds/MSEDKOL
+marzoleon/taunt4			sprites/classes/marzoleon/sounds/MSCRTR
+
+marzoleon/ugu1				sprites/classes/marzoleon/sounds/MSUGU
+marzoleon/ugu2				sprites/classes/marzoleon/sounds/MSUGU2
+marzoleon/ugu3				sprites/classes/marzoleon/sounds/MSUGU3
+
+$soundalias		marzoleon/weapons/chainsaw/fire		marzoleon/haha
+				marzoleon/weapons/chainsaw/start	sprites/classes/marzoleon/sounds/MSCHWSTRT
+				marzoleon/weapons/chainsaw/loop		sprites/classes/marzoleon/sounds/MSCHWLP
+
+$random	marzoleon/emoe	{
+	marzoleon/emoe1
+	marzoleon/emoe2
+}
+
+$random	marzoleon/ugu	{
+	marzoleon/ugu1
+	marzoleon/ugu2
+	marzoleon/ugu3
+}
+
+$random	marzoleon/fist	{
+	marzoleon/fist1
+	marzoleon/fist1
+	marzoleon/fist2
+	marzoleon/fist3
+	marzoleon/na
+}
+
+$random	marzoleon/pain	{
+	marzoleon/jump
+}
+
+$random	marzoleon/jump	{
+	marzoleon/jump1
+	marzoleon/jump2
+}
 
 $random marzoleon/taunt {
 	marzoleon/nahya
+	marzoleon/hod
+	marzoleon/emoe
+	marzoleon/maybe
+	marzoleon/earrape
+	marzoleon/taunt1
+	marzoleon/taunt2
+	marzoleon/taunt3
+	marzoleon/taunt4
+	marzoleon/taunt5
 }
 
 $random marzoleon/pickup {
 	marzoleon/nahya
+	marzoleon/hahaa
+	marzoleon/food
 }
 
 
@@ -504,6 +574,7 @@ $random menu/quit2 {
 	nomakh/ohhi
 	nomakh/monster
 	nomakh/waaat
+	marzoleon/taunt5
 }
 
 other/saxgun	DSSAXGUN
