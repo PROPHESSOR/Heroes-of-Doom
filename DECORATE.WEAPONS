@@ -169,6 +169,36 @@ Actor EpicSaxGun : Weapon {
 	}
 }
 
+Actor TeslaStation : Weapon {
+	States {
+		Ready:
+			MISG A 0 A_WeaponReady
+			MISG A 0 A_PlaySound("chaser/weapons/bfg/ball", CHAN_6, 1, 1)
+			MISG A 0 A_GunFlash
+			MISG A 1 A_SpawnItemEx("BRGResearchRail")
+			Loop
+		Deselect:
+			MISG A 0
+			Goto Ready
+		Select:
+			MISG A 0
+			Goto Ready
+		Fire:
+			MISG A 0
+			Goto Ready
+		Flash:
+              MISF AB 1 Bright A_Light2
+			  Goto LightDone
+              MISF BA 1 Bright A_LightInverse
+			  Goto LightDone
+              MISF AB 1 Bright A_Light1
+			  Goto LightDone
+		Spawn:
+			BFS1 AB 1 A_SpawnItemEx("BRGResearchRail")
+			Loop
+	}
+}
+
 #include "sprites/classes/prophessor/PROPHESSOR.WEAPONS"
 #include "sprites/classes/irondroog/IRONDROOG.WEAPONS"
 #include "sprites/classes/marzoleon/MARZOLEON.WEAPONS"

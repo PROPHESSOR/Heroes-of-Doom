@@ -269,7 +269,7 @@ Actor BRG9000Ball {
 	}
 }
 
-ACTOR BRGResearchRail {
+Actor BRGResearchRail {
 	PROJECTILE
 	+LOOKALLAROUND
 	+ISMONSTER
