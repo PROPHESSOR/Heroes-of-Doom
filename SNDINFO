@@ -102,6 +102,7 @@ irondroog/great             sprites/classes/irondroog/sounds/ISGREAT
 irondroog/stop              sprites/classes/irondroog/sounds/ISSTOP
 irondroog/plasmagun         sprites/classes/irondroog/sounds/ISPLSM
 irondroog/marzoleon         sprites/classes/irondroog/sounds/ISPLDETH
+irondroog/pickuphaha        sprites/classes/irondroog/sounds/ISPCKP
 
 irondroog/hod1              sprites/classes/irondroog/sounds/ISHOD1
 irondroog/hod2              sprites/classes/irondroog/sounds/ISHOD2
@@ -209,6 +210,7 @@ $random     irondroog/pickup {
     irondroog/donation
     irondroog/plasmagun
     irondroog/shit
+    irondroog/pickuphaha
 }
 
 $random     irondroog/pain  {
@@ -288,6 +290,7 @@ marzoleon/taunt1            sprites/classes/marzoleon/sounds/MSTAUNT1
 marzoleon/taunt2            sprites/classes/marzoleon/sounds/MSWEB
 marzoleon/taunt3            sprites/classes/marzoleon/sounds/MSEDKOL
 marzoleon/taunt4            sprites/classes/marzoleon/sounds/MSCRTR
+marzoleon/taunt5            sprites/classes/marzoleon/sounds/MSALL
 
 marzoleon/ugu1              sprites/classes/marzoleon/sounds/MSUGU
 marzoleon/ugu2              sprites/classes/marzoleon/sounds/MSUGU2
@@ -507,6 +510,12 @@ nomakh/taunt21                  sprites/classes/nomakh/sounds/NSTAUNT21
 nomakh/taunt22                  sprites/classes/nomakh/sounds/NSTAUNT22
 nomakh/taunt23                  sprites/classes/nomakh/sounds/NSTAUNT23
 nomakh/taunt24                  sprites/classes/nomakh/sounds/NSTAUNT24
+nomakh/taunt25                  sprites/classes/nomakh/sounds/NSTAUNT25
+nomakh/taunt26                  sprites/classes/nomakh/sounds/NSTAUNT26
+nomakh/taunt27                  sprites/classes/nomakh/sounds/NSTAUNT27
+nomakh/taunt28                  sprites/classes/nomakh/sounds/NSTAUNT28
+nomakh/taunt29                  sprites/classes/nomakh/sounds/NSTAUNT29
+nomakh/taunt30                  sprites/classes/nomakh/sounds/NSTAUNT30
 
 nomakh/weapons/chaingun/start               sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTAT
 nomakh/weapons/chaingun/stop                sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTOP
@@ -565,6 +574,12 @@ $random nomakh/taunt {
     nomakh/taunt22
     nomakh/taunt23
     nomakh/taunt24
+    nomakh/taunt25
+    nomakh/taunt26
+    nomakh/taunt27
+    nomakh/taunt28
+    nomakh/taunt29
+    nomakh/taunt30
     nomakh/laugh1
     nomakh/laugh2
     nomakh/laugh3
@@ -605,6 +620,7 @@ $random menu/quit2 {
     nomakh/monster
     nomakh/waaat
     marzoleon/taunt5
+    irondroog/pickuphaha
 }
 
 other/saxgun    DSSAXGUN

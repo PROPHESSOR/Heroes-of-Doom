@@ -245,7 +245,7 @@ Actor NomakhChaingun : Chaingun {
 
 	Inventory.RestrictedTo "Nomakh"
 	Inventory.PickupSound "nomakh/pickup"
-	Weapon.AmmoUse 5
+	Weapon.AmmoUse 3
 
 	States {
 		Ready:
