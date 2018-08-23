@@ -210,18 +210,29 @@ Actor ProphessorBFG : BFG9000 {
 	Inventory.PickupSound "prophessor/pickup"
 
 	States {
+		Ready:
+			WTFG A 1 A_WeaponReady
+			Loop
+		Deselect:
+			WTFG A 1 A_Lower
+			Loop
+		Select:
+			WTFG A 1 A_Raise
+			Loop
 		Fire:
-			BFGG A 0 A_PlaySound("prophessor/ahrinet", CHAN_6, 1.0)
-			BFGG A 20 A_BFGSound
-			BFGG B 10 A_GunFlash
-			BFGG B 1 A_FireProjectile("BRG9000Ball", 0, true, 0, 1)
+			WTFG A 0 A_PlaySound("prophessor/ahrinet", CHAN_6, 1.0)
+			WTFG A 0 A_BFGSound
+			WTFG ABCDEFGHIJKLMNOPQ 2
+			WTFG RST 4 A_GunFlash
+			WTFG U 1 A_FireProjectile("BRG9000Ball", 0, true, 0, 1)
 			BFGF B 0 Bright A_SetBlend("FFFFFF", 0.5, 1)
 			BFGF B 0 Bright A_GiveInventory("TimeFreeze")
 			BFGF B 0 Bright A_SpawnItemEx("TimeFreezeSound")
 			BFGF ACE 1 Bright A_Quake(6, 6, 0, 0)
 			BFGF B 0 Bright A_SetBlend("FF4444", 0.5, 516)
-			BFGG B 516
-			BFGG B 0 A_TakeInventory("TimeFreeze")
+			WTFG U 516
+			WTFG B 0 A_TakeInventory("TimeFreeze")
+			WTFG QPONMLKJIHGFEDCB 2
 			Goto Ready
 	}
 }

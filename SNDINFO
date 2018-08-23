@@ -41,6 +41,8 @@ prophessor/taunt2			sprites/classes/prophessor/sounds/PSTAUNT2
 prophessor/taunt3			sprites/classes/prophessor/sounds/PSTAUNT3
 prophessor/taunt4			sprites/classes/prophessor/sounds/PSTAUNT4
 prophessor/taunt5			sprites/classes/prophessor/sounds/PSTAUNT5
+prophessor/taunt6			sprites/classes/prophessor/sounds/PSTAUNT6
+prophessor/taunt7			sprites/classes/prophessor/sounds/PSTAUNT7
 
 prophessor/land1			sprites/classes/prophessor/sounds/PSLND1
 prophessor/land2			sprites/classes/prophessor/sounds/PSLND2
@@ -57,6 +59,8 @@ $random		prophessor/taunt {
 	prophessor/taunt3
 	prophessor/taunt4
 	prophessor/taunt5
+	prophessor/taunt6
+	prophessor/taunt7
 }
 
 $random		prophessor/land {
