@@ -296,6 +296,12 @@ marzoleon/ugu1              sprites/classes/marzoleon/sounds/MSUGU
 marzoleon/ugu2              sprites/classes/marzoleon/sounds/MSUGU2
 marzoleon/ugu3              sprites/classes/marzoleon/sounds/MSUGU3
 
+marzoleon/weapons/rl/fire   sprites/classes/marzoleon/sounds/weapons/rl/MSGRFIRE
+marzoleon/weapons/rl/spin   sprites/classes/marzoleon/sounds/weapons/rl/MSGRSPIN
+marzoleon/weapons/rl/bounce sprites/classes/marzoleon/sounds/weapons/rl/MSLGBNC1
+marzoleon/weapons/rl/pickup sprites/classes/marzoleon/sounds/weapons/rl/MSGRPUP
+marzoleon/weapons/rl/cycle  sprites/classes/marzoleon/sounds/weapons/rl/MSGLOD
+
 $soundalias     marzoleon/weapons/chainsaw/fire     marzoleon/haha
                 marzoleon/weapons/chainsaw/start    sprites/classes/marzoleon/sounds/MSCHWSTRT
                 marzoleon/weapons/chainsaw/loop     sprites/classes/marzoleon/sounds/MSCHWLP
