@@ -9,68 +9,68 @@
 //
 //===========================================================================
 
-$playersound	prophessor	male	*death		sprites/classes/prophessor/sounds/PSDIE
-$playersound	prophessor	male	*xdeath		sprites/classes/prophessor/sounds/PSDIE
-$playersound	prophessor	male	*gibbed		psslop
-$playersound	prophessor	male	*pain100	sprites/classes/prophessor/sounds/PSLND2
-$playersounddup	prophessor	male	*pain75		*pain100
-$playersounddup	prophessor	male	*pain50		*pain100
-$playersounddup	prophessor	male	*pain25		*pain100
-$playersound	prophessor	male	*grunt		sprites/classes/prophessor/sounds/PSLND1
-$playersounddup	prophessor	male	*land		*grunt
-$playersound	prophessor	male	*jump		sprites/classes/prophessor/sounds/PSTAUNT4
-$playersound	prophessor	male	*fist		sprites/classes/prophessor/sounds/PSFIST
-$playersound	prophessor	male	*usefail	sprites/classes/prophessor/sounds/PSUSE1
+$playersound    prophessor  male    *death      sprites/classes/prophessor/sounds/PSDIE
+$playersound    prophessor  male    *xdeath     sprites/classes/prophessor/sounds/PSDIE
+$playersound    prophessor  male    *gibbed     psslop
+$playersound    prophessor  male    *pain100    sprites/classes/prophessor/sounds/PSLND2
+$playersounddup prophessor  male    *pain75     *pain100
+$playersounddup prophessor  male    *pain50     *pain100
+$playersounddup prophessor  male    *pain25     *pain100
+$playersound    prophessor  male    *grunt      sprites/classes/prophessor/sounds/PSLND1
+$playersounddup prophessor  male    *land       *grunt
+$playersound    prophessor  male    *jump       sprites/classes/prophessor/sounds/PSTAUNT4
+$playersound    prophessor  male    *fist       sprites/classes/prophessor/sounds/PSFIST
+$playersound    prophessor  male    *usefail    sprites/classes/prophessor/sounds/PSUSE1
 
-prophessor/sphere			sprites/classes/prophessor/sounds/PSSPHR
-prophessor/0fps				sprites/classes/prophessor/sounds/PS0FPS
-prophessor/secret			sprites/classes/prophessor/sounds/PSSECRET
-prophessor/o				sprites/classes/prophessor/sounds/PSO
-prophessor/fist				sprites/classes/prophessor/sounds/PSFIST
-prophessor/kick				sprites/classes/prophessor/sounds/PSKICK
-prophessor/armor			sprites/classes/prophessor/sounds/PSARMOR
-prophessor/die				sprites/classes/prophessor/sounds/PSDIE
-prophessor/ahrinet			sprites/classes/prophessor/sounds/PSAHR
-
-
-prophessor/hren1			sprites/classes/prophessor/sounds/PSUSE1
-prophessor/hren2			sprites/classes/prophessor/sounds/PSUSE2
-
-prophessor/taunt1			sprites/classes/prophessor/sounds/PSTAUNT1
-prophessor/taunt2			sprites/classes/prophessor/sounds/PSTAUNT2
-prophessor/taunt3			sprites/classes/prophessor/sounds/PSTAUNT3
-prophessor/taunt4			sprites/classes/prophessor/sounds/PSTAUNT4
-prophessor/taunt5			sprites/classes/prophessor/sounds/PSTAUNT5
-prophessor/taunt6			sprites/classes/prophessor/sounds/PSTAUNT6
-prophessor/taunt7			sprites/classes/prophessor/sounds/PSTAUNT7
-
-prophessor/land1			sprites/classes/prophessor/sounds/PSLND1
-prophessor/land2			sprites/classes/prophessor/sounds/PSLND2
-
-prophessor/weapons/shotgun/reload			sprites/classes/prophessor/sounds/weapons/shotgun/DSASHUP
-prophessor/weapons/shotgun/fire				sprites/classes/prophessor/sounds/weapons/shotgun/DSASGFR
-prophessor/weapons/shotgun/click			sprites/classes/prophessor/sounds/weapons/shotgun/DSCLICKY
+prophessor/sphere           sprites/classes/prophessor/sounds/PSSPHR
+prophessor/0fps             sprites/classes/prophessor/sounds/PS0FPS
+prophessor/secret           sprites/classes/prophessor/sounds/PSSECRET
+prophessor/o                sprites/classes/prophessor/sounds/PSO
+prophessor/fist             sprites/classes/prophessor/sounds/PSFIST
+prophessor/kick             sprites/classes/prophessor/sounds/PSKICK
+prophessor/armor            sprites/classes/prophessor/sounds/PSARMOR
+prophessor/die              sprites/classes/prophessor/sounds/PSDIE
+prophessor/ahrinet          sprites/classes/prophessor/sounds/PSAHR
 
 
-$random		prophessor/taunt {
-	prophessor/0fps
-	prophessor/taunt1
-	prophessor/taunt2
-	prophessor/taunt3
-	prophessor/taunt4
-	prophessor/taunt5
-	prophessor/taunt6
-	prophessor/taunt7
+prophessor/hren1            sprites/classes/prophessor/sounds/PSUSE1
+prophessor/hren2            sprites/classes/prophessor/sounds/PSUSE2
+
+prophessor/taunt1           sprites/classes/prophessor/sounds/PSTAUNT1
+prophessor/taunt2           sprites/classes/prophessor/sounds/PSTAUNT2
+prophessor/taunt3           sprites/classes/prophessor/sounds/PSTAUNT3
+prophessor/taunt4           sprites/classes/prophessor/sounds/PSTAUNT4
+prophessor/taunt5           sprites/classes/prophessor/sounds/PSTAUNT5
+prophessor/taunt6           sprites/classes/prophessor/sounds/PSTAUNT6
+prophessor/taunt7           sprites/classes/prophessor/sounds/PSTAUNT7
+
+prophessor/land1            sprites/classes/prophessor/sounds/PSLND1
+prophessor/land2            sprites/classes/prophessor/sounds/PSLND2
+
+prophessor/weapons/shotgun/reload           sprites/classes/prophessor/sounds/weapons/shotgun/DSASHUP
+prophessor/weapons/shotgun/fire             sprites/classes/prophessor/sounds/weapons/shotgun/DSASGFR
+prophessor/weapons/shotgun/click            sprites/classes/prophessor/sounds/weapons/shotgun/DSCLICKY
+
+
+$random     prophessor/taunt {
+    prophessor/0fps
+    prophessor/taunt1
+    prophessor/taunt2
+    prophessor/taunt3
+    prophessor/taunt4
+    prophessor/taunt5
+    prophessor/taunt6
+    prophessor/taunt7
 }
 
-$random		prophessor/land {
-	prophessor/land1
-	prophessor/land2
+$random     prophessor/land {
+    prophessor/land1
+    prophessor/land2
 }
 
-$random		prophessor/pickup {
-	prophessor/o
-	prophessor/armor
+$random     prophessor/pickup {
+    prophessor/o
+    prophessor/armor
 }
 
 //===========================================================================
@@ -79,140 +79,166 @@ $random		prophessor/pickup {
 //
 //===========================================================================
 
-$playersound	irondroog	male	*death		sprites/classes/irondroog/sounds/ISPLDETH
-$playersound	irondroog	male	*xdeath		sprites/classes/irondroog/sounds/ISPLDETH
-$playersound	irondroog	male	*gibbed		sprites/classes/irondroog/sounds/ISPLDETH
-$playeralias	irondroog	male	*pain100	irondroog/pain
-$playersounddup	irondroog	male	*pain75		*pain100
-$playersounddup	irondroog	male	*pain50		*pain100
-$playersounddup	irondroog	male	*pain25		*pain100
-$playersound	irondroog	male	*grunt		sprites/classes/irondroog/sounds/isoof
-$playersounddup	irondroog	male	*land		*grunt
-$playeralias	irondroog	male	*jump		irondroog/jump
-$playeralias	irondroog	male	*fist		irondroog/boom
-$playersound	irondroog	male	*usefail	sprites/classes/irondroog/sounds/isnoway
+$playeralias    irondroog   male    *death      irondroog/death
+$playeralias    irondroog   male    *xdeath     irondroog/death
+$playeralias    irondroog   male    *gibbed     irondroog/death
+$playeralias    irondroog   male    *pain100    irondroog/pain
+$playersounddup irondroog   male    *pain75     *pain100
+$playersounddup irondroog   male    *pain50     *pain100
+$playersounddup irondroog   male    *pain25     *pain100
+$playersound    irondroog   male    *grunt      sprites/classes/irondroog/sounds/isoof
+$playersounddup irondroog   male    *land       *grunt
+$playeralias    irondroog   male    *jump       irondroog/jump
+$playeralias    irondroog   male    *fist       irondroog/boom
+$playersound    irondroog   male    *usefail    sprites/classes/irondroog/sounds/isnoway
 
-irondroog/donation			sprites/classes/irondroog/sounds/ISWPNUP
-irondroog/powerup			sprites/classes/irondroog/sounds/ISGETPOW
-irondroog/boom				sprites/classes/irondroog/sounds/ISBOOM
-irondroog/eey				sprites/classes/irondroog/sounds/ISEEY
-irondroog/raur				sprites/classes/irondroog/sounds/ISRAUR
-irondroog/shit				sprites/classes/irondroog/sounds/ISSHIT
-irondroog/great				sprites/classes/irondroog/sounds/ISGREAT
-irondroog/stop				sprites/classes/irondroog/sounds/ISSTOP
-irondroog/plasmagun			sprites/classes/irondroog/sounds/ISPLSM
+irondroog/donation          sprites/classes/irondroog/sounds/ISWPNUP
+irondroog/powerup           sprites/classes/irondroog/sounds/ISGETPOW
+irondroog/boom              sprites/classes/irondroog/sounds/ISBOOM
+irondroog/eey               sprites/classes/irondroog/sounds/ISEEY
+irondroog/raur              sprites/classes/irondroog/sounds/ISRAUR
+irondroog/shit              sprites/classes/irondroog/sounds/ISSHIT
+irondroog/great             sprites/classes/irondroog/sounds/ISGREAT
+irondroog/stop              sprites/classes/irondroog/sounds/ISSTOP
+irondroog/plasmagun         sprites/classes/irondroog/sounds/ISPLSM
+irondroog/marzoleon         sprites/classes/irondroog/sounds/ISPLDETH
 
-irondroog/hod1				sprites/classes/irondroog/sounds/ISHOD1
-irondroog/hod2				sprites/classes/irondroog/sounds/ISHOD2
+irondroog/hod1              sprites/classes/irondroog/sounds/ISHOD1
+irondroog/hod2              sprites/classes/irondroog/sounds/ISHOD2
 
-irondroog/locked			sprites/classes/irondroog/sounds/ISLOCKED
+irondroog/locked            sprites/classes/irondroog/sounds/ISLOCKED
 
-irondroog/pain1				sprites/classes/irondroog/sounds/ISPLPAIN
+irondroog/pain1             sprites/classes/irondroog/sounds/ISPLPAIN
 
-irondroog/taunt1			sprites/classes/irondroog/sounds/ITAUNT1
-irondroog/taunt2			sprites/classes/irondroog/sounds/ITAUNT2
-irondroog/taunt3			sprites/classes/irondroog/sounds/ITAUNT3
-irondroog/taunt4			sprites/classes/irondroog/sounds/ITAUNT4
-irondroog/taunt5			sprites/classes/irondroog/sounds/ITAUNT5
-irondroog/taunt6			sprites/classes/irondroog/sounds/ITAUNT6
-irondroog/taunt7			sprites/classes/irondroog/sounds/ITAUNT7
-irondroog/taunt8			sprites/classes/irondroog/sounds/ITAUNT8
-irondroog/taunt9			sprites/classes/irondroog/sounds/ITAUNT9
-irondroog/taunt10			sprites/classes/irondroog/sounds/ITAUNT10
-irondroog/taunt11			sprites/classes/irondroog/sounds/ITAUNT11
-irondroog/taunt12			sprites/classes/irondroog/sounds/ITAUNT12
+irondroog/taunt1            sprites/classes/irondroog/sounds/ITAUNT1
+irondroog/taunt2            sprites/classes/irondroog/sounds/ITAUNT2
+irondroog/taunt3            sprites/classes/irondroog/sounds/ITAUNT3
+irondroog/taunt4            sprites/classes/irondroog/sounds/ITAUNT4
+irondroog/taunt5            sprites/classes/irondroog/sounds/ITAUNT5
+irondroog/taunt6            sprites/classes/irondroog/sounds/ITAUNT6
+irondroog/taunt7            sprites/classes/irondroog/sounds/ITAUNT7
+irondroog/taunt8            sprites/classes/irondroog/sounds/ITAUNT8
+irondroog/taunt9            sprites/classes/irondroog/sounds/ITAUNT9
+irondroog/taunt10           sprites/classes/irondroog/sounds/ITAUNT10
+irondroog/taunt11           sprites/classes/irondroog/sounds/ITAUNT11
+irondroog/taunt12           sprites/classes/irondroog/sounds/ITAUNT12
 
-irondroog/rage1				sprites/classes/irondroog/sounds/ISRAGE
-irondroog/rage2				sprites/classes/irondroog/sounds/ISRAGE2
+irondroog/rage1             sprites/classes/irondroog/sounds/ISRAGE
+irondroog/rage2             sprites/classes/irondroog/sounds/ISRAGE2
 
-irondroog/laugh1			sprites/classes/irondroog/sounds/ISLAUGH1
-irondroog/laugh2			sprites/classes/irondroog/sounds/ISLAUGH2
-irondroog/laugh3			sprites/classes/irondroog/sounds/ISLAUGH3
+irondroog/laugh1            sprites/classes/irondroog/sounds/ISLAUGH1
+irondroog/laugh2            sprites/classes/irondroog/sounds/ISLAUGH2
+irondroog/laugh3            sprites/classes/irondroog/sounds/ISLAUGH3
 
-irondroog/jump1				sprites/classes/irondroog/sounds/ISJUMP
-irondroog/jump2				sprites/classes/irondroog/sounds/ISJUMP2
-irondroog/jump3				sprites/classes/irondroog/sounds/ISJUMP3
-irondroog/jump4				sprites/classes/irondroog/sounds/ISJUMP4
-irondroog/jumpgoat			sprites/classes/irondroog/sounds/ISGOAT
+irondroog/jump1             sprites/classes/irondroog/sounds/ISJUMP
+irondroog/jump2             sprites/classes/irondroog/sounds/ISJUMP2
+irondroog/jump3             sprites/classes/irondroog/sounds/ISJUMP3
+irondroog/jump4             sprites/classes/irondroog/sounds/ISJUMP4
+irondroog/jumpgoat          sprites/classes/irondroog/sounds/ISGOAT
 
-irondroog/fast1				sprites/classes/irondroog/sounds/ISFAST1
-irondroog/fast2				sprites/classes/irondroog/sounds/ISFAST2
-irondroog/fast3				sprites/classes/irondroog/sounds/ISFAST3
+irondroog/fast1             sprites/classes/irondroog/sounds/ISFAST1
+irondroog/fast2             sprites/classes/irondroog/sounds/ISFAST2
+irondroog/fast3             sprites/classes/irondroog/sounds/ISFAST3
 
-irondroog/kick				sprites/classes/irondroog/sounds/ISKICK
-irondroog/sphere			sprites/classes/irondroog/sounds/ISSPHR
-ending/irondroog			sprites/classes/irondroog/sounds/ISBGDTH2
-ending/irondroog2			sprites/classes/irondroog/sounds/ISBOSDTD
+irondroog/kick              sprites/classes/irondroog/sounds/ISKICK
+irondroog/sphere            sprites/classes/irondroog/sounds/ISSPHR
+ending/irondroog            sprites/classes/irondroog/sounds/ISBGDTH2
+ending/irondroog2           sprites/classes/irondroog/sounds/ISBOSDTD
 
-irondroog/weapons/ssg/load	sprites/classes/irondroog/sounds/weapons/ssg/LCSGLOAD
-irondroog/weapons/ssg/hit	sprites/classes/irondroog/sounds/weapons/ssg/LCSGALTF
+irondroog/weapons/ssg/load  sprites/classes/irondroog/sounds/weapons/ssg/LCSGLOAD
+irondroog/weapons/ssg/hit   sprites/classes/irondroog/sounds/weapons/ssg/LCSGALTF
 
-irondroog/weapons/chaingun/fire		sprites/classes/irondroog/sounds/weapons/chaingun/LMCGFIRE
-irondroog/weapons/chaingun/start	sprites/classes/irondroog/sounds/weapons/chaingun/LMCSTART
-irondroog/weapons/chaingun/stop		sprites/classes/irondroog/sounds/weapons/chaingun/LMCGSTOP
-irondroog/weapons/chaingun/loop		sprites/classes/irondroog/sounds/weapons/chaingun/LMCGLOOP
+irondroog/weapons/chaingun/fire     sprites/classes/irondroog/sounds/weapons/chaingun/LMCGFIRE
+irondroog/weapons/chaingun/start    sprites/classes/irondroog/sounds/weapons/chaingun/LMCSTART
+irondroog/weapons/chaingun/stop     sprites/classes/irondroog/sounds/weapons/chaingun/LMCGSTOP
+irondroog/weapons/chaingun/loop     sprites/classes/irondroog/sounds/weapons/chaingun/LMCGLOOP
 
-$random		irondroog/fast		{
-	irondroog/fast1
-	irondroog/fast2
-	irondroog/fast3
+irondroog/weapons/prostate/fire1    sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTA1
+irondroog/weapons/prostate/fire2    sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTA2
+irondroog/weapons/prostate/fire3    sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTA3
+irondroog/weapons/prostate/hit1     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB1
+irondroog/weapons/prostate/hit2     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB2
+irondroog/weapons/prostate/hit3     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB3
+irondroog/weapons/prostate/hit4     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB4
+
+$random     irondroog/fast      {
+    irondroog/fast1
+    irondroog/fast2
+    irondroog/fast3
 }
 
-$random		irondroog/rage		{
-	irondroog/rage1
-	irondroog/rage2
+$random     irondroog/rage      {
+    irondroog/rage1
+    irondroog/rage2
 }
 
-$random 	irondroog/jump		{
-	irondroog/jump1
-	irondroog/jump1
-	irondroog/jump1
-	irondroog/jump2
-	irondroog/jump3
-	irondroog/jump4
+$random     irondroog/jump      {
+    irondroog/jump1
+    irondroog/jump1
+    irondroog/jump1
+    irondroog/jump2
+    irondroog/jump3
+    irondroog/jump4
 }
 
-$random		irondroog/taunt		{
-	irondroog/taunt1
-	irondroog/taunt2
-	irondroog/taunt3
-	irondroog/taunt4
-	irondroog/taunt5
-	irondroog/taunt6
-	irondroog/taunt7
-	irondroog/taunt8
-	irondroog/taunt9
-	irondroog/taunt10
-	irondroog/taunt11
-	irondroog/taunt12
-	irondroog/laugh1
-	irondroog/laugh2
-	irondroog/laugh3
-	irondroog/hod1
-	irondroog/hod2
-	irondroog/fast
-	irondroog/great
-	irondroog/jumpgoat
+$random     irondroog/taunt     {
+    irondroog/taunt1
+    irondroog/taunt2
+    irondroog/taunt3
+    irondroog/taunt4
+    irondroog/taunt5
+    irondroog/taunt6
+    irondroog/taunt7
+    irondroog/taunt8
+    irondroog/taunt9
+    irondroog/taunt10
+    irondroog/taunt11
+    irondroog/taunt12
+    irondroog/laugh1
+    irondroog/laugh2
+    irondroog/laugh3
+    irondroog/hod1
+    irondroog/hod2
+    irondroog/fast
+    irondroog/great
+    irondroog/jumpgoat
 }
 
-$random		irondroog/pickup {
-	irondroog/donation
-	irondroog/donation
-	irondroog/plasmagun
-	irondroog/shit
+$random     irondroog/pickup {
+    irondroog/donation
+    irondroog/donation
+    irondroog/plasmagun
+    irondroog/shit
 }
 
-$random		irondroog/pain	{
-	irondroog/pain1
-	irondroog/pain1
-	irondroog/eey
-	irondroog/jump2
-	irondroog/jump3
-	irondroog/jump4
-	irondroog/rage1
-	irondroog/raur
-	irondroog/stop
-	irondroog/taunt12
+$random     irondroog/pain  {
+    irondroog/pain1
+    irondroog/pain1
+    irondroog/eey
+    irondroog/jump2
+    irondroog/jump3
+    irondroog/jump4
+    irondroog/raur
+    irondroog/stop
+    irondroog/taunt12
+}
+
+$random     irondroog/death {
+    irondroog/rage1
+    irondroog/marzoleon
+}
+
+$random     irondroog/weapons/prostate/fire {
+    irondroog/weapons/prostate/fire1
+    irondroog/weapons/prostate/fire2
+    irondroog/weapons/prostate/fire3
+}
+
+$random     irondroog/weapons/prostate/hit {
+    irondroog/weapons/prostate/hit1
+    irondroog/weapons/prostate/hit2
+    irondroog/weapons/prostate/hit3
+    irondroog/weapons/prostate/hit4
 }
 
 //===========================================================================
@@ -221,101 +247,101 @@ $random		irondroog/pain	{
 //
 //===========================================================================
 
-$playeralias	marzoleon	male	*death		marzoleon/nou
-$playeralias	marzoleon	male	*xdeath		marzoleon/nou
-$playeralias	marzoleon	male	*gibbed		marzoleon/nou
-$playeralias	marzoleon	male	*pain100	marzoleon/pain
-$playersounddup	marzoleon	male	*pain75		*pain100
-$playersounddup	marzoleon	male	*pain50		*pain100
-$playersounddup	marzoleon	male	*pain25		*pain100
-$playersound	marzoleon	male	*grunt		msoof
-$playersounddup	marzoleon	male	*land		*grunt
-$playeralias	marzoleon	male	*jump		marzoleon/jump
-$playeralias	marzoleon	male	*fist		marzoleon/fist
-$playeralias	marzoleon	male	*usefail	marzoleon/ugu
+$playeralias    marzoleon   male    *death      marzoleon/nou
+$playeralias    marzoleon   male    *xdeath     marzoleon/nou
+$playeralias    marzoleon   male    *gibbed     marzoleon/nou
+$playeralias    marzoleon   male    *pain100    marzoleon/pain
+$playersounddup marzoleon   male    *pain75     *pain100
+$playersounddup marzoleon   male    *pain50     *pain100
+$playersounddup marzoleon   male    *pain25     *pain100
+$playersound    marzoleon   male    *grunt      msoof
+$playersounddup marzoleon   male    *land       *grunt
+$playeralias    marzoleon   male    *jump       marzoleon/jump
+$playeralias    marzoleon   male    *fist       marzoleon/fist
+$playeralias    marzoleon   male    *usefail    marzoleon/ugu
 
-marzoleon/fist1				sprites/classes/marzoleon/sounds/MSTDSCH
-marzoleon/fist2				sprites/classes/marzoleon/sounds/MSTSCH1
-marzoleon/fist3				sprites/classes/marzoleon/sounds/MSTSCH2
-marzoleon/hadoken			sprites/classes/marzoleon/sounds/MSHADKN
+marzoleon/fist1             sprites/classes/marzoleon/sounds/MSTDSCH
+marzoleon/fist2             sprites/classes/marzoleon/sounds/MSTSCH1
+marzoleon/fist3             sprites/classes/marzoleon/sounds/MSTSCH2
+marzoleon/hadoken           sprites/classes/marzoleon/sounds/MSHADKN
 
-marzoleon/haha				sprites/classes/marzoleon/sounds/MSHAHA
-marzoleon/nou				sprites/classes/marzoleon/sounds/MSNOU
-marzoleon/hod				sprites/classes/marzoleon/sounds/MSHOD
-marzoleon/hahaa				sprites/classes/marzoleon/sounds/MSPICKP
-marzoleon/food				sprites/classes/marzoleon/sounds/MSFOOD
-marzoleon/na				sprites/classes/marzoleon/sounds/MSNA
-marzoleon/ohoho				sprites/classes/marzoleon/sounds/MSOHOHO
-marzoleon/sphere			sprites/classes/marzoleon/sounds/MSSPHR
-marzoleon/nahya				sprites/classes/marzoleon/sounds/MSHYA
-marzoleon/chivo				sprites/classes/marzoleon/sounds/MSCVO
-marzoleon/maybe				sprites/classes/marzoleon/sounds/MSMYBE
-marzoleon/earrape			sprites/classes/marzoleon/sounds/MSERRP
+marzoleon/haha              sprites/classes/marzoleon/sounds/MSHAHA
+marzoleon/nou               sprites/classes/marzoleon/sounds/MSNOU
+marzoleon/hod               sprites/classes/marzoleon/sounds/MSHOD
+marzoleon/hahaa             sprites/classes/marzoleon/sounds/MSPICKP
+marzoleon/food              sprites/classes/marzoleon/sounds/MSFOOD
+marzoleon/na                sprites/classes/marzoleon/sounds/MSNA
+marzoleon/ohoho             sprites/classes/marzoleon/sounds/MSOHOHO
+marzoleon/sphere            sprites/classes/marzoleon/sounds/MSSPHR
+marzoleon/nahya             sprites/classes/marzoleon/sounds/MSHYA
+marzoleon/chivo             sprites/classes/marzoleon/sounds/MSCVO
+marzoleon/maybe             sprites/classes/marzoleon/sounds/MSMYBE
+marzoleon/earrape           sprites/classes/marzoleon/sounds/MSERRP
 
-marzoleon/emoe1				sprites/classes/marzoleon/sounds/MSEMOE1
-marzoleon/emoe2				sprites/classes/marzoleon/sounds/MSEMOE2
+marzoleon/emoe1             sprites/classes/marzoleon/sounds/MSEMOE1
+marzoleon/emoe2             sprites/classes/marzoleon/sounds/MSEMOE2
 
-marzoleon/jump1				sprites/classes/marzoleon/sounds/MJUMP1
-marzoleon/jump2				sprites/classes/marzoleon/sounds/MJUMP2
+marzoleon/jump1             sprites/classes/marzoleon/sounds/MJUMP1
+marzoleon/jump2             sprites/classes/marzoleon/sounds/MJUMP2
 
-marzoleon/taunt1			sprites/classes/marzoleon/sounds/MSTAUNT1
-marzoleon/taunt2			sprites/classes/marzoleon/sounds/MSWEB
-marzoleon/taunt3			sprites/classes/marzoleon/sounds/MSEDKOL
-marzoleon/taunt4			sprites/classes/marzoleon/sounds/MSCRTR
+marzoleon/taunt1            sprites/classes/marzoleon/sounds/MSTAUNT1
+marzoleon/taunt2            sprites/classes/marzoleon/sounds/MSWEB
+marzoleon/taunt3            sprites/classes/marzoleon/sounds/MSEDKOL
+marzoleon/taunt4            sprites/classes/marzoleon/sounds/MSCRTR
 
-marzoleon/ugu1				sprites/classes/marzoleon/sounds/MSUGU
-marzoleon/ugu2				sprites/classes/marzoleon/sounds/MSUGU2
-marzoleon/ugu3				sprites/classes/marzoleon/sounds/MSUGU3
+marzoleon/ugu1              sprites/classes/marzoleon/sounds/MSUGU
+marzoleon/ugu2              sprites/classes/marzoleon/sounds/MSUGU2
+marzoleon/ugu3              sprites/classes/marzoleon/sounds/MSUGU3
 
-$soundalias		marzoleon/weapons/chainsaw/fire		marzoleon/haha
-				marzoleon/weapons/chainsaw/start	sprites/classes/marzoleon/sounds/MSCHWSTRT
-				marzoleon/weapons/chainsaw/loop		sprites/classes/marzoleon/sounds/MSCHWLP
+$soundalias     marzoleon/weapons/chainsaw/fire     marzoleon/haha
+                marzoleon/weapons/chainsaw/start    sprites/classes/marzoleon/sounds/MSCHWSTRT
+                marzoleon/weapons/chainsaw/loop     sprites/classes/marzoleon/sounds/MSCHWLP
 
-$random	marzoleon/emoe	{
-	marzoleon/emoe1
-	marzoleon/emoe2
+$random marzoleon/emoe  {
+    marzoleon/emoe1
+    marzoleon/emoe2
 }
 
-$random	marzoleon/ugu	{
-	marzoleon/ugu1
-	marzoleon/ugu2
-	marzoleon/ugu3
+$random marzoleon/ugu   {
+    marzoleon/ugu1
+    marzoleon/ugu2
+    marzoleon/ugu3
 }
 
-$random	marzoleon/fist	{
-	marzoleon/fist1
-	marzoleon/fist1
-	marzoleon/fist2
-	marzoleon/fist3
-	marzoleon/na
+$random marzoleon/fist  {
+    marzoleon/fist1
+    marzoleon/fist1
+    marzoleon/fist2
+    marzoleon/fist3
+    marzoleon/na
 }
 
-$random	marzoleon/pain	{
-	marzoleon/jump
+$random marzoleon/pain  {
+    marzoleon/jump
 }
 
-$random	marzoleon/jump	{
-	marzoleon/jump1
-	marzoleon/jump2
+$random marzoleon/jump  {
+    marzoleon/jump1
+    marzoleon/jump2
 }
 
 $random marzoleon/taunt {
-	marzoleon/nahya
-	marzoleon/hod
-	marzoleon/emoe
-	marzoleon/maybe
-	marzoleon/earrape
-	marzoleon/taunt1
-	marzoleon/taunt2
-	marzoleon/taunt3
-	marzoleon/taunt4
-	marzoleon/taunt5
+    marzoleon/nahya
+    marzoleon/hod
+    marzoleon/emoe
+    marzoleon/maybe
+    marzoleon/earrape
+    marzoleon/taunt1
+    marzoleon/taunt2
+    marzoleon/taunt3
+    marzoleon/taunt4
+    marzoleon/taunt5
 }
 
 $random marzoleon/pickup {
-	marzoleon/nahya
-	marzoleon/hahaa
-	marzoleon/food
+    marzoleon/nahya
+    marzoleon/hahaa
+    marzoleon/food
 }
 
 
@@ -325,81 +351,81 @@ $random marzoleon/pickup {
 //
 //===========================================================================
 
-$playersound	chaser	male	*death		sprites/classes/chaser/sounds/CSPLDTH
-$playersound	chaser	male	*xdeath		sprites/classes/chaser/sounds/CSPLDTH
-$playersound	chaser	male	*gibbed		dsslop
-$playersound	chaser	male	*pain100	sprites/classes/chaser/sounds/CSBLIN
-$playersounddup	chaser	male	*pain75		*pain100
-$playersounddup	chaser	male	*pain50		*pain100
-$playersounddup	chaser	male	*pain25		*pain100
-$playersound	chaser	male	*grunt		sprites/classes/chaser/sounds/CSBLIN
-$playersounddup	chaser	male	*land		*grunt
-$playersound	chaser	male	*jump		sprites/classes/chaser/sounds/CSE
-$playersound	chaser	male	*fist		DSSKESWG
-$playersound	chaser	male	*usefail	sprites/classes/chaser/sounds/CSE
+$playersound    chaser  male    *death      sprites/classes/chaser/sounds/CSPLDTH
+$playersound    chaser  male    *xdeath     sprites/classes/chaser/sounds/CSPLDTH
+$playersound    chaser  male    *gibbed     dsslop
+$playersound    chaser  male    *pain100    sprites/classes/chaser/sounds/CSBLIN
+$playersounddup chaser  male    *pain75     *pain100
+$playersounddup chaser  male    *pain50     *pain100
+$playersounddup chaser  male    *pain25     *pain100
+$playersound    chaser  male    *grunt      sprites/classes/chaser/sounds/CSBLIN
+$playersounddup chaser  male    *land       *grunt
+$playersound    chaser  male    *jump       sprites/classes/chaser/sounds/CSE
+$playersound    chaser  male    *fist       DSSKESWG
+$playersound    chaser  male    *usefail    sprites/classes/chaser/sounds/CSE
 
-chaser/aaaa				sprites/classes/chaser/sounds/CSAAAAAA
-chaser/eeee				sprites/classes/chaser/sounds/CSE
-chaser/ahrinet			sprites/classes/chaser/sounds/CSAHR
-chaser/nahrena			sprites/classes/chaser/sounds/CSNHRN
-chaser/oyblin			sprites/classes/chaser/sounds/CSBLIN
-chaser/eeeblin			sprites/classes/chaser/sounds/CSEBLN
-chaser/eee				sprites/classes/chaser/sounds/CSEEE
-chaser/blin				sprites/classes/chaser/sounds/CSBLN
+chaser/aaaa             sprites/classes/chaser/sounds/CSAAAAAA
+chaser/eeee             sprites/classes/chaser/sounds/CSE
+chaser/ahrinet          sprites/classes/chaser/sounds/CSAHR
+chaser/nahrena          sprites/classes/chaser/sounds/CSNHRN
+chaser/oyblin           sprites/classes/chaser/sounds/CSBLIN
+chaser/eeeblin          sprites/classes/chaser/sounds/CSEBLN
+chaser/eee              sprites/classes/chaser/sounds/CSEEE
+chaser/blin             sprites/classes/chaser/sounds/CSBLN
 
-chaser/pickup1			sprites/classes/chaser/sounds/CSITEMUP
-chaser/pickup2			sprites/classes/chaser/sounds/CSNISHK
-chaser/pickup3			sprites/classes/chaser/sounds/CSNISHA
-chaser/pickup4			sprites/classes/chaser/sounds/CSOMTFK
+chaser/pickup1          sprites/classes/chaser/sounds/CSITEMUP
+chaser/pickup2          sprites/classes/chaser/sounds/CSNISHK
+chaser/pickup3          sprites/classes/chaser/sounds/CSNISHA
+chaser/pickup4          sprites/classes/chaser/sounds/CSOMTFK
 
-chaser/taunt01			sprites/classes/chaser/sounds/CTAUNT01
-chaser/taunt02			sprites/classes/chaser/sounds/CTAUNT02
-chaser/taunt03			sprites/classes/chaser/sounds/CTAUNT03
-chaser/taunt04			sprites/classes/chaser/sounds/CTAUNT04
-chaser/taunt05			sprites/classes/chaser/sounds/CTAUNT05
-chaser/taunt06			sprites/classes/chaser/sounds/CTAUNT06
-chaser/taunt07			sprites/classes/chaser/sounds/CTAUNT07
-chaser/taunt08			sprites/classes/chaser/sounds/CTAUNT08
-chaser/taunt09			sprites/classes/chaser/sounds/CTAUNT09
-chaser/taunt10			sprites/classes/chaser/sounds/CTAUNT10
-chaser/taunt11			sprites/classes/chaser/sounds/CTAUNT11
-chaser/taunt12			sprites/classes/chaser/sounds/CTAUNT12
-chaser/taunt13			sprites/classes/chaser/sounds/CTAUNT13
-chaser/taunt14			sprites/classes/chaser/sounds/CTAUNT14
+chaser/taunt01          sprites/classes/chaser/sounds/CTAUNT01
+chaser/taunt02          sprites/classes/chaser/sounds/CTAUNT02
+chaser/taunt03          sprites/classes/chaser/sounds/CTAUNT03
+chaser/taunt04          sprites/classes/chaser/sounds/CTAUNT04
+chaser/taunt05          sprites/classes/chaser/sounds/CTAUNT05
+chaser/taunt06          sprites/classes/chaser/sounds/CTAUNT06
+chaser/taunt07          sprites/classes/chaser/sounds/CTAUNT07
+chaser/taunt08          sprites/classes/chaser/sounds/CTAUNT08
+chaser/taunt09          sprites/classes/chaser/sounds/CTAUNT09
+chaser/taunt10          sprites/classes/chaser/sounds/CTAUNT10
+chaser/taunt11          sprites/classes/chaser/sounds/CTAUNT11
+chaser/taunt12          sprites/classes/chaser/sounds/CTAUNT12
+chaser/taunt13          sprites/classes/chaser/sounds/CTAUNT13
+chaser/taunt14          sprites/classes/chaser/sounds/CTAUNT14
 
-chaser/weapons/ssg/hit1		sprites/classes/chaser/sounds/weapons/ssg/CHHIT1
-chaser/weapons/ssg/hit2		sprites/classes/chaser/sounds/weapons/ssg/CHHIT2
-chaser/weapons/ssg/close	sprites/classes/chaser/sounds/weapons/ssg/CHCLOSE
-chaser/weapons/bfg/ball		sprites/classes/chaser/sounds/weapons/bfg/DSCFGBL
+chaser/weapons/ssg/hit1     sprites/classes/chaser/sounds/weapons/ssg/CHHIT1
+chaser/weapons/ssg/hit2     sprites/classes/chaser/sounds/weapons/ssg/CHHIT2
+chaser/weapons/ssg/close    sprites/classes/chaser/sounds/weapons/ssg/CHCLOSE
+chaser/weapons/bfg/ball     sprites/classes/chaser/sounds/weapons/bfg/DSCFGBL
 
-chaser/sphere			sprites/classes/chaser/sounds/CSSPHR
+chaser/sphere           sprites/classes/chaser/sounds/CSSPHR
 
-$random		chaser/pickup		{
-	chaser/pickup2
-	chaser/pickup3
-	chaser/pickup4
+$random     chaser/pickup       {
+    chaser/pickup2
+    chaser/pickup3
+    chaser/pickup4
 }
 
-$random		chaser/taunt		{
-	chaser/taunt01
-	chaser/taunt02
-	chaser/taunt03
-	chaser/taunt04
-	chaser/taunt05
-	chaser/taunt06
-	chaser/taunt07
-	chaser/taunt08
-	chaser/taunt09
-	chaser/taunt10
-	chaser/taunt11
-	chaser/taunt12
-	chaser/taunt13
-	chaser/taunt14
+$random     chaser/taunt        {
+    chaser/taunt01
+    chaser/taunt02
+    chaser/taunt03
+    chaser/taunt04
+    chaser/taunt05
+    chaser/taunt06
+    chaser/taunt07
+    chaser/taunt08
+    chaser/taunt09
+    chaser/taunt10
+    chaser/taunt11
+    chaser/taunt12
+    chaser/taunt13
+    chaser/taunt14
 }
 
 $random chaser/weapons/ssg/hit {
-	chaser/weapons/ssg/hit1
-	chaser/weapons/ssg/hit2
+    chaser/weapons/ssg/hit1
+    chaser/weapons/ssg/hit2
 }
 
 
@@ -409,149 +435,149 @@ $random chaser/weapons/ssg/hit {
 //
 //===========================================================================
 
-$playersound	nomakh	male	*death		sprites/classes/nomakh/sounds/NSDIE
-$playersound	nomakh	male	*xdeath		sprites/classes/nomakh/sounds/NSDIE
-$playersound	nomakh	male	*gibbed		sprites/classes/nomakh/sounds/NSDIE
-$playeralias	nomakh	male	*pain100	nomakh/pain
-$playersounddup	nomakh	male	*pain75		*pain100
-$playersounddup	nomakh	male	*pain50		*pain100
-$playersounddup	nomakh	male	*pain25		*pain100
-$playersound	nomakh	male	*grunt		sprites/classes/nomakh/sounds/NSHF
-$playersounddup	nomakh	male	*land		*grunt
-$playersound	nomakh	male	*jump		sprites/classes/nomakh/sounds/NSJUMP
-$playersound	nomakh	male	*fist		DSSKEPCH
-$playeralias	nomakh	male	*usefail	nomakh/noway
+$playersound    nomakh  male    *death      sprites/classes/nomakh/sounds/NSDIE
+$playersound    nomakh  male    *xdeath     sprites/classes/nomakh/sounds/NSDIE
+$playersound    nomakh  male    *gibbed     sprites/classes/nomakh/sounds/NSDIE
+$playeralias    nomakh  male    *pain100    nomakh/pain
+$playersounddup nomakh  male    *pain75     *pain100
+$playersounddup nomakh  male    *pain50     *pain100
+$playersounddup nomakh  male    *pain25     *pain100
+$playersound    nomakh  male    *grunt      sprites/classes/nomakh/sounds/NSHF
+$playersounddup nomakh  male    *land       *grunt
+$playersound    nomakh  male    *jump       sprites/classes/nomakh/sounds/NSJUMP
+$playersound    nomakh  male    *fist       DSSKEPCH
+$playeralias    nomakh  male    *usefail    nomakh/noway
 
-nomakh/hren1					sprites/classes/nomakh/sounds/NSNOWAY
-nomakh/nein						sprites/classes/nomakh/sounds/NSNOWAY2
-nomakh/doesntwork				sprites/classes/nomakh/sounds/NSNOWAY3
+nomakh/hren1                    sprites/classes/nomakh/sounds/NSNOWAY
+nomakh/nein                     sprites/classes/nomakh/sounds/NSNOWAY2
+nomakh/doesntwork               sprites/classes/nomakh/sounds/NSNOWAY3
 
-nomakh/cheza					sprites/classes/nomakh/sounds/NSPICKUP
-nomakh/cacodemon				sprites/classes/nomakh/sounds/NSPICKUP2
+nomakh/cheza                    sprites/classes/nomakh/sounds/NSPICKUP
+nomakh/cacodemon                sprites/classes/nomakh/sounds/NSPICKUP2
 
-nomakh/pain1					sprites/classes/nomakh/sounds/NSPAIN
-nomakh/pain2					sprites/classes/nomakh/sounds/NSPAIN2
-nomakh/pain3					sprites/classes/nomakh/sounds/NSPAIN3
+nomakh/pain1                    sprites/classes/nomakh/sounds/NSPAIN
+nomakh/pain2                    sprites/classes/nomakh/sounds/NSPAIN2
+nomakh/pain3                    sprites/classes/nomakh/sounds/NSPAIN3
 
-nomakh/boom						sprites/classes/nomakh/sounds/NSBOOM
-nomakh/chivo					sprites/classes/nomakh/sounds/NSWTF
-nomakh/down						sprites/classes/nomakh/sounds/NSDOWN
-nomakh/omg						sprites/classes/nomakh/sounds/NSOMG
-nomakh/cybr						sprites/classes/nomakh/sounds/NSCYBR
-nomakh/aaaaa					sprites/classes/nomakh/sounds/NSAAAAA
-nomakh/eee						sprites/classes/nomakh/sounds/NSEEE
-nomakh/hf						sprites/classes/nomakh/sounds/NSHF
-nomakh/how						sprites/classes/nomakh/sounds/NSHOW
-nomakh/ohhi						sprites/classes/nomakh/sounds/NSOHHI
-nomakh/ohno						sprites/classes/nomakh/sounds/NSOHNO
-nomakh/monster					sprites/classes/nomakh/sounds/NSMONST
-nomakh/waaat					sprites/classes/nomakh/sounds/NSWAAAT
-nomakh/maty						sprites/classes/nomakh/sounds/NSMATY
+nomakh/boom                     sprites/classes/nomakh/sounds/NSBOOM
+nomakh/chivo                    sprites/classes/nomakh/sounds/NSWTF
+nomakh/down                     sprites/classes/nomakh/sounds/NSDOWN
+nomakh/omg                      sprites/classes/nomakh/sounds/NSOMG
+nomakh/cybr                     sprites/classes/nomakh/sounds/NSCYBR
+nomakh/aaaaa                    sprites/classes/nomakh/sounds/NSAAAAA
+nomakh/eee                      sprites/classes/nomakh/sounds/NSEEE
+nomakh/hf                       sprites/classes/nomakh/sounds/NSHF
+nomakh/how                      sprites/classes/nomakh/sounds/NSHOW
+nomakh/ohhi                     sprites/classes/nomakh/sounds/NSOHHI
+nomakh/ohno                     sprites/classes/nomakh/sounds/NSOHNO
+nomakh/monster                  sprites/classes/nomakh/sounds/NSMONST
+nomakh/waaat                    sprites/classes/nomakh/sounds/NSWAAAT
+nomakh/maty                     sprites/classes/nomakh/sounds/NSMATY
 
-nomakh/sphere					sprites/classes/nomakh/sounds/NSSPHERE
+nomakh/sphere                   sprites/classes/nomakh/sounds/NSSPHERE
 
-nomakh/laugh1					sprites/classes/nomakh/sounds/NSLAUGH1
-nomakh/laugh2					sprites/classes/nomakh/sounds/NSLAUGH2
-nomakh/laugh3					sprites/classes/nomakh/sounds/NSLAUGH3
-nomakh/laugh4					sprites/classes/nomakh/sounds/NSLAUGH4
+nomakh/laugh1                   sprites/classes/nomakh/sounds/NSLAUGH1
+nomakh/laugh2                   sprites/classes/nomakh/sounds/NSLAUGH2
+nomakh/laugh3                   sprites/classes/nomakh/sounds/NSLAUGH3
+nomakh/laugh4                   sprites/classes/nomakh/sounds/NSLAUGH4
 
-nomakh/die1						sprites/classes/nomakh/sounds/NSDIE
+nomakh/die1                     sprites/classes/nomakh/sounds/NSDIE
 
-nomakh/taunt1					sprites/classes/nomakh/sounds/NSTAUNT1
-nomakh/taunt2					sprites/classes/nomakh/sounds/NSTAUNT2
-nomakh/taunt3					sprites/classes/nomakh/sounds/NSTAUNT3
-nomakh/taunt4					sprites/classes/nomakh/sounds/NSTAUNT4
-nomakh/taunt5					sprites/classes/nomakh/sounds/NSTAUNT5
-nomakh/taunt6					sprites/classes/nomakh/sounds/NSTAUNT6
-nomakh/taunt7					sprites/classes/nomakh/sounds/NSTAUNT7
-nomakh/taunt8					sprites/classes/nomakh/sounds/NSTAUNT8
-nomakh/taunt9					sprites/classes/nomakh/sounds/NSTAUNT9
-nomakh/taunt10					sprites/classes/nomakh/sounds/NSTAUNT10
-nomakh/taunt11					sprites/classes/nomakh/sounds/NSTAUNT11
-nomakh/taunt12					sprites/classes/nomakh/sounds/NSTAUNT12
-nomakh/taunt13					sprites/classes/nomakh/sounds/NSTAUNT13
-nomakh/taunt14					sprites/classes/nomakh/sounds/NSTAUNT14
-nomakh/taunt15					sprites/classes/nomakh/sounds/NSTAUNT15
-nomakh/taunt16					sprites/classes/nomakh/sounds/NSTAUNT16
-nomakh/taunt17					sprites/classes/nomakh/sounds/NSTAUNT17
-nomakh/taunt18					sprites/classes/nomakh/sounds/NSTAUNT18
-nomakh/taunt19					sprites/classes/nomakh/sounds/NSTAUNT19
-nomakh/taunt20					sprites/classes/nomakh/sounds/NSTAUNT20
-nomakh/taunt21					sprites/classes/nomakh/sounds/NSTAUNT21
-nomakh/taunt22					sprites/classes/nomakh/sounds/NSTAUNT22
-nomakh/taunt23					sprites/classes/nomakh/sounds/NSTAUNT23
-nomakh/taunt24					sprites/classes/nomakh/sounds/NSTAUNT24
+nomakh/taunt1                   sprites/classes/nomakh/sounds/NSTAUNT1
+nomakh/taunt2                   sprites/classes/nomakh/sounds/NSTAUNT2
+nomakh/taunt3                   sprites/classes/nomakh/sounds/NSTAUNT3
+nomakh/taunt4                   sprites/classes/nomakh/sounds/NSTAUNT4
+nomakh/taunt5                   sprites/classes/nomakh/sounds/NSTAUNT5
+nomakh/taunt6                   sprites/classes/nomakh/sounds/NSTAUNT6
+nomakh/taunt7                   sprites/classes/nomakh/sounds/NSTAUNT7
+nomakh/taunt8                   sprites/classes/nomakh/sounds/NSTAUNT8
+nomakh/taunt9                   sprites/classes/nomakh/sounds/NSTAUNT9
+nomakh/taunt10                  sprites/classes/nomakh/sounds/NSTAUNT10
+nomakh/taunt11                  sprites/classes/nomakh/sounds/NSTAUNT11
+nomakh/taunt12                  sprites/classes/nomakh/sounds/NSTAUNT12
+nomakh/taunt13                  sprites/classes/nomakh/sounds/NSTAUNT13
+nomakh/taunt14                  sprites/classes/nomakh/sounds/NSTAUNT14
+nomakh/taunt15                  sprites/classes/nomakh/sounds/NSTAUNT15
+nomakh/taunt16                  sprites/classes/nomakh/sounds/NSTAUNT16
+nomakh/taunt17                  sprites/classes/nomakh/sounds/NSTAUNT17
+nomakh/taunt18                  sprites/classes/nomakh/sounds/NSTAUNT18
+nomakh/taunt19                  sprites/classes/nomakh/sounds/NSTAUNT19
+nomakh/taunt20                  sprites/classes/nomakh/sounds/NSTAUNT20
+nomakh/taunt21                  sprites/classes/nomakh/sounds/NSTAUNT21
+nomakh/taunt22                  sprites/classes/nomakh/sounds/NSTAUNT22
+nomakh/taunt23                  sprites/classes/nomakh/sounds/NSTAUNT23
+nomakh/taunt24                  sprites/classes/nomakh/sounds/NSTAUNT24
 
-nomakh/weapons/chaingun/start				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTAT
-nomakh/weapons/chaingun/stop				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTOP
-nomakh/weapons/chaingun/fire				sprites/classes/nomakh/sounds/weapons/chaingun/DSTMFIRE
+nomakh/weapons/chaingun/start               sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTAT
+nomakh/weapons/chaingun/stop                sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTOP
+nomakh/weapons/chaingun/fire                sprites/classes/nomakh/sounds/weapons/chaingun/DSTMFIRE
 
-nomakh/weapons/ssg/Up						sprites/classes/nomakh/sounds/weapons/ssg/QUADUP
-nomakh/weapons/ssg/Fire						sprites/classes/nomakh/sounds/weapons/ssg/QUADFIRE
-nomakh/weapons/ssg/Open						sprites/classes/nomakh/sounds/weapons/ssg/QUADOPEN
-nomakh/weapons/ssg/Load						sprites/classes/nomakh/sounds/weapons/ssg/QUADLOAD
-nomakh/weapons/ssg/Close					sprites/classes/nomakh/sounds/weapons/ssg/QUADCLOS
-nomakh/weapons/ssg/Deploy					sprites/classes/nomakh/sounds/weapons/ssg/QUADDEPL
-nomakh/weapons/ssg/Alt						sprites/classes/nomakh/sounds/weapons/ssg/QUADALT
-nomakh/weapons/ssg/Mode						sprites/classes/nomakh/sounds/weapons/ssg/QUADMODE
+nomakh/weapons/ssg/Up                       sprites/classes/nomakh/sounds/weapons/ssg/QUADUP
+nomakh/weapons/ssg/Fire                     sprites/classes/nomakh/sounds/weapons/ssg/QUADFIRE
+nomakh/weapons/ssg/Open                     sprites/classes/nomakh/sounds/weapons/ssg/QUADOPEN
+nomakh/weapons/ssg/Load                     sprites/classes/nomakh/sounds/weapons/ssg/QUADLOAD
+nomakh/weapons/ssg/Close                    sprites/classes/nomakh/sounds/weapons/ssg/QUADCLOS
+nomakh/weapons/ssg/Deploy                   sprites/classes/nomakh/sounds/weapons/ssg/QUADDEPL
+nomakh/weapons/ssg/Alt                      sprites/classes/nomakh/sounds/weapons/ssg/QUADALT
+nomakh/weapons/ssg/Mode                     sprites/classes/nomakh/sounds/weapons/ssg/QUADMODE
 
-nomakh/weapons/pistol/up						sprites/classes/nomakh/sounds/weapons/pistol/BERNUP
-nomakh/weapons/pistol/fire						sprites/classes/nomakh/sounds/weapons/pistol/BERNFIRE
+nomakh/weapons/pistol/up                        sprites/classes/nomakh/sounds/weapons/pistol/BERNUP
+nomakh/weapons/pistol/fire                      sprites/classes/nomakh/sounds/weapons/pistol/BERNFIRE
 
 $random nomakh/noway {
-	nomakh/hren1
-	nomakh/hren1
-	nomakh/hren1
-	nomakh/doesntwork
-	nomakh/doesntwork
-	nomakh/nein
+    nomakh/hren1
+    nomakh/hren1
+    nomakh/hren1
+    nomakh/doesntwork
+    nomakh/doesntwork
+    nomakh/nein
 }
 
 $random nomakh/pain {
-	nomakh/pain1
-	nomakh/pain1
-	nomakh/pain2
-	nomakh/pain3
+    nomakh/pain1
+    nomakh/pain1
+    nomakh/pain2
+    nomakh/pain3
 }
 
-$random	nomakh/taunt {
-	nomakh/taunt1
-	nomakh/taunt2
-	nomakh/taunt3
-	nomakh/taunt4
-	nomakh/taunt5
-	nomakh/taunt6
-	nomakh/taunt7
-	nomakh/taunt8
-	nomakh/taunt9
-	nomakh/taunt10
-	nomakh/taunt11
-	nomakh/taunt12
-	nomakh/taunt13
-	nomakh/taunt14
-	nomakh/taunt15
-	nomakh/taunt16
-	nomakh/taunt17
-	nomakh/taunt18
-	nomakh/taunt19
-	nomakh/taunt20
-	nomakh/taunt21
-	nomakh/taunt22
-	nomakh/taunt23
-	nomakh/taunt24
-	nomakh/laugh1
-	nomakh/laugh2
-	nomakh/laugh3
-	nomakh/laugh4
-	nomakh/monster
-	nomakh/maty
-	nomakh/down
-	nomakh/omg
+$random nomakh/taunt {
+    nomakh/taunt1
+    nomakh/taunt2
+    nomakh/taunt3
+    nomakh/taunt4
+    nomakh/taunt5
+    nomakh/taunt6
+    nomakh/taunt7
+    nomakh/taunt8
+    nomakh/taunt9
+    nomakh/taunt10
+    nomakh/taunt11
+    nomakh/taunt12
+    nomakh/taunt13
+    nomakh/taunt14
+    nomakh/taunt15
+    nomakh/taunt16
+    nomakh/taunt17
+    nomakh/taunt18
+    nomakh/taunt19
+    nomakh/taunt20
+    nomakh/taunt21
+    nomakh/taunt22
+    nomakh/taunt23
+    nomakh/taunt24
+    nomakh/laugh1
+    nomakh/laugh2
+    nomakh/laugh3
+    nomakh/laugh4
+    nomakh/monster
+    nomakh/maty
+    nomakh/down
+    nomakh/omg
 }
 
-$random	nomakh/pickup {
-	nomakh/cheza
-	nomakh/cacodemon
+$random nomakh/pickup {
+    nomakh/cheza
+    nomakh/cacodemon
 }
 
 //===========================================================================
@@ -561,31 +587,31 @@ $random	nomakh/pickup {
 //===========================================================================
 
 $random menu/quit2 {
-	ending/irondroog
-	marzoleon/fist2
-	ending/irondroog2
-	irondroog/taunt5
-	chaser/taunt09
-	chaser/taunt13
-	marzoleon/nahya
-	prophessor/taunt4
-	nomakh/chivo
-	nomakh/die1
-	nomakh/nein
-	nomakh/omg
-	nomakh/cybr
-	nomakh/how
-	nomakh/ohhi
-	nomakh/monster
-	nomakh/waaat
-	marzoleon/taunt5
+    ending/irondroog
+    marzoleon/fist2
+    ending/irondroog2
+    irondroog/taunt5
+    chaser/taunt09
+    chaser/taunt13
+    marzoleon/nahya
+    prophessor/taunt4
+    nomakh/chivo
+    nomakh/die1
+    nomakh/nein
+    nomakh/omg
+    nomakh/cybr
+    nomakh/how
+    nomakh/ohhi
+    nomakh/monster
+    nomakh/waaat
+    marzoleon/taunt5
 }
 
-other/saxgun	DSSAXGUN
-weapon/kick		KICK
-weapon/kickmiss	DSSKESWG
-weapon/kickdown	DSSKEPCH
-explosion/big	DSLMIEX
+other/saxgun    DSSAXGUN
+weapon/kick     KICK
+weapon/kickmiss DSSKESWG
+weapon/kickdown DSSKEPCH
+explosion/big   DSLMIEX
 
 timefreeze/effect1 TIMEFRZ1
 timefreeze/effect2 TIMEFRZ2

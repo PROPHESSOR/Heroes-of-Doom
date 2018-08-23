@@ -175,6 +175,56 @@ Actor IronDroogPlasmagun : PlasmaRifle {
 
 	Inventory.RestrictedTo "IronDroog"
 	Inventory.PickupSound "irondroog/pickup"
+
+	States {
+		Ready:
+			GORG ABCD 3 A_WeaponReady
+			Loop
+		Deselect:
+			GORG A 1 A_Lower
+			Loop
+		Select:
+			GORG A 1 A_Raise
+			Loop
+		Fire:
+			GORG A 0 A_PlaySound("irondroog/jump", CHAN_5)
+			GORG RQPONMLKJI 3
+			Goto Hold
+		Hold:
+			GORG EFG 1
+			GORG A 0 A_PlaySound("irondroog/weapons/prostate/fire", CHAN_WEAPON, 1.0, 1.0)
+			GORG H 1 A_FireCustomMissile("ProstateBall", 0, 1)
+			GORG A 0 A_ReFire
+			GORG A 0 A_PlaySound("irondroog/jump", CHAN_5)
+			GORG RQPONMLKJI 3
+			GORG A 0 A_StopSound(CHAN_WEAPON)
+			Goto Ready
+		Flash:
+			//GORG B 4 Bright A_Light1
+			Goto LightDone
+			//GORG C 4 Bright A_Light1
+			Goto LightDone
+		Spawn:
+			PLAS A -1
+			Stop
+	}
+}
+
+Actor ProstateBall : PlasmaBall {
+	+SEEKERMISSILE
+
+	SeeSound "irondroog/weapons/prostate/hit"
+	DeathSound "irondroog/weapons/prostate/hit"
+	Obituary "%o was melted by %k's IronDroog's prostate."
+
+	States {
+		Spawn:
+			SPIR P 6 Bright A_SeekerMissile(360, 90, SMF_LOOK | SMF_PRECISE | SMF_CURSPEED)
+			Loop
+		Death:
+			SPIR QRSTU 4 Bright
+			Stop
+	}
 }
 
 Actor IronDroogBFG : BFG9000 {
