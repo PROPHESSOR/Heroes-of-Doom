@@ -3,22 +3,23 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-/sprites/KICKS							- Brutal Doom v21 (Base by Captain Toenail, edited by Sergeant_Mark_IV)
-/sounds/KICK							- Brutal Doom v21 (Base by Captain Toenail, edited by Sergeant_Mark_IV)
-/chaser/weapons/ssg						- Extreme Weapon Pack (Doggo120)
-/irondroog/weapons/ssg					- Legacy of Suffering
-/chaser/skin							- 60skins.wad
-/irondroog/skin							- 60skins.wad
-/nomakh/skin							- 60skins.wad
-/prophessor/skin						- Complex Doom Invasion
-/nomakh/weapons/chaingun				- Valiant (Paul "skillsaw" DeBruyne)
-/nomakh/sounds/weapons/chaingun			- Complex Doom Invasion
-/nomakh/weapons/ssg						- Russian Overkill 2.2
-/nomakh/weapons/pistol					- Russian Overkill 2.2
-/prophessor/weapons/shotgun				- Complex Doom v26a2
-/sounds/TIMEFRZ(1,2,3)					- LCA 1.5.8
-/SBARINFO								- Complex Doom v26a2
-/sprites/HUD							- Complex Doom v26a2
-/irondroog/weapons/chaingun				- Legacy of Suffering
+/sprites/KICKS                          - Brutal Doom v21 (Base by Captain Toenail, edited by Sergeant_Mark_IV)
+/sounds/KICK                            - Brutal Doom v21 (Base by Captain Toenail, edited by Sergeant_Mark_IV)
+/chaser/weapons/ssg                     - Extreme Weapon Pack (Doggo120)
+/irondroog/weapons/ssg                  - Legacy of Suffering
+/chaser/skin                            - 60skins.wad
+/irondroog/skin                         - 60skins.wad
+/nomakh/skin                            - 60skins.wad
+/prophessor/skin                        - Complex Doom Invasion
+/nomakh/weapons/chaingun                - Valiant (Paul "skillsaw" DeBruyne)
+/nomakh/sounds/weapons/chaingun         - Complex Doom Invasion
+/nomakh/weapons/ssg                     - Russian Overkill 2.2
+/nomakh/weapons/pistol                  - Russian Overkill 2.2
+/prophessor/weapons/shotgun             - Complex Doom v26a2
+/sounds/TIMEFRZ(1,2,3)                  - LCA 1.5.8
+/SBARINFO                               - Complex Doom v26a2
+/sprites/HUD                            - Complex Doom v26a2
+/irondroog/weapons/chaingun             - Legacy of Suffering
+/nomakh/weapons/plasmarifle             - Brutal Doom v21
 
 Special thanks to JSO_x for realistic weapons recoil :)

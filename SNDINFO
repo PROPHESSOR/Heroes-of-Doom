@@ -166,7 +166,6 @@ $random 	irondroog/jump		{
 	irondroog/jump2
 	irondroog/jump3
 	irondroog/jump4
-	irondroog/jumpgoat
 }
 
 $random		irondroog/taunt		{
@@ -189,6 +188,7 @@ $random		irondroog/taunt		{
 	irondroog/hod2
 	irondroog/fast
 	irondroog/great
+	irondroog/jumpgoat
 }
 
 $random		irondroog/pickup {
