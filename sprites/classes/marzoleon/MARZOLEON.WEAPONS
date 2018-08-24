@@ -184,7 +184,7 @@ Actor MarzoLeonChaingun : Chaingun {
 		Fire:
 			CHGG A 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
 			CHGG A 0 A_GunFlash
-			CHGG A 4 A_FireBullets(14, 14, 2, random(10, 15), "BulletPuff")
+			CHGG A 4 A_FireBullets(2, 2, 1, random(10, 15), "BulletPuff")
 			CHGG B 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
 			CHGG B 0 A_GunFlash("Flash2")
 			CHGG B 4 A_FireBullets(14, 14, 2, random(15, 25), "BulletPuff")
@@ -211,7 +211,7 @@ Actor MarzoLeonRL : RocketLauncher {
 		Deselect:
 			TNT1 A 0 A_PlayWeaponSound("weapons/weapondown")
 			GREN A 1 A_Lower
-			Goto Deselect+4
+			Goto Deselect+1
 		Ready:
 			TNT1 A 0 A_PlayWeaponSound("marzoleon/weapons/rl/pickup")
 			GRUP ABCDE 1
@@ -220,19 +220,16 @@ Actor MarzoLeonRL : RocketLauncher {
 		Fire:
 			TNT1 A 0 A_JumpIfNoAmmo("Empty")
 			TNT1 A 0 A_AlertMonsters
-			TNT1 A 0 A_GunFlash
-			TNT1 A 0 A_Light1 
 			TNT1 A 0 Radius_Quake(4, 3, 0, 1, 0)
 			TNT1 A 0 A_PlaySound("marzoleon/weapons/rl/fire", CHAN_WEAPON)
 			GREF BC 1 Bright
-			GREF D 1 Bright A_Light2
+			GREF D 1 Bright
 			GREF E 1 Bright A_FireCustomMissile("RifleGrenade", 0, TRUE, 0, 0, 0, 6.328125)
-			TNT1 A 0 A_Light0
 			GREF FGH 3
 			GRER PQR 2
 			GREN A 1
 			TNT1 A 0 A_ReFire
-			Goto Ready+6	
+			Goto Ready+6
 		Empty:
 			GREN A 4 A_PlayWeaponSound("prophessor/weapons/shotgun/click")
 			Goto Ready+6
