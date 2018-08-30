@@ -60,13 +60,26 @@ Actor ProphessorPistol : Pistol {
 	Weapon.AmmoUse 100
 
 	States {
+		Ready:
+			UTIL A 1 A_WeaponReady
+			Loop
+		Deselect:
+			UTIL A 1 A_Lower
+			Loop
+		Select:
+			UTIL A 1 A_Raise
+			Loop
+		Flash:
+			TNT1 A 7 Bright A_Light1
+			Goto LightDone
+			TNT1 A 7 Bright A_Light1
+			Goto LightDone
 		Fire:
-			PISG A 4
-			PISG B 1 A_FireBullets (5.6, 0, 1, 100, "BulletPuff")
-			PISG C 1 A_GunFlash
-			PISG C 15 A_SpawnItemEx("Backpack", 100, 0, 10, random(10, 20), 0, 0)
-			PISG C 4
-			PISG B 5 A_ReFire
+			UTIL A 4 A_PlaySound("prophessor/weapons/pistol/build")
+			UTIL B 1 A_FireBullets (5.6, 0, 1, 512, "BulletPuff")
+			UTIL A 1 A_GunFlash
+			UTIL B 15 A_SpawnItemEx("Backpack", 100, 0, 10, random(10, 20), 0, 0)
+			UTIL A 4 A_ReFire
 			Goto Ready
 	}
 }

@@ -51,6 +51,8 @@ prophessor/weapons/shotgun/reload           sprites/classes/prophessor/sounds/we
 prophessor/weapons/shotgun/fire             sprites/classes/prophessor/sounds/weapons/shotgun/DSASGFR
 prophessor/weapons/shotgun/click            sprites/classes/prophessor/sounds/weapons/shotgun/DSCLICKY
 
+prophessor/weapons/pistol/build             sprites/classes/prophessor/sounds/weapons/pistol/BUILD
+
 
 $random     prophessor/taunt {
     prophessor/0fps
