@@ -225,7 +225,7 @@ Actor CFG9000Ball {
 	DeathSound ""
 	Species "Player"
 	Obituary "$OB_MPBFG_BOOM"
-	RenderStyle Translucent
+	RenderStyle Add
 
 	States {
 		Spawn:
