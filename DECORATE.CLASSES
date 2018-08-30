@@ -51,11 +51,11 @@ Actor PROPHESSOR : DoomPlayer 15025 {
 			PROP A 2
 			Loop
 		See:
-			PROP AB 4 A_JumpIfInventory("HeroicKick", 1, "Kick")
-			PROP CD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			PROP AB 3 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			PROP CD 3 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
 			Loop
 		Missile:
-			PROP E 12
+			PROP E 10
 			Goto Spawn
 		Melee:
 			PROP F 6 BRIGHT
@@ -361,8 +361,8 @@ Actor Chaser : DoomPlayer 15028 {
 			TARD A 2
 			Loop
 		See:
-			TARD AB 4 A_JumpIfInventory("HeroicKick", 1, "Kick")
-			TARD CD 4 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
+			TARD AB 8 A_JumpIfInventory("HeroicKick", 1, "Kick")
+			TARD CD 8 A_JumpIfInventory("HeroicTaunt", 1, "Taunt")
 			Loop
 		Missile:
 			TARD E 12

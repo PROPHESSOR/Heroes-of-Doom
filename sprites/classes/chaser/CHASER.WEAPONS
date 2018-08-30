@@ -14,13 +14,29 @@ Actor ChaserFist : Fist {
 	Weapon.Kickback 0
 	Inventory.PickupSound "chaser/pickup"
 
-	States {	
+	States {
+		Ready:
+			CFST A 1 A_WeaponReady
+			Loop
+		Deselect:
+			CFST A 1 A_Lower
+			Loop
+		Select:
+			CFST A 1 A_Raise
+			Loop
 		Fire:
-				PUNG B 4
-				PUNG C 2 A_CustomPunch(1)
-				PUNG C 2
-				PUNG B 5 A_ReFire
-				Goto Ready
+			CFST B 4
+			CFST C 4 A_Punch
+			CFST D 5
+			CFST C 4
+			CFST B 5 A_ReFire
+			Goto Ready
+		Fire:
+			CFST B 4
+			CFST C 2 A_CustomPunch(1)
+			CFST C 2
+			CFST B 5 A_ReFire
+			Goto Ready
 	}
 }
 
