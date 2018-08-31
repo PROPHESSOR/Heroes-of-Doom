@@ -1,0 +1,186 @@
+/**
+ *Copyright (c) 2018 PROPHESSOR
+ *
+ *This software is released under the MIT License.
+ *https://opensource.org/licenses/MIT
+ */
+
+//===========================================================================
+//
+// Nomakh Thunder
+//
+//===========================================================================
+
+$playersound    nomakh  male    *death      sprites/classes/nomakh/sounds/NSDIE
+$playersound    nomakh  male    *xdeath     sprites/classes/nomakh/sounds/NSDIE
+$playersound    nomakh  male    *gibbed     sprites/classes/nomakh/sounds/NSDIE
+$playeralias    nomakh  male    *pain100    nomakh/pain
+$playersounddup nomakh  male    *pain75     *pain100
+$playersounddup nomakh  male    *pain50     *pain100
+$playersounddup nomakh  male    *pain25     *pain100
+$playersound    nomakh  male    *grunt      sprites/classes/nomakh/sounds/NSHF
+$playersounddup nomakh  male    *land       *grunt
+$playersound    nomakh  male    *jump       sprites/classes/nomakh/sounds/NSJUMP
+$playersound    nomakh  male    *fist       DSSKEPCH
+$playeralias    nomakh  male    *usefail    nomakh/noway
+
+nomakh/hren1                    sprites/classes/nomakh/sounds/NSNOWAY
+nomakh/nein                     sprites/classes/nomakh/sounds/NSNOWAY2
+nomakh/doesntwork               sprites/classes/nomakh/sounds/NSNOWAY3
+
+nomakh/cheza                    sprites/classes/nomakh/sounds/NSPICKUP
+nomakh/cacodemon                sprites/classes/nomakh/sounds/NSPICKUP2
+
+nomakh/pain1                    sprites/classes/nomakh/sounds/NSPAIN
+nomakh/pain2                    sprites/classes/nomakh/sounds/NSPAIN2
+nomakh/pain3                    sprites/classes/nomakh/sounds/NSPAIN3
+
+nomakh/boom                     sprites/classes/nomakh/sounds/NSBOOM
+nomakh/chivo                    sprites/classes/nomakh/sounds/NSWTF
+nomakh/down                     sprites/classes/nomakh/sounds/NSDOWN
+nomakh/omg                      sprites/classes/nomakh/sounds/NSOMG
+nomakh/cybr                     sprites/classes/nomakh/sounds/NSCYBR
+nomakh/aaaaa                    sprites/classes/nomakh/sounds/NSAAAAA
+nomakh/eee                      sprites/classes/nomakh/sounds/NSEEE
+nomakh/hf                       sprites/classes/nomakh/sounds/NSHF
+nomakh/how                      sprites/classes/nomakh/sounds/NSHOW
+nomakh/ohhi                     sprites/classes/nomakh/sounds/NSOHHI
+nomakh/ohno                     sprites/classes/nomakh/sounds/NSOHNO
+nomakh/monster                  sprites/classes/nomakh/sounds/NSMONST
+nomakh/waaat                    sprites/classes/nomakh/sounds/NSWAAAT
+nomakh/maty                     sprites/classes/nomakh/sounds/NSMATY
+
+nomakh/sphere                   sprites/classes/nomakh/sounds/NSSPHERE
+
+nomakh/laugh1                   sprites/classes/nomakh/sounds/NSLAUGH1
+nomakh/laugh2                   sprites/classes/nomakh/sounds/NSLAUGH2
+nomakh/laugh3                   sprites/classes/nomakh/sounds/NSLAUGH3
+nomakh/laugh4                   sprites/classes/nomakh/sounds/NSLAUGH4
+
+nomakh/die1                     sprites/classes/nomakh/sounds/NSDIE
+
+nomakh/taunt1                   sprites/classes/nomakh/sounds/NSTAUNT1
+nomakh/taunt2                   sprites/classes/nomakh/sounds/NSTAUNT2
+nomakh/taunt3                   sprites/classes/nomakh/sounds/NSTAUNT3
+nomakh/taunt4                   sprites/classes/nomakh/sounds/NSTAUNT4
+nomakh/taunt5                   sprites/classes/nomakh/sounds/NSTAUNT5
+nomakh/taunt6                   sprites/classes/nomakh/sounds/NSTAUNT6
+nomakh/taunt7                   sprites/classes/nomakh/sounds/NSTAUNT7
+nomakh/taunt8                   sprites/classes/nomakh/sounds/NSTAUNT8
+nomakh/taunt9                   sprites/classes/nomakh/sounds/NSTAUNT9
+nomakh/taunt10                  sprites/classes/nomakh/sounds/NSTAUNT10
+nomakh/taunt11                  sprites/classes/nomakh/sounds/NSTAUNT11
+nomakh/taunt12                  sprites/classes/nomakh/sounds/NSTAUNT12
+nomakh/taunt13                  sprites/classes/nomakh/sounds/NSTAUNT13
+nomakh/taunt14                  sprites/classes/nomakh/sounds/NSTAUNT14
+nomakh/taunt15                  sprites/classes/nomakh/sounds/NSTAUNT15
+nomakh/taunt16                  sprites/classes/nomakh/sounds/NSTAUNT16
+nomakh/taunt17                  sprites/classes/nomakh/sounds/NSTAUNT17
+nomakh/taunt18                  sprites/classes/nomakh/sounds/NSTAUNT18
+nomakh/taunt19                  sprites/classes/nomakh/sounds/NSTAUNT19
+nomakh/taunt20                  sprites/classes/nomakh/sounds/NSTAUNT20
+nomakh/taunt21                  sprites/classes/nomakh/sounds/NSTAUNT21
+nomakh/taunt22                  sprites/classes/nomakh/sounds/NSTAUNT22
+nomakh/taunt23                  sprites/classes/nomakh/sounds/NSTAUNT23
+nomakh/taunt24                  sprites/classes/nomakh/sounds/NSTAUNT24
+nomakh/taunt25                  sprites/classes/nomakh/sounds/NSTAUNT25
+nomakh/taunt26                  sprites/classes/nomakh/sounds/NSTAUNT26
+nomakh/taunt27                  sprites/classes/nomakh/sounds/NSTAUNT27
+nomakh/taunt28                  sprites/classes/nomakh/sounds/NSTAUNT28
+nomakh/taunt29                  sprites/classes/nomakh/sounds/NSTAUNT29
+nomakh/taunt30                  sprites/classes/nomakh/sounds/NSTAUNT30
+
+nomakh/weapons/chaingun/start               sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTAT
+nomakh/weapons/chaingun/stop                sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTOP
+nomakh/weapons/chaingun/fire                sprites/classes/nomakh/sounds/weapons/chaingun/DSTMFIRE
+
+nomakh/weapons/ssg/Up                       sprites/classes/nomakh/sounds/weapons/ssg/QUADUP
+nomakh/weapons/ssg/Fire                     sprites/classes/nomakh/sounds/weapons/ssg/QUADFIRE
+nomakh/weapons/ssg/Open                     sprites/classes/nomakh/sounds/weapons/ssg/QUADOPEN
+nomakh/weapons/ssg/Load                     sprites/classes/nomakh/sounds/weapons/ssg/QUADLOAD
+nomakh/weapons/ssg/Close                    sprites/classes/nomakh/sounds/weapons/ssg/QUADCLOS
+nomakh/weapons/ssg/Deploy                   sprites/classes/nomakh/sounds/weapons/ssg/QUADDEPL
+nomakh/weapons/ssg/Alt                      sprites/classes/nomakh/sounds/weapons/ssg/QUADALT
+nomakh/weapons/ssg/Mode                     sprites/classes/nomakh/sounds/weapons/ssg/QUADMODE
+
+nomakh/weapons/pistol/up                        sprites/classes/nomakh/sounds/weapons/pistol/BERNUP
+nomakh/weapons/pistol/fire                      sprites/classes/nomakh/sounds/weapons/pistol/BERNFIRE
+
+$random nomakh/noway {
+    nomakh/hren1
+    nomakh/hren1
+    nomakh/hren1
+    nomakh/doesntwork
+    nomakh/doesntwork
+    nomakh/nein
+}
+
+$random nomakh/pain {
+    nomakh/pain1
+    nomakh/pain1
+    nomakh/pain2
+    nomakh/pain3
+}
+
+$random nomakh/taunt {
+    nomakh/taunt1
+    nomakh/taunt2
+    nomakh/taunt3
+    nomakh/taunt4
+    nomakh/taunt5
+    nomakh/taunt6
+    nomakh/taunt7
+    nomakh/taunt8
+    nomakh/taunt9
+    nomakh/taunt10
+    nomakh/taunt11
+    nomakh/taunt12
+    nomakh/taunt13
+    nomakh/taunt14
+    nomakh/taunt15
+    nomakh/taunt16
+    nomakh/taunt17
+    nomakh/taunt18
+    nomakh/taunt19
+    nomakh/taunt20
+    nomakh/taunt21
+    nomakh/taunt22
+    nomakh/taunt23
+    nomakh/taunt24
+    nomakh/taunt25
+    nomakh/taunt26
+    nomakh/taunt27
+    nomakh/taunt28
+    nomakh/taunt29
+    nomakh/taunt30
+    nomakh/laugh1
+    nomakh/laugh2
+    nomakh/laugh3
+    nomakh/laugh4
+    nomakh/monster
+    nomakh/maty
+    nomakh/down
+    nomakh/omg
+}
+
+$random nomakh/pickup {
+    nomakh/cheza
+    nomakh/cacodemon
+}
+
+$random nomakh/exit {
+    nomakh/chivo
+    nomakh/die1
+    nomakh/nein
+    nomakh/omg
+    nomakh/cybr
+    nomakh/how
+    nomakh/ohhi
+    nomakh/monster
+    nomakh/waaat
+    nomakh/taunt28
+    nomakh/laugh1
+    nomakh/laugh2
+    nomakh/laugh3
+    nomakh/laugh4
+}

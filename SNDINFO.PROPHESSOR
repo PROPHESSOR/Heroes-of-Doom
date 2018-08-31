@@ -1,0 +1,82 @@
+/**
+ *Copyright (c) 2018 PROPHESSOR
+ *
+ *This software is released under the MIT License.
+ *https://opensource.org/licenses/MIT
+ */
+
+//===========================================================================
+//
+// PROPHESSOR
+//
+//===========================================================================
+
+$playersound    prophessor  male    *death      sprites/classes/prophessor/sounds/PSDIE
+$playersound    prophessor  male    *xdeath     sprites/classes/prophessor/sounds/PSDIE
+$playersound    prophessor  male    *gibbed     psslop
+$playersound    prophessor  male    *pain100    sprites/classes/prophessor/sounds/PSLND2
+$playersounddup prophessor  male    *pain75     *pain100
+$playersounddup prophessor  male    *pain50     *pain100
+$playersounddup prophessor  male    *pain25     *pain100
+$playersound    prophessor  male    *grunt      sprites/classes/prophessor/sounds/PSLND1
+$playersounddup prophessor  male    *land       *grunt
+$playersound    prophessor  male    *jump       sprites/classes/prophessor/sounds/PSTAUNT4
+$playersound    prophessor  male    *fist       sprites/classes/prophessor/sounds/PSFIST
+$playersound    prophessor  male    *usefail    sprites/classes/prophessor/sounds/PSUSE1
+
+prophessor/sphere           sprites/classes/prophessor/sounds/PSSPHR
+prophessor/0fps             sprites/classes/prophessor/sounds/PS0FPS
+prophessor/secret           sprites/classes/prophessor/sounds/PSSECRET
+prophessor/o                sprites/classes/prophessor/sounds/PSO
+prophessor/fist             sprites/classes/prophessor/sounds/PSFIST
+prophessor/kick             sprites/classes/prophessor/sounds/PSKICK
+prophessor/armor            sprites/classes/prophessor/sounds/PSARMOR
+prophessor/die              sprites/classes/prophessor/sounds/PSDIE
+prophessor/ahrinet          sprites/classes/prophessor/sounds/PSAHR
+
+
+prophessor/hren1            sprites/classes/prophessor/sounds/PSUSE1
+prophessor/hren2            sprites/classes/prophessor/sounds/PSUSE2
+
+prophessor/taunt1           sprites/classes/prophessor/sounds/PSTAUNT1
+prophessor/taunt2           sprites/classes/prophessor/sounds/PSTAUNT2
+prophessor/taunt3           sprites/classes/prophessor/sounds/PSTAUNT3
+prophessor/taunt4           sprites/classes/prophessor/sounds/PSTAUNT4
+prophessor/taunt5           sprites/classes/prophessor/sounds/PSTAUNT5
+prophessor/taunt6           sprites/classes/prophessor/sounds/PSTAUNT6
+prophessor/taunt7           sprites/classes/prophessor/sounds/PSTAUNT7
+
+prophessor/land1            sprites/classes/prophessor/sounds/PSLND1
+prophessor/land2            sprites/classes/prophessor/sounds/PSLND2
+
+prophessor/weapons/shotgun/reload           sprites/classes/prophessor/sounds/weapons/shotgun/DSASHUP
+prophessor/weapons/shotgun/fire             sprites/classes/prophessor/sounds/weapons/shotgun/DSASGFR
+prophessor/weapons/shotgun/click            sprites/classes/prophessor/sounds/weapons/shotgun/DSCLICKY
+
+prophessor/weapons/pistol/build             sprites/classes/prophessor/sounds/weapons/pistol/BUILD
+
+
+$random     prophessor/taunt {
+    prophessor/0fps
+    prophessor/taunt1
+    prophessor/taunt2
+    prophessor/taunt3
+    prophessor/taunt4
+    prophessor/taunt5
+    prophessor/taunt6
+    prophessor/taunt7
+}
+
+$random     prophessor/land {
+    prophessor/land1
+    prophessor/land2
+}
+
+$random     prophessor/pickup {
+    prophessor/o
+    prophessor/armor
+}
+
+$random     prophessor/exit {
+    prophessor/taunt4
+}

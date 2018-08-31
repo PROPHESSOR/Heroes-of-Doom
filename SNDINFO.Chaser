@@ -1,0 +1,89 @@
+/**
+ *Copyright (c) 2018 PROPHESSOR
+ *
+ *This software is released under the MIT License.
+ *https://opensource.org/licenses/MIT
+ */
+
+//===========================================================================
+//
+// Chaser
+//
+//===========================================================================
+
+$playersound    chaser  male    *death      sprites/classes/chaser/sounds/CSPLDTH
+$playersound    chaser  male    *xdeath     sprites/classes/chaser/sounds/CSPLDTH
+$playersound    chaser  male    *gibbed     dsslop
+$playersound    chaser  male    *pain100    sprites/classes/chaser/sounds/CSBLIN
+$playersounddup chaser  male    *pain75     *pain100
+$playersounddup chaser  male    *pain50     *pain100
+$playersounddup chaser  male    *pain25     *pain100
+$playersound    chaser  male    *grunt      sprites/classes/chaser/sounds/CSBLIN
+$playersounddup chaser  male    *land       *grunt
+$playersound    chaser  male    *jump       sprites/classes/chaser/sounds/CSE
+$playersound    chaser  male    *fist       DSSKESWG
+$playersound    chaser  male    *usefail    sprites/classes/chaser/sounds/CSE
+
+chaser/aaaa             sprites/classes/chaser/sounds/CSAAAAAA
+chaser/eeee             sprites/classes/chaser/sounds/CSE
+chaser/ahrinet          sprites/classes/chaser/sounds/CSAHR
+chaser/nahrena          sprites/classes/chaser/sounds/CSNHRN
+chaser/oyblin           sprites/classes/chaser/sounds/CSBLIN
+chaser/eeeblin          sprites/classes/chaser/sounds/CSEBLN
+chaser/eee              sprites/classes/chaser/sounds/CSEEE
+chaser/blin             sprites/classes/chaser/sounds/CSBLN
+
+chaser/pickup1          sprites/classes/chaser/sounds/CSITEMUP
+chaser/pickup2          sprites/classes/chaser/sounds/CSNISHK
+chaser/pickup3          sprites/classes/chaser/sounds/CSNISHA
+chaser/pickup4          sprites/classes/chaser/sounds/CSOMTFK
+
+chaser/taunt01          sprites/classes/chaser/sounds/CTAUNT01
+chaser/taunt02          sprites/classes/chaser/sounds/CTAUNT02
+chaser/taunt03          sprites/classes/chaser/sounds/CTAUNT03
+chaser/taunt04          sprites/classes/chaser/sounds/CTAUNT04
+chaser/taunt05          sprites/classes/chaser/sounds/CTAUNT05
+chaser/taunt06          sprites/classes/chaser/sounds/CTAUNT06
+chaser/taunt07          sprites/classes/chaser/sounds/CTAUNT07
+chaser/taunt08          sprites/classes/chaser/sounds/CTAUNT08
+chaser/taunt09          sprites/classes/chaser/sounds/CTAUNT09
+chaser/taunt10          sprites/classes/chaser/sounds/CTAUNT10
+chaser/taunt11          sprites/classes/chaser/sounds/CTAUNT11
+chaser/taunt12          sprites/classes/chaser/sounds/CTAUNT12
+chaser/taunt13          sprites/classes/chaser/sounds/CTAUNT13
+chaser/taunt14          sprites/classes/chaser/sounds/CTAUNT14
+
+chaser/weapons/ssg/hit1     sprites/classes/chaser/sounds/weapons/ssg/CHHIT1
+chaser/weapons/ssg/hit2     sprites/classes/chaser/sounds/weapons/ssg/CHHIT2
+chaser/weapons/ssg/close    sprites/classes/chaser/sounds/weapons/ssg/CHCLOSE
+chaser/weapons/bfg/ball     sprites/classes/chaser/sounds/weapons/bfg/DSCFGBL
+
+chaser/sphere           sprites/classes/chaser/sounds/CSSPHR
+
+$random     chaser/pickup       {
+    chaser/pickup2
+    chaser/pickup3
+    chaser/pickup4
+}
+
+$random     chaser/taunt        {
+    chaser/taunt01
+    chaser/taunt02
+    chaser/taunt03
+    chaser/taunt04
+    chaser/taunt05
+    chaser/taunt06
+    chaser/taunt07
+    chaser/taunt08
+    chaser/taunt09
+    chaser/taunt10
+    chaser/taunt11
+    chaser/taunt12
+    chaser/taunt13
+    chaser/taunt14
+}
+
+$random chaser/weapons/ssg/hit {
+    chaser/weapons/ssg/hit1
+    chaser/weapons/ssg/hit2
+}

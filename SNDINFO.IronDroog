@@ -1,0 +1,183 @@
+/**
+ *Copyright (c) 2018 PROPHESSOR
+ *
+ *This software is released under the MIT License.
+ *https://opensource.org/licenses/MIT
+ */
+
+//===========================================================================
+//
+// Iron Droog
+//
+//===========================================================================
+
+$playeralias    irondroog   male    *death      irondroog/death
+$playeralias    irondroog   male    *xdeath     irondroog/death
+$playeralias    irondroog   male    *gibbed     irondroog/death
+$playeralias    irondroog   male    *pain100    irondroog/pain
+$playersounddup irondroog   male    *pain75     *pain100
+$playersounddup irondroog   male    *pain50     *pain100
+$playersounddup irondroog   male    *pain25     *pain100
+$playersound    irondroog   male    *grunt      sprites/classes/irondroog/sounds/isoof
+$playersounddup irondroog   male    *land       *grunt
+$playeralias    irondroog   male    *jump       irondroog/jump
+$playeralias    irondroog   male    *fist       irondroog/boom
+$playersound    irondroog   male    *usefail    sprites/classes/irondroog/sounds/isnoway
+
+irondroog/donation          sprites/classes/irondroog/sounds/ISWPNUP
+irondroog/powerup           sprites/classes/irondroog/sounds/ISGETPOW
+irondroog/boom              sprites/classes/irondroog/sounds/ISBOOM
+irondroog/eey               sprites/classes/irondroog/sounds/ISEEY
+irondroog/raur              sprites/classes/irondroog/sounds/ISRAUR
+irondroog/shit              sprites/classes/irondroog/sounds/ISSHIT
+irondroog/great             sprites/classes/irondroog/sounds/ISGREAT
+irondroog/stop              sprites/classes/irondroog/sounds/ISSTOP
+irondroog/plasmagun         sprites/classes/irondroog/sounds/ISPLSM
+irondroog/marzoleon         sprites/classes/irondroog/sounds/ISPLDETH
+irondroog/pickuphaha        sprites/classes/irondroog/sounds/ISPCKP
+
+irondroog/hod1              sprites/classes/irondroog/sounds/ISHOD1
+irondroog/hod2              sprites/classes/irondroog/sounds/ISHOD2
+
+irondroog/locked            sprites/classes/irondroog/sounds/ISLOCKED
+
+irondroog/pain1             sprites/classes/irondroog/sounds/ISPLPAIN
+
+irondroog/taunt1            sprites/classes/irondroog/sounds/ITAUNT1
+irondroog/taunt2            sprites/classes/irondroog/sounds/ITAUNT2
+irondroog/taunt3            sprites/classes/irondroog/sounds/ITAUNT3
+irondroog/taunt4            sprites/classes/irondroog/sounds/ITAUNT4
+irondroog/taunt5            sprites/classes/irondroog/sounds/ITAUNT5
+irondroog/taunt6            sprites/classes/irondroog/sounds/ITAUNT6
+irondroog/taunt7            sprites/classes/irondroog/sounds/ITAUNT7
+irondroog/taunt8            sprites/classes/irondroog/sounds/ITAUNT8
+irondroog/taunt9            sprites/classes/irondroog/sounds/ITAUNT9
+irondroog/taunt10           sprites/classes/irondroog/sounds/ITAUNT10
+irondroog/taunt11           sprites/classes/irondroog/sounds/ITAUNT11
+irondroog/taunt12           sprites/classes/irondroog/sounds/ITAUNT12
+
+irondroog/rage1             sprites/classes/irondroog/sounds/ISRAGE
+irondroog/rage2             sprites/classes/irondroog/sounds/ISRAGE2
+
+irondroog/laugh1            sprites/classes/irondroog/sounds/ISLAUGH1
+irondroog/laugh2            sprites/classes/irondroog/sounds/ISLAUGH2
+irondroog/laugh3            sprites/classes/irondroog/sounds/ISLAUGH3
+
+irondroog/jump1             sprites/classes/irondroog/sounds/ISJUMP
+irondroog/jump2             sprites/classes/irondroog/sounds/ISJUMP2
+irondroog/jump3             sprites/classes/irondroog/sounds/ISJUMP3
+irondroog/jump4             sprites/classes/irondroog/sounds/ISJUMP4
+irondroog/jumpgoat          sprites/classes/irondroog/sounds/ISGOAT
+
+irondroog/fast1             sprites/classes/irondroog/sounds/ISFAST1
+irondroog/fast2             sprites/classes/irondroog/sounds/ISFAST2
+irondroog/fast3             sprites/classes/irondroog/sounds/ISFAST3
+
+irondroog/kick              sprites/classes/irondroog/sounds/ISKICK
+irondroog/sphere            sprites/classes/irondroog/sounds/ISSPHR
+ending/irondroog            sprites/classes/irondroog/sounds/ISBGDTH2
+ending/irondroog2           sprites/classes/irondroog/sounds/ISBOSDTD
+
+irondroog/weapons/ssg/load  sprites/classes/irondroog/sounds/weapons/ssg/LCSGLOAD
+irondroog/weapons/ssg/hit   sprites/classes/irondroog/sounds/weapons/ssg/LCSGALTF
+
+irondroog/weapons/chaingun/fire     sprites/classes/irondroog/sounds/weapons/chaingun/LMCGFIRE
+irondroog/weapons/chaingun/start    sprites/classes/irondroog/sounds/weapons/chaingun/LMCSTART
+irondroog/weapons/chaingun/stop     sprites/classes/irondroog/sounds/weapons/chaingun/LMCGSTOP
+irondroog/weapons/chaingun/loop     sprites/classes/irondroog/sounds/weapons/chaingun/LMCGLOOP
+
+irondroog/weapons/prostate/fire1    sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTA1
+irondroog/weapons/prostate/fire2    sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTA2
+irondroog/weapons/prostate/fire3    sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTA3
+irondroog/weapons/prostate/hit1     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB1
+irondroog/weapons/prostate/hit2     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB2
+irondroog/weapons/prostate/hit3     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB3
+irondroog/weapons/prostate/hit4     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB4
+
+$random     irondroog/fast      {
+    irondroog/fast1
+    irondroog/fast2
+    irondroog/fast3
+}
+
+$random     irondroog/rage      {
+    irondroog/rage1
+    irondroog/rage2
+}
+
+$random     irondroog/jump      {
+    irondroog/jump1
+    irondroog/jump1
+    irondroog/jump1
+    irondroog/jump2
+    irondroog/jump3
+    irondroog/jump4
+}
+
+$random     irondroog/taunt     {
+    irondroog/taunt1
+    irondroog/taunt2
+    irondroog/taunt3
+    irondroog/taunt4
+    irondroog/taunt5
+    irondroog/taunt6
+    irondroog/taunt7
+    irondroog/taunt8
+    irondroog/taunt9
+    irondroog/taunt10
+    irondroog/taunt11
+    irondroog/taunt12
+    irondroog/laugh1
+    irondroog/laugh2
+    irondroog/laugh3
+    irondroog/hod1
+    irondroog/hod2
+    irondroog/fast
+    irondroog/great
+    irondroog/jumpgoat
+}
+
+$random     irondroog/pickup {
+    irondroog/donation
+    irondroog/donation
+    irondroog/plasmagun
+    irondroog/shit
+    irondroog/pickuphaha
+}
+
+$random     irondroog/pain  {
+    irondroog/pain1
+    irondroog/pain1
+    irondroog/eey
+    irondroog/jump2
+    irondroog/jump3
+    irondroog/jump4
+    irondroog/raur
+    irondroog/stop
+    irondroog/taunt12
+}
+
+$random     irondroog/death {
+    irondroog/rage1
+    irondroog/marzoleon
+}
+
+$random     irondroog/weapons/prostate/fire {
+    irondroog/weapons/prostate/fire1
+    irondroog/weapons/prostate/fire2
+    irondroog/weapons/prostate/fire3
+}
+
+$random     irondroog/weapons/prostate/hit {
+    irondroog/weapons/prostate/hit1
+    irondroog/weapons/prostate/hit2
+    irondroog/weapons/prostate/hit3
+    irondroog/weapons/prostate/hit4
+}
+
+$random     irondroog/exit {
+    ending/irondroog
+    ending/irondroog2
+    irondroog/taunt5
+    irondroog/pickuphaha
+}

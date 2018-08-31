@@ -6,21 +6,21 @@
  */
 
 Actor MarzoLeonSphere : Megasphere {
-	-INVENTORY.ALWAYSPICKUP
+    -INVENTORY.ALWAYSPICKUP
 
-	Inventory.RestrictedTo "marzoleon"
-	Inventory.PickupMessage "MarzoLeonSphere!"
-	Inventory.PickupSound "marzoleon/sphere"
+    Inventory.RestrictedTo "marzoleon"
+    Inventory.PickupMessage "MarzoLeonSphere!"
+    Inventory.PickupSound "marzoleon/sphere"
 
-	States {
-		Spawn:
-			MEGA ABCD 6 Bright
-			Loop
-		Pickup:
-			TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1)
-			TNT1 A 0 A_GiveInventory("MegasphereHealth", 1)
-			TNT1 A 0 A_GiveInventory("Regeneration", 1)
-			TNT1 A 0 A_GiveInventory("Protection", 1)
-			Stop
-	}
+    States {
+        Spawn:
+            MEGA ABCD 6 Bright
+            Loop
+        Pickup:
+            TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1)
+            TNT1 A 0 A_GiveInventory("MegasphereHealth", 1)
+            TNT1 A 0 A_GiveInventory("Regeneration", 1)
+            TNT1 A 0 A_GiveInventory("Protection", 1)
+            Stop
+    }
 }

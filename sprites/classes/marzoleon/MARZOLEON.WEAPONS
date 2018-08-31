@@ -8,286 +8,286 @@
 // Arms in the hands of MarzoLeon
 
 Actor MarzoLeonFist : Fist {
-	+INVENTORY.RESTRICTABSOLUTELY
+    +INVENTORY.RESTRICTABSOLUTELY
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Weapon.Kickback 1000
-	Inventory.PickupSound "marzoleon/pickup"
+    Inventory.RestrictedTo "MarzoLeon"
+    Weapon.Kickback 1000
+    Inventory.PickupSound "marzoleon/pickup"
 
-	States {
-		Ready:
-			MFIS A 1 A_WeaponReady
-			Loop
-		Deselect:
-			MFIS A 1 A_Lower
-			Loop
-		Select:
-			MFIS A 1 A_Raise
-			Loop
-		Fire:
-			MFIS B 1
-			Goto Hold
-		Hold:
-			MFIS CD 2
-			TNT1 A 0 A_PlaySound("marzoleon/fist1", CHAN_5)
-			MFIS E 4 A_CustomPunch(175)
-			MFIS EFG 5
-			TNT1 A 0 A_ReFire
-			MFIS B 1 A_PlaySound("marzoleon/hadoken", CHAN_5)
-			MFIS A 6
-			Goto Ready
-	}
+    States {
+        Ready:
+            MFIS A 1 A_WeaponReady
+            Loop
+        Deselect:
+            MFIS A 1 A_Lower
+            Loop
+        Select:
+            MFIS A 1 A_Raise
+            Loop
+        Fire:
+            MFIS B 1
+            Goto Hold
+        Hold:
+            MFIS CD 2
+            TNT1 A 0 A_PlaySound("marzoleon/fist1", CHAN_5)
+            MFIS E 4 A_CustomPunch(175)
+            MFIS EFG 5
+            TNT1 A 0 A_ReFire
+            MFIS B 1 A_PlaySound("marzoleon/hadoken", CHAN_5)
+            MFIS A 6
+            Goto Ready
+    }
 }
 
 Actor MarzoLeonKick : Kick {
-	+INVENTORY.RESTRICTABSOLUTELY
+    +INVENTORY.RESTRICTABSOLUTELY
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Weapon.Kickback 1000
+    Inventory.RestrictedTo "MarzoLeon"
+    Weapon.Kickback 1000
 
-	States {
-		Ready:
-			KICK A 0 A_WeaponReady
-			Goto Fire
-		Deselect:
-			KICK A 0 A_Lower
-			Loop
-		Select:
-			KICK A 0 A_Raise
-			Loop
-		Fire:
-			KICK B 1
-			KICK C 1
-			KICK D 1
-			KICK E 1 A_PlaySound("weapon/kick", CHAN_6, 1.0, 0.0)
-			KICK F 1
-			KICK G 1
-			KICK H 4 A_CustomPunch(20, false, 0, "BulletPuff", 64, 0, 0, "", "marzoleon/fist", "weapon/kickmiss")
-			KICK I 3 A_Recoil(7)
-			KICK G 1
-			KICK B 1 A_TakeInventory("MarzoLeonKick")
-			Stop
-	}
+    States {
+        Ready:
+            KICK A 0 A_WeaponReady
+            Goto Fire
+        Deselect:
+            KICK A 0 A_Lower
+            Loop
+        Select:
+            KICK A 0 A_Raise
+            Loop
+        Fire:
+            KICK B 1
+            KICK C 1
+            KICK D 1
+            KICK E 1 A_PlaySound("weapon/kick", CHAN_6, 1.0, 0.0)
+            KICK F 1
+            KICK G 1
+            KICK H 4 A_CustomPunch(20, false, 0, "BulletPuff", 64, 0, 0, "", "marzoleon/fist", "weapon/kickmiss")
+            KICK I 3 A_Recoil(7)
+            KICK G 1
+            KICK B 1 A_TakeInventory("MarzoLeonKick")
+            Stop
+    }
 }
 
 Actor MarzoLeonChainsaw : Chainsaw {
-	+INVENTORY.RESTRICTABSOLUTELY
+    +INVENTORY.RESTRICTABSOLUTELY
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Weapon.Kickback -50
-	Inventory.PickupSound "marzoleon/ohoho"
-	Weapon.UpSound "marzoleon/weapons/chainsaw/start"
-	Weapon.ReadySound "marzoleon/weapons/chainsaw/loop"
+    Inventory.RestrictedTo "MarzoLeon"
+    Weapon.Kickback -50
+    Inventory.PickupSound "marzoleon/ohoho"
+    Weapon.UpSound "marzoleon/weapons/chainsaw/start"
+    Weapon.ReadySound "marzoleon/weapons/chainsaw/loop"
 
-	States {
-		Fire:
-			SAWG D 0 A_PlaySound("marzoleon/haha", CHAN_5, 1.0)
-			SAWG D 25 A_PlaySound("weapons/sawfull", CHAN_WEAPON, 0.8)
-			Goto Hold
-		Hold:
-			SAWG AB 2 A_Saw("weapons/sawfull", "weapons/sawhit", 25)
-			SAWG AAA 0 A_SetAngle(FRandom(2.2, -2.2) + Angle)
-			SAWG AAA 0 A_Recoil(-2.0)
-			SAWG AAA 0 A_Quake(6, 12, 0, 128, "weapons/sawhit")
-			SAWG AB 2 A_Saw("weapons/sawfull", "weapons/sawhit", 25)
-			SAWG AAA 0 A_Recoil(-2.0)
-			SAWG B 0 A_ReFire
-			Goto Ready
-	}
+    States {
+        Fire:
+            SAWG D 0 A_PlaySound("marzoleon/haha", CHAN_5, 1.0)
+            SAWG D 25 A_PlaySound("weapons/sawfull", CHAN_WEAPON, 0.8)
+            Goto Hold
+        Hold:
+            SAWG AB 2 A_Saw("weapons/sawfull", "weapons/sawhit", 25)
+            SAWG AAA 0 A_SetAngle(FRandom(2.2, -2.2) + Angle)
+            SAWG AAA 0 A_Recoil(-2.0)
+            SAWG AAA 0 A_Quake(6, 12, 0, 128, "weapons/sawhit")
+            SAWG AB 2 A_Saw("weapons/sawfull", "weapons/sawhit", 25)
+            SAWG AAA 0 A_Recoil(-2.0)
+            SAWG B 0 A_ReFire
+            Goto Ready
+    }
 }
 
 Actor MarzoLeonPistol : Pistol {
-	+INVENTORY.RESTRICTABSOLUTELY
-	+NOAUTOFIRE
+    +INVENTORY.RESTRICTABSOLUTELY
+    +NOAUTOFIRE
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Inventory.PickupSound "marzoleon/pickup"
+    Inventory.RestrictedTo "MarzoLeon"
+    Inventory.PickupSound "marzoleon/pickup"
 
-	States {
-		Ready:
-			MPIS A 1 A_WeaponReady
-			Loop
-		Deselect:
-			MPIS A 1 A_Lower
-			Loop
-		Select:
-			MPIS A 1 A_Raise
-			Loop
-		Fire:
-			MPIS B 0 A_FireBullets (7, 0, 1, 5, "BulletPuff")
-			MPIS B 0 A_PlaySound("weapons/pistol", CHAN_WEAPON)
-			MPIS B 3 A_GunFlash
-			MPIS C 1
-			MPIS D 2
-			MPIS EF 1
-			Goto Ready
-		Flash:
-			MPIS B 3 Bright A_Light1
-			Goto LightDone
-			MPIS B 3 Bright A_Light1
-			Goto LightDone
-	}
+    States {
+        Ready:
+            MPIS A 1 A_WeaponReady
+            Loop
+        Deselect:
+            MPIS A 1 A_Lower
+            Loop
+        Select:
+            MPIS A 1 A_Raise
+            Loop
+        Fire:
+            MPIS B 0 A_FireBullets (7, 0, 1, 5, "BulletPuff")
+            MPIS B 0 A_PlaySound("weapons/pistol", CHAN_WEAPON)
+            MPIS B 3 A_GunFlash
+            MPIS C 1
+            MPIS D 2
+            MPIS EF 1
+            Goto Ready
+        Flash:
+            MPIS B 3 Bright A_Light1
+            Goto LightDone
+            MPIS B 3 Bright A_Light1
+            Goto LightDone
+    }
 }
 
 Actor MarzoLeonShotgun : Shotgun {
-	+INVENTORY.RESTRICTABSOLUTELY
+    +INVENTORY.RESTRICTABSOLUTELY
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Inventory.PickupSound "marzoleon/pickup"
+    Inventory.RestrictedTo "MarzoLeon"
+    Inventory.PickupSound "marzoleon/pickup"
 }
 
 Actor MarzoLeonSSG : SuperShotgun {
-	+INVENTORY.RESTRICTABSOLUTELY
+    +INVENTORY.RESTRICTABSOLUTELY
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Inventory.PickupSound "marzoleon/pickup"
+    Inventory.RestrictedTo "MarzoLeon"
+    Inventory.PickupSound "marzoleon/pickup"
 
-	States {
-		Ready:
-			MSSG A 1 A_WeaponReady
-			Loop
-		Deselect:
-			MSSG A 1 A_Lower
-			Loop
-		Select:
-			MSSG A 1 A_Raise
-			Loop
-		Fire:
-			MSSG A 3
-			MSSG B 2 A_FireShotgun2
-			MSSG C 3
-			MSSG D 2
-			MSSG EF 1 A_CheckReload
-			MSSG GHIJK 2
-			MSSG L 4 A_OpenShotgun2
-			MSSG MNOP 2
-			MSSG Q 4 A_LoadShotgun2
-			MSSG RS 3
-			MSSG T 2 A_CloseShotgun2
-			MSSG UV 3
-			MSSG A 5 A_ReFire
-			Goto Ready
-		Flash:
-			// MSSG I 4 Bright A_Light1
-			// MSSG J 3 Bright A_Light2
-			Goto LightDone
-	}
+    States {
+        Ready:
+            MSSG A 1 A_WeaponReady
+            Loop
+        Deselect:
+            MSSG A 1 A_Lower
+            Loop
+        Select:
+            MSSG A 1 A_Raise
+            Loop
+        Fire:
+            MSSG A 3
+            MSSG B 2 A_FireShotgun2
+            MSSG C 3
+            MSSG D 2
+            MSSG EF 1 A_CheckReload
+            MSSG GHIJK 2
+            MSSG L 4 A_OpenShotgun2
+            MSSG MNOP 2
+            MSSG Q 4 A_LoadShotgun2
+            MSSG RS 3
+            MSSG T 2 A_CloseShotgun2
+            MSSG UV 3
+            MSSG A 5 A_ReFire
+            Goto Ready
+        Flash:
+            // MSSG I 4 Bright A_Light1
+            // MSSG J 3 Bright A_Light2
+            Goto LightDone
+    }
 }
 
 Actor MarzoLeonChaingun : Chaingun {
-	+INVENTORY.RESTRICTABSOLUTELY
+    +INVENTORY.RESTRICTABSOLUTELY
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Inventory.PickupSound "marzoleon/pickup"
+    Inventory.RestrictedTo "MarzoLeon"
+    Inventory.PickupSound "marzoleon/pickup"
 
-	States {
-		Fire:
-			CHGG A 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
-			CHGG A 0 A_GunFlash
-			CHGG A 4 A_FireBullets(2, 2, 1, random(10, 15), "BulletPuff")
-			CHGG B 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
-			CHGG B 0 A_GunFlash("Flash2")
-			CHGG B 4 A_FireBullets(14, 14, 2, random(15, 25), "BulletPuff")
-			CHGG B 0 A_ReFire
-			Goto Ready
-	}
+    States {
+        Fire:
+            CHGG A 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
+            CHGG A 0 A_GunFlash
+            CHGG A 4 A_FireBullets(2, 2, 1, random(10, 15), "BulletPuff")
+            CHGG B 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
+            CHGG B 0 A_GunFlash("Flash2")
+            CHGG B 4 A_FireBullets(14, 14, 2, random(15, 25), "BulletPuff")
+            CHGG B 0 A_ReFire
+            Goto Ready
+    }
 }
 
 Actor MarzoLeonRL : RocketLauncher {
-	+INVENTORY.RESTRICTABSOLUTELY
-	+WEAPON.NOAUTOAIM
-	+WEAPON.AMMO_OPTIONAL
-	+WEAPON.NOALERT
+    +INVENTORY.RESTRICTABSOLUTELY
+    +WEAPON.NOAUTOAIM
+    +WEAPON.AMMO_OPTIONAL
+    +WEAPON.NOALERT
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Inventory.PickupSound "marzoleon/pickup"
+    Inventory.RestrictedTo "MarzoLeon"
+    Inventory.PickupSound "marzoleon/pickup"
 
-	Weapon.Kickback 100
+    Weapon.Kickback 100
 
-	States {
-		Select:
-			TNT1 A 0 A_Raise
-			Wait
-		Deselect:
-			TNT1 A 0 A_PlayWeaponSound("weapons/weapondown")
-			GREN A 1 A_Lower
-			Goto Deselect+1
-		Ready:
-			TNT1 A 0 A_PlayWeaponSound("marzoleon/weapons/rl/pickup")
-			GRUP ABCDE 1
-			GREN A 1 A_WeaponReady
-			Goto Ready+6
-		Fire:
-			TNT1 A 0 A_JumpIfNoAmmo("Empty")
-			TNT1 A 0 A_AlertMonsters
-			TNT1 A 0 Radius_Quake(4, 3, 0, 1, 0)
-			TNT1 A 0 A_PlaySound("marzoleon/weapons/rl/fire", CHAN_WEAPON)
-			GREF BC 1 Bright
-			GREF D 1 Bright
-			GREF E 1 Bright A_FireCustomMissile("RifleGrenade", 0, TRUE, 0, 0, 0, 6.328125)
-			GREF FGH 3
-			GRER PQR 2
-			GREN A 1
-			TNT1 A 0 A_ReFire
-			Goto Ready+6
-		Empty:
-			GREN A 4 A_PlayWeaponSound("prophessor/weapons/shotgun/click")
-			Goto Ready+6
-	}
+    States {
+        Select:
+            TNT1 A 0 A_Raise
+            Wait
+        Deselect:
+            TNT1 A 0 A_PlayWeaponSound("weapons/weapondown")
+            GREN A 1 A_Lower
+            Goto Deselect+1
+        Ready:
+            TNT1 A 0 A_PlayWeaponSound("marzoleon/weapons/rl/pickup")
+            GRUP ABCDE 1
+            GREN A 1 A_WeaponReady
+            Goto Ready+6
+        Fire:
+            TNT1 A 0 A_JumpIfNoAmmo("Empty")
+            TNT1 A 0 A_AlertMonsters
+            TNT1 A 0 Radius_Quake(4, 3, 0, 1, 0)
+            TNT1 A 0 A_PlaySound("marzoleon/weapons/rl/fire", CHAN_WEAPON)
+            GREF BC 1 Bright
+            GREF D 1 Bright
+            GREF E 1 Bright A_FireCustomMissile("RifleGrenade", 0, TRUE, 0, 0, 0, 6.328125)
+            GREF FGH 3
+            GRER PQR 2
+            GREN A 1
+            TNT1 A 0 A_ReFire
+            Goto Ready+6
+        Empty:
+            GREN A 4 A_PlayWeaponSound("prophessor/weapons/shotgun/click")
+            Goto Ready+6
+    }
 }
 
 Actor RifleGrenade {
-	Projectile
-	+DONTSPLASH
-	+THRUSPECIES
-	+DOOMBOUNCE
-	-NOGRAVITY
-	-GRENADETRAIL
-	-ROCKETTRAIL
+    Projectile
+    +DONTSPLASH
+    +THRUSPECIES
+    +DOOMBOUNCE
+    -NOGRAVITY
+    -GRENADETRAIL
+    -ROCKETTRAIL
 
-	Radius 6
-	Height 6
-	Speed 30
-	Damage 24
-	Species "Player"
-	Scale 0.75
+    Radius 6
+    Height 6
+    Speed 30
+    Damage 24
+    Species "Player"
+    Scale 0.75
 
-	Gravity 0.4
-	WallBounceFactor 0.25
-	BounceFactor 0.36
-	ExplosionDamage 128
-	ExplosionRadius 128
+    Gravity 0.4
+    WallBounceFactor 0.25
+    BounceFactor 0.36
+    ExplosionDamage 128
+    ExplosionRadius 128
 
-	Obituary "%o successfully played catch with %k's Grenade."
-	SeeSound "marzoleon/weapons/rl/bounce"
-	DeathSound "Weapons/RockLX"
-	DamageType "Explosion"
+    Obituary "%o successfully played catch with %k's Grenade."
+    SeeSound "marzoleon/weapons/rl/bounce"
+    DeathSound "Weapons/RockLX"
+    DamageType "Explosion"
 
-	States {
-		Spawn:
-			TNT1 A 0
-			TNT1 A 0 A_StopSound
-		SpawnLoop:
-			GRND A 1
-			Loop
-		Death:
-			MISL B 8 Bright A_Explode
-			MISL C 6 Bright
-			MISL D 4 Bright
-			Stop	
-	}
+    States {
+        Spawn:
+            TNT1 A 0
+            TNT1 A 0 A_StopSound
+        SpawnLoop:
+            GRND A 1
+            Loop
+        Death:
+            MISL B 8 Bright A_Explode
+            MISL C 6 Bright
+            MISL D 4 Bright
+            Stop	
+    }
 }
 
 Actor MarzoLeonPlasmagun : PlasmaRifle {
-	+INVENTORY.RESTRICTABSOLUTELY
+    +INVENTORY.RESTRICTABSOLUTELY
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Inventory.PickupSound "marzoleon/pickup"
+    Inventory.RestrictedTo "MarzoLeon"
+    Inventory.PickupSound "marzoleon/pickup"
 }
 
 Actor MarzoLeonBFG : BFG9000 {
-	+INVENTORY.RESTRICTABSOLUTELY
+    +INVENTORY.RESTRICTABSOLUTELY
 
-	Inventory.RestrictedTo "MarzoLeon"
-	Inventory.PickupSound "marzoleon/pickup"
+    Inventory.RestrictedTo "MarzoLeon"
+    Inventory.PickupSound "marzoleon/pickup"
 }

@@ -12,14 +12,14 @@
 #include "sprites/classes/nomakh/NOMAKH.ITEMS"
 
 Actor SpheresSpawner replaces MegaSphere {
-	States {
-		Spawn:
-			TNT1 A 0
-			TNT1 A 0 A_SpawnItemEx( "ProphessorSphere" )
-			TNT1 A 0 A_SpawnItemEx( "IronDroogSphere" )
-			TNT1 A 0 A_SpawnItemEx( "MarzoLeonSphere" )
-			TNT1 A 0 A_SpawnItemEx( "ChaserSphere" )
-			TNT1 A 0 A_SpawnItemEx( "NomakhSphere" )
-			Stop
-	}
+    States {
+        Spawn:
+            TNT1 A 0
+            TNT1 A 0 A_SpawnItemEx( "ProphessorSphere" )
+            TNT1 A 0 A_SpawnItemEx( "IronDroogSphere" )
+            TNT1 A 0 A_SpawnItemEx( "MarzoLeonSphere" )
+            TNT1 A 0 A_SpawnItemEx( "ChaserSphere" )
+            TNT1 A 0 A_SpawnItemEx( "NomakhSphere" )
+            Stop
+    }
 }

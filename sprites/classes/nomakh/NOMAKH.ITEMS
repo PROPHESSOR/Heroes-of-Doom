@@ -6,21 +6,21 @@
  */
 
 Actor NomakhSphere : Megasphere {
-	-INVENTORY.ALWAYSPICKUP
+    -INVENTORY.ALWAYSPICKUP
 
-	Inventory.RestrictedTo "nomakh"
-	Inventory.PickupMessage "NomakhSphere!"
-	Inventory.PickupSound "nomakh/sphere"
+    Inventory.RestrictedTo "nomakh"
+    Inventory.PickupMessage "NomakhSphere!"
+    Inventory.PickupSound "nomakh/sphere"
 
-	States {
-		Spawn:
-			MEGA ABCD 6 Bright
-			Loop
-		Pickup:
-			TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1)
-			TNT1 A 0 A_GiveInventory("MegasphereHealth", 1)
-			TNT1 A 0 A_GiveInventory("Rage", 1)
-			TNT1 A 0 A_GiveInventory("Protection", 1)
-			Stop
-	}
+    States {
+        Spawn:
+            MEGA ABCD 6 Bright
+            Loop
+        Pickup:
+            TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1)
+            TNT1 A 0 A_GiveInventory("MegasphereHealth", 1)
+            TNT1 A 0 A_GiveInventory("Rage", 1)
+            TNT1 A 0 A_GiveInventory("Protection", 1)
+            Stop
+    }
 }

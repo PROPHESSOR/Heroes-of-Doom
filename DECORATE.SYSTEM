@@ -10,101 +10,101 @@ Actor Counter : Inventory {}
 // Powerups
 
 Actor Invulnerability : InvulnerabilitySphere {
-	Powerup.Duration 0x7FFFFFFF
-	Powerup.Color None
+    Powerup.Duration 0x7FFFFFFF
+    Powerup.Color None
 }
 
 Actor InfiniteAmmo : PowerInfiniteAmmo {
-	Powerup.Duration -30
-	Powerup.Color GoldMap
+    Powerup.Duration -30
+    Powerup.Color GoldMap
 }
 
 Actor QuadDamage : PowerDamage {
-	Powerup.Duration -30
-	DamageFactor "normal", 4
-	Powerup.Color RedMap
+    Powerup.Duration -30
+    DamageFactor "normal", 4
+    Powerup.Color RedMap
 }
 
 Actor Regeneration : PowerRegeneration {
-	Powerup.Duration -30
-	Powerup.Strength 10
-	Powerup.Color Red 0.25
+    Powerup.Duration -30
+    Powerup.Strength 10
+    Powerup.Color Red 0.25
 }
 
 Actor Protection : PowerProtection {
-	Powerup.Duration -30
-	Powerup.Color Yellow 0.25
+    Powerup.Duration -30
+    Powerup.Color Yellow 0.25
 }
 
 Actor HighJump : PowerHighJump {
-	Powerup.Duration -30
-	Powerup.Strength 2
-	Powerup.Color Purple 0.25
+    Powerup.Duration -30
+    Powerup.Strength 2
+    Powerup.Color Purple 0.25
 }
 
 Actor HighSpeed : PowerSpeed {
-	Powerup.Duration -30
-	Powerup.Strength 0.5
-	Speed 2.5
+    Powerup.Duration -30
+    Powerup.Strength 0.5
+    Speed 2.5
 }
 
 Actor TimeFreeze : PowerTimeFreezer {
-	Powerup.Duration -12
+    Powerup.Duration -12
 }
 
 Actor TimeFreezeSound {
-	+NOTIMEFREEZE
+    +NOTIMEFREEZE
 
-	States { 	
-		Spawn:
-			TNT1 A 0
-			TNT1 A 45 A_PlaySound("timefreeze/effect1", CHAN_AUTO|CHAN_NOPAUSE, 1.0, FALSE, ATTN_NONE)  
-			TNT1 A 245 A_PlaySound("timefreeze/effect2", CHAN_BODY|CHAN_NOPAUSE, 1.0, FALSE, ATTN_NONE) 
-			TNT1 A 1 A_StopSound(CHAN_BODY)  
-			TNT1 A 1 A_PlaySound("timefreeze/effect3", CHAN_AUTO|CHAN_NOPAUSE, 1.0, FALSE, ATTN_NONE)  
-			Stop	
-	}
+    States { 	
+        Spawn:
+            TNT1 A 0
+            TNT1 A 45 A_PlaySound("timefreeze/effect1", CHAN_AUTO|CHAN_NOPAUSE, 1.0, FALSE, ATTN_NONE)  
+            TNT1 A 245 A_PlaySound("timefreeze/effect2", CHAN_BODY|CHAN_NOPAUSE, 1.0, FALSE, ATTN_NONE) 
+            TNT1 A 1 A_StopSound(CHAN_BODY)  
+            TNT1 A 1 A_PlaySound("timefreeze/effect3", CHAN_AUTO|CHAN_NOPAUSE, 1.0, FALSE, ATTN_NONE)  
+            Stop	
+    }
 }
 
 Actor Buddha : PowerBuddha {
-	Powerup.Duration -30
+    Powerup.Duration -30
 }
 
 Actor Rage : PowerDoubleFiringSpeed {
-	Powerup.Duration -30
-	Powerup.Color Red 0.38
+    Powerup.Duration -30
+    Powerup.Color Red 0.38
 }
 
 Actor Fly : PowerFlight {
-	Powerup.Duration -30
+    Powerup.Duration -30
 }
 
 // Booleans
 
 Actor HeroicTaunt : Inventory {
-	Inventory.MaxAmount 1
+    Inventory.MaxAmount 1
 }
 
 Actor HeroicKick : Inventory {
-	Inventory.MaxAmount 1
+    Inventory.MaxAmount 1
 }
 
 Actor PROPHESSORTag : Inventory {
-	Inventory.MaxAmount 1
+    Inventory.MaxAmount 1
 }
 
 Actor IronDroogTag : Inventory {
-	Inventory.MaxAmount 1
+    Inventory.MaxAmount 1
 }
 
 Actor MarzoLeonTag : Inventory {
-	Inventory.MaxAmount 1
+    Inventory.MaxAmount 1
 }
 
 Actor ChaserTag : Inventory {
-	Inventory.MaxAmount 1
+    Inventory.MaxAmount 1
 }
 
 Actor NomakhTag : Inventory {
-	Inventory.MaxAmount 1
+    Inventory.MaxAmount 1
 }

@@ -4,14 +4,14 @@
 // https://opensource.org/licenses/MIT
 
 
-addkeysection "Heroes of DooM - Keys" HODKeys
+addkeysection "Heroes of Doom - Keys" HODKeys
 
-	// Brutal doom compatible kick
-	addmenukey "Kick" kickem
-	alias kickem "pukename HeroicKick"
-	defaultbind Q kickem
+    // Brutal doom compatible kick
+    addmenukey "Kick" kickem
+    alias kickem "pukename HeroicKick"
+    defaultbind Q kickem
 
-	// Brutal doom compatible taunt
-	addmenukey "Taunt" brutaltaunt
-	alias brutaltaunt "pukename HeroicTaunt"
-	defaultbind U brutaltaunt
+    // Brutal doom compatible taunt
+    addmenukey "Taunt" brutaltaunt
+    alias brutaltaunt "pukename HeroicTaunt"
+    defaultbind U brutaltaunt
