@@ -251,9 +251,9 @@ $random     irondroog/weapons/prostate/hit {
 //
 //===========================================================================
 
-$playeralias    marzoleon   male    *death      marzoleon/nou
-$playeralias    marzoleon   male    *xdeath     marzoleon/nou
-$playeralias    marzoleon   male    *gibbed     marzoleon/nou
+$playeralias    marzoleon   male    *death      marzoleon/die
+$playeralias    marzoleon   male    *xdeath     marzoleon/die
+$playeralias    marzoleon   male    *gibbed     marzoleon/die
 $playeralias    marzoleon   male    *pain100    marzoleon/pain
 $playersounddup marzoleon   male    *pain75     *pain100
 $playersounddup marzoleon   male    *pain50     *pain100
@@ -270,7 +270,7 @@ marzoleon/fist3             sprites/classes/marzoleon/sounds/MSTSCH2
 marzoleon/hadoken           sprites/classes/marzoleon/sounds/MSHADKN
 
 marzoleon/haha              sprites/classes/marzoleon/sounds/MSHAHA
-marzoleon/nou               sprites/classes/marzoleon/sounds/MSNOU
+marzoleon/die               sprites/classes/marzoleon/sounds/MSDIE
 marzoleon/hod               sprites/classes/marzoleon/sounds/MSHOD
 marzoleon/hahaa             sprites/classes/marzoleon/sounds/MSPICKP
 marzoleon/food              sprites/classes/marzoleon/sounds/MSFOOD
