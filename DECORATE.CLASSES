@@ -41,6 +41,7 @@ Actor PROPHESSOR : DoomPlayer 15025 {
     Player.StartItem "ProphessorPlasmagun"
     Player.StartItem "ProphessorPistol"
     Player.StartItem "ProphessorFist"
+    Player.StartItem "PROPHESSORTag"
     
     Player.StartItem "Cell", 128
 
@@ -146,6 +147,7 @@ Actor IronDroog : DoomPlayer 15026 {
     Player.StartItem "IronDroogSSG"
     Player.StartItem "IronDroogPistol"
     Player.StartItem "IronDroogFist"
+    Player.StartItem "IronDroogTag"
     
     Player.StartItem "Shell", 24
     
@@ -247,6 +249,7 @@ Actor MarzoLeon: DoomPlayer 15027 {
     
     Player.StartItem "MarzoLeonFist"
     Player.StartItem "MarzoLeonPistol"
+    Player.StartItem "MarzoLeonTag"
 
     Player.StartItem "Clip", 100
 
@@ -351,6 +354,7 @@ Actor Chaser : DoomPlayer 15028 {
     Player.StartItem "ChaserBFG"
     Player.StartItem "ChaserFist"
     Player.StartItem "ChaserPistol"
+    Player.StartItem "ChaserTag"
     
     Player.StartItem "Cell", 300
 
@@ -453,6 +457,7 @@ Actor Nomakh : DoomPlayer 15029 {
     Player.StartItem "NomakhChaingun"
     Player.StartItem "NomakhPistol"
     Player.StartItem "NomakhFist"
+    Player.StartItem "NomakhTag"
     
     Player.StartItem "Clip", 999
     
