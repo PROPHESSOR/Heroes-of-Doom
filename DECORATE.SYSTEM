@@ -48,6 +48,10 @@ Actor HighSpeed : PowerSpeed {
     Speed 2.5
 }
 
+Actor Flight : PowerFlight {
+    Powerup.Duration 0x7FFFFFFF
+}
+
 Actor TimeFreeze : PowerTimeFreezer {
     Powerup.Duration -12
 }
