@@ -59,10 +59,10 @@ Actor IronDroogKick : Kick {
             KICK D 1
             KICK E 1 A_PlaySound("weapon/kick", CHAN_5, 1.0, 0.0)
             KICK F 1
-            KICK G 1 
+            KICK G 1
             KICK H 4 A_CustomPunch(20, false, 0, "BulletPuff", 64, 0, 0, "", "irondroog/kick", "weapon/kickmiss")
             KICK I 3 A_Recoil(2)
-            KICK G 1 
+            KICK G 1
             KICK B 1 A_TakeInventory("IronDroogKick")
             Stop
     }

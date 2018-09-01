@@ -55,6 +55,12 @@ prophessor/weapons/shotgun/click            sprites/classes/prophessor/sounds/we
 
 prophessor/weapons/pistol/build             sprites/classes/prophessor/sounds/weapons/pistol/BUILD
 
+prophessor/weapons/chainsaw/launch          sprites/classes/prophessor/sounds/weapons/chainsaw/DSTSAWLN
+prophessor/weapons/chainsaw/hit             sprites/classes/prophessor/sounds/weapons/chainsaw/DSTSAWHT
+prophessor/weapons/chainsaw/up              sprites/classes/prophessor/sounds/weapons/chainsaw/DSTSAWUP
+prophessor/weapons/chainsaw/down            sprites/classes/prophessor/sounds/weapons/chainsaw/DSTSAWRD
+prophessor/weapons/chainsaw/loop            sprites/classes/prophessor/sounds/weapons/chainsaw/DSTSAWCT
+
 
 $random     prophessor/taunt {
     prophessor/0fps
