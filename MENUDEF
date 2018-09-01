@@ -12,23 +12,23 @@ OptionMenu "HODOptions" {
 	StaticText "Custom taunts"
 	StaticText " "
 	Slider "PROPHESSOR", "hod_customtaunt_prophessor", 1, 7, 1
-	Command "Test", "pukename CustomTaunt 1"
+	Command "Test", "pukename CustomTaunt always 1"
 
     StaticText " "
 	Slider "Iron Droog", "hod_customtaunt_irondroog", 1, 12, 1
-	Command "Test", "pukename CustomTaunt 2"
+	Command "Test", "pukename CustomTaunt always 2"
 
     StaticText " "
 	Slider "MarzoLeon", "hod_customtaunt_marzoleon", 1, 5, 1
-	Command "Test", "pukename CustomTaunt 3"
+	Command "Test", "pukename CustomTaunt always 3"
 
     StaticText " "
 	Slider "Chaser", "hod_customtaunt_chaser", 1, 14, 1
-	Command "Test", "pukename CustomTaunt 4"
+	Command "Test", "pukename CustomTaunt always 4"
 
     StaticText " "
 	Slider "Nomakh", "hod_customtaunt_nomakh", 1, 30, 1
-	Command "Test", "pukename CustomTaunt 5"
+	Command "Test", "pukename CustomTaunt always 5"
 
 	StaticText " "
 	StaticText "Customize controls"

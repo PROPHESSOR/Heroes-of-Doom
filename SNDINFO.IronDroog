@@ -97,6 +97,11 @@ irondroog/weapons/prostate/hit1     sprites/classes/irondroog/sounds/weapons/pla
 irondroog/weapons/prostate/hit2     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB2
 irondroog/weapons/prostate/hit3     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB3
 irondroog/weapons/prostate/hit4     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB4
+irondroog/weapons/prostate/upfirst  sprites/classes/irondroog/sounds/weapons/plasmagun/ISPFIRST
+irondroog/weapons/prostate/up1      sprites/classes/irondroog/sounds/weapons/plasmagun/ISPSPIRIT
+irondroog/weapons/prostate/up2      sprites/classes/irondroog/sounds/weapons/plasmagun/ISPUP
+irondroog/weapons/prostate/up3      sprites/classes/irondroog/sounds/weapons/plasmagun/ISPUP3
+irondroog/weapons/prostate/up4      sprites/classes/irondroog/sounds/weapons/plasmagun/ISPUP4
 
 irondroog/weapons/chainsaw/up       sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWUP
 irondroog/weapons/chainsaw/fire     sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWFIRE
@@ -184,6 +189,13 @@ $random     irondroog/weapons/prostate/hit {
     irondroog/weapons/prostate/hit2
     irondroog/weapons/prostate/hit3
     irondroog/weapons/prostate/hit4
+}
+
+$random     irondroog/weapons/prostate/up  {
+    irondroog/weapons/prostate/up1
+    irondroog/weapons/prostate/up2
+    irondroog/weapons/prostate/up3
+    irondroog/weapons/prostate/up4
 }
 
 $random     irondroog/exit {
