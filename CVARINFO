@@ -1,0 +1,10 @@
+// Copyright (c) 2018 PROPHESSOR
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
+user int hod_customtaunt_prophessor = 1;
+user int hod_customtaunt_irondroog  = 1;
+user int hod_customtaunt_marzoleon  = 1;
+user int hod_customtaunt_chaser     = 1;
+user int hod_customtaunt_nomakh     = 1;

@@ -15,3 +15,8 @@ addkeysection "Heroes of Doom - Keys" HODKeys
     addmenukey "Taunt" brutaltaunt
     alias brutaltaunt "pukename HeroicTaunt"
     defaultbind U brutaltaunt
+
+    // Brutal doom compatible advanced (custom) taunt
+    addmenukey "Custom taunt" advtaunt
+    alias advtaunt "pukename CustomTaunt"
+    defaultbind V advtaunt

@@ -38,15 +38,15 @@ chaser/pickup2          sprites/classes/chaser/sounds/CSNISHK
 chaser/pickup3          sprites/classes/chaser/sounds/CSNISHA
 chaser/pickup4          sprites/classes/chaser/sounds/CSOMTFK
 
-chaser/taunt01          sprites/classes/chaser/sounds/CTAUNT01
-chaser/taunt02          sprites/classes/chaser/sounds/CTAUNT02
-chaser/taunt03          sprites/classes/chaser/sounds/CTAUNT03
-chaser/taunt04          sprites/classes/chaser/sounds/CTAUNT04
-chaser/taunt05          sprites/classes/chaser/sounds/CTAUNT05
-chaser/taunt06          sprites/classes/chaser/sounds/CTAUNT06
-chaser/taunt07          sprites/classes/chaser/sounds/CTAUNT07
-chaser/taunt08          sprites/classes/chaser/sounds/CTAUNT08
-chaser/taunt09          sprites/classes/chaser/sounds/CTAUNT09
+chaser/taunt1           sprites/classes/chaser/sounds/CTAUNT01
+chaser/taunt2           sprites/classes/chaser/sounds/CTAUNT02
+chaser/taunt3           sprites/classes/chaser/sounds/CTAUNT03
+chaser/taunt4           sprites/classes/chaser/sounds/CTAUNT04
+chaser/taunt5           sprites/classes/chaser/sounds/CTAUNT05
+chaser/taunt6           sprites/classes/chaser/sounds/CTAUNT06
+chaser/taunt7           sprites/classes/chaser/sounds/CTAUNT07
+chaser/taunt8           sprites/classes/chaser/sounds/CTAUNT08
+chaser/taunt9           sprites/classes/chaser/sounds/CTAUNT09
 chaser/taunt10          sprites/classes/chaser/sounds/CTAUNT10
 chaser/taunt11          sprites/classes/chaser/sounds/CTAUNT11
 chaser/taunt12          sprites/classes/chaser/sounds/CTAUNT12
@@ -67,15 +67,15 @@ $random     chaser/pickup       {
 }
 
 $random     chaser/taunt        {
-    chaser/taunt01
-    chaser/taunt02
-    chaser/taunt03
-    chaser/taunt04
-    chaser/taunt05
-    chaser/taunt06
-    chaser/taunt07
-    chaser/taunt08
-    chaser/taunt09
+    chaser/taunt1
+    chaser/taunt2
+    chaser/taunt3
+    chaser/taunt4
+    chaser/taunt5
+    chaser/taunt6
+    chaser/taunt7
+    chaser/taunt8
+    chaser/taunt9
     chaser/taunt10
     chaser/taunt11
     chaser/taunt12
