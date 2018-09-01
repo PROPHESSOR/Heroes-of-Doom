@@ -134,6 +134,30 @@ Actor MarzoLeonShotgun : Shotgun {
 
     Inventory.RestrictedTo "MarzoLeon"
     Inventory.PickupSound "marzoleon/pickup"
+
+    States {
+        Ready:
+            DSHT A 1 A_WeaponReady
+            Loop
+        Deselect:
+            DSHT A 1 A_Lower
+            Loop
+        Select:
+            DSHT A 1 A_Raise
+            Loop
+        Fire:
+            DSHT A 3
+            DSHT A 7 A_FireShotgun
+            DSHT BCDE 4
+            DSHT FGH 3
+            DSHT EDCB 3
+            DSHT A 5 A_ReFire
+            Goto Ready
+        Flash:
+            DSHT I 4 Bright A_Light1
+            DSHT J 3 Bright A_Light2
+            Goto LightDone
+    }
 }
 
 Actor MarzoLeonSSG : SuperShotgun {
@@ -181,14 +205,28 @@ Actor MarzoLeonChaingun : Chaingun {
     Inventory.PickupSound "marzoleon/pickup"
 
     States {
+        Ready:
+            MCGG A 1 A_WeaponReady
+            Loop
+        Deselect:
+            MCGG A 1 A_Lower
+            Loop
+        Select:
+            MCGG A 1 A_Raise
+            Loop
+        Flash:
+            MCGF A 5 Bright A_Light1
+            Goto LightDone
+            MCGF B 5 Bright A_Light1
+            Goto LightDone
         Fire:
-            CHGG A 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
-            CHGG A 0 A_GunFlash
-            CHGG A 4 A_FireBullets(2, 2, 1, random(10, 15), "BulletPuff")
-            CHGG B 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
-            CHGG B 0 A_GunFlash("Flash2")
-            CHGG B 4 A_FireBullets(14, 14, 2, random(15, 25), "BulletPuff")
-            CHGG B 0 A_ReFire
+            MCGG A 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
+            MCGG A 0 A_GunFlash
+            MCGG A 4 A_FireBullets(2, 2, 1, random(10, 15), "BulletPuff")
+            MCGG B 0 A_PlaySound("weapons/sshotf", CHAN_WEAPON)
+            MCGG B 0 A_GunFlash("Flash2")
+            MCGG B 4 A_FireBullets(14, 14, 2, random(15, 25), "BulletPuff")
+            MCGG B 0 A_ReFire
             Goto Ready
     }
 }
