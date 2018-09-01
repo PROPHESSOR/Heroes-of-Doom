@@ -33,8 +33,8 @@ irondroog/shit              sprites/classes/irondroog/sounds/ISSHIT
 irondroog/great             sprites/classes/irondroog/sounds/ISGREAT
 irondroog/stop              sprites/classes/irondroog/sounds/ISSTOP
 irondroog/plasmagun         sprites/classes/irondroog/sounds/ISPLSM
-irondroog/marzoleon         sprites/classes/irondroog/sounds/ISPLDETH
 irondroog/pickuphaha        sprites/classes/irondroog/sounds/ISPCKP
+irondroog/song1             sprites/classes/irondroog/sounds/ISMUS1
 
 irondroog/hod1              sprites/classes/irondroog/sounds/ISHOD1
 irondroog/hod2              sprites/classes/irondroog/sounds/ISHOD2
@@ -42,6 +42,10 @@ irondroog/hod2              sprites/classes/irondroog/sounds/ISHOD2
 irondroog/locked            sprites/classes/irondroog/sounds/ISLOCKED
 
 irondroog/pain1             sprites/classes/irondroog/sounds/ISPLPAIN
+irondroog/pain2             sprites/classes/irondroog/sounds/ISPLPAIN2
+
+irondroog/marzoleon         sprites/classes/irondroog/sounds/ISPLDETH
+irondroog/die2              sprites/classes/irondroog/sounds/ISDIE2
 
 irondroog/taunt1            sprites/classes/irondroog/sounds/ITAUNT1
 irondroog/taunt2            sprites/classes/irondroog/sounds/ITAUNT2
@@ -94,6 +98,9 @@ irondroog/weapons/prostate/hit2     sprites/classes/irondroog/sounds/weapons/pla
 irondroog/weapons/prostate/hit3     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB3
 irondroog/weapons/prostate/hit4     sprites/classes/irondroog/sounds/weapons/plasmagun/PROSTB4
 
+irondroog/weapons/chainsaw/up       sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWUP
+irondroog/weapons/chainsaw/fire     sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWFIRE
+
 $random     irondroog/fast      {
     irondroog/fast1
     irondroog/fast2
@@ -135,6 +142,7 @@ $random     irondroog/taunt     {
     irondroog/fast
     irondroog/great
     irondroog/jumpgoat
+    irondroog/mus1
 }
 
 $random     irondroog/pickup {
@@ -148,6 +156,8 @@ $random     irondroog/pickup {
 $random     irondroog/pain  {
     irondroog/pain1
     irondroog/pain1
+    irondroog/pain2
+    irondroog/pain2
     irondroog/eey
     irondroog/jump2
     irondroog/jump3
@@ -160,6 +170,7 @@ $random     irondroog/pain  {
 $random     irondroog/death {
     irondroog/rage1
     irondroog/marzoleon
+    irondroog/die2
 }
 
 $random     irondroog/weapons/prostate/fire {

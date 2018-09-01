@@ -62,10 +62,10 @@ Actor ChaserKick : Kick {
             KICK L 4
             KICK M 4
             KICK N 2 A_PlaySound("weapon/kickmiss", CHAN_5, 1.0, 0.0)
-            KICK O 2 A_Recoil(5)
+            KICK O 2 A_Recoil(10)
             KICK P 2 
             KICK Q 2 A_CustomPunch(2, false, 0, "BulletPuff", 64, 0, 0, "", "weapon/kickdown")
-            KICK R 3 A_Recoil(5)
+            KICK R 3 A_Recoil(10)
             KICK S 2 
             KICK T 2 A_TakeInventory("ChaserKick")
             Stop
