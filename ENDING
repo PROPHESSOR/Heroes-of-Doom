@@ -1,0 +1,170 @@
+Intermission Inter_Cast { // Entry point? Lol
+	Image {
+		Background = "$bgcastcall"
+		Time = -1
+		Music = "D_ENDING"
+	}
+
+	Link = MonsterCast
+}
+
+
+Intermission MonsterCast {
+	Image {
+		Background = "$bgcastcall"
+		Time = -1
+		Music = "D_ENDING"
+	}
+
+	Cast {
+		CastClass = "Zombieman"
+		CastName = "Mr. Greenhead"
+		AttackSound = "Missile", 1, "grunt/attack"
+	}
+
+	Cast {
+		CastClass = "ShotgunGuy"
+		CastName = "Bald From UAC"
+		AttackSound = "Missile", 1, "shotguy/attack"
+	}
+
+	Cast {
+		CastClass = "ChaingunGuy"
+		CastName = "Nomakh's red clone"
+		AttackSound = "Missile", 1, "chainguy/attack"
+		AttackSound = "Missile", 2, "chainguy/attack"
+		AttackSound = "Missile", 3, "chainguy/attack"
+	}
+
+	Cast {
+		CastClass = "DoomImp"
+		CastName = "Hedgehogman"
+		AttackSound = "Missile", 2, "imp/attack"
+	}
+
+	Cast {
+		CastClass = "Demon"
+		CastName = "A Swine"
+		AttackSound = "Melee", 1, "demon/melee"
+	}
+
+	Cast {
+		CastClass = "Lostsoul"
+		CastName = "Hater's soul"
+		AttackSound = "Missile", 1, "skull/melee"
+	}
+
+	Cast {
+		CastClass = "Cacodemon"
+		CastName = "Cock'o'Demon"
+		AttackSound = "Missile", 1, "caco/attack"
+	}
+
+	Cast {
+		CastClass = "HellKnight"
+		CastName = "A Goat"
+		AttackSound = "Missile", 1, "baron/attack"
+	}
+
+	Cast {
+		CastClass = "BaronOfHell"
+		CastName = "Uncle Boris"
+		AttackSound = "Missile", 1, "baron/attack"
+	}
+
+	Cast {
+		CastClass = "Arachnotron"
+		CastName = "Arachnoher"
+		AttackSound = "Missile", 1, "baby/attack"
+	}
+
+	Cast {
+		CastClass = "PainElemental"
+		CastName = "Nomakh Pain"
+		AttackSound = "Missile", 2, "skull/melee"
+	}
+
+	Cast {
+		CastClass = "Revenant"
+		CastName = "Plahotniuc"
+		AttackSound = "Missile", 1, "skeleton/attack"
+		AttackSound = "Melee", 1, "skeleton/swing"
+		AttackSound = "Melee", 3, "skeleton/melee"
+	}
+
+	Cast {
+		CastClass = "Fatso"
+		CastName = "Succubus"
+		AttackSound = "Missile", 1, "fatso/attack"
+		AttackSound = "Missile", 4, "fatso/attack"
+		AttackSound = "Missile", 7, "fatso/attack"
+	}
+
+	Cast {
+		CastClass = "Archvile"
+		CastName = "Arch-veil"
+		AttackSound = "Missile", 1, "vile/start"
+	}
+
+	Cast {
+		CastClass = "SpiderMastermind"
+		CastName = "Master Spiderman"
+		AttackSound = "Missile", 1, "spider/attack"
+		AttackSound = "Missile", 2, "spider/attack"
+	}
+
+	Cast {
+		CastClass = "Cyberdemon"
+		CastName = "Cyberdimooon"
+		AttackSound = "Missile", 1, "weapons/rocklf"
+		AttackSound = "Missile", 3, "weapons/rocklf"
+		AttackSound = "Missile", 5, "weapons/rocklf"
+	}
+
+	Cast {
+		CastClass = "CommanderKeen"
+		CastName = "The one who got a kick in the balls in the trailer"
+	}
+
+	Link = HeroCast
+}
+
+Intermission HeroCast {
+	Image {
+		Background  = "INTERPIC"
+		Time        = -1
+	}
+
+	Cast {
+		CastClass   = "PROPHESSOR"
+		CastName    = "PROPHESSOR"
+		AttackSound = "Melee", 1, "prophessor/taunt"
+	}
+
+	Cast {
+		CastClass   = "IronDroog"
+		CastName    = "Iron Droog"
+		AttackSound = "Melee", 1, "irondroog/taunt"
+	}
+
+	Cast {
+		CastClass   = "MarzoLeon"
+		CastName    = "MarzoLeon"
+		AttackSound = "Melee", 1, "marzoleon/taunt"
+	}
+
+	Cast {
+		CastClass   = "Chaser"
+		CastName    = "Chaser"
+		AttackSound = "Melee", 1, "chaser/taunt"
+	}
+
+	Cast {
+		CastClass   = "Nomakh"
+		CastName    = "Nomakh Thunder"
+		AttackSound = "Melee", 1, "nomakh/taunt"
+	}
+
+	Link = MonsterCast
+}
+
