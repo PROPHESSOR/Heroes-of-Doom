@@ -20,6 +20,7 @@ Actor NomakhKick : Kick {
     Inventory.RestrictedTo "Nomakh"
     Weapon.Kickback 350
     Inventory.PickupSound "nomakh/pickup"
+    Weapon.SelectionOrder 1
 
     States {
         Ready:
@@ -54,7 +55,7 @@ Actor NomakhChainsaw : Chainsaw {
     Inventory.PickupSound "nomakh/pickup"
 }
 
-Actor NomakhPistol : Weapon {
+Actor NomakhPistol : Pistol {
     +INVENTORY.RESTRICTABSOLUTELY
     +NOALERT
 
@@ -67,7 +68,6 @@ Actor NomakhPistol : Weapon {
     Obituary "%k mistook %o with a tree."
 
     Weapon.UpSound "nomakh/weapons/pistol/up"
-    Weapon.SelectionOrder 5000
     Weapon.AmmoType "Clip"
     Weapon.AmmoGive 0
     Weapon.AmmoUse 5
@@ -142,7 +142,7 @@ Actor NomakhShotgun : Shotgun {
     Also, it has a nasty ability to deal horribly large damage on point-blank shot. Give Cyberdemon a taste!
 */
 
-Actor NomakhSSG : Weapon {
+Actor NomakhSSG : SuperShotgun {
     +INVENTORY.RESTRICTABSOLUTELY
     +NOALERT
 
@@ -151,7 +151,6 @@ Actor NomakhSSG : Weapon {
     Inventory.PickupSound "nomakh/pickup"
     Inventory.PickupMessage "You've got the quad shotgun!"
     Weapon.UpSound "nomakh/weapons/ssg/Up"
-    Weapon.SelectionOrder 6
     Weapon.AmmoType "Shell"
     Weapon.AmmoUse 16
     Weapon.AmmoGive 16

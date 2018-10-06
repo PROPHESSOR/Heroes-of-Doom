@@ -45,6 +45,7 @@ Actor ChaserKick : Kick {
 
     Inventory.RestrictedTo "Chaser"
     Weapon.Kickback 0
+    Weapon.SelectionOrder 1
     Inventory.PickupSound "chaser/pickup"
 
     States {	
@@ -301,7 +302,7 @@ Actor ChaserBFG : BFG9000 {
     +INVENTORY.RESTRICTABSOLUTELY
 
     Inventory.RestrictedTo "Chaser"
-    Weapon.SelectionOrder 1
+    Weapon.SelectionOrder 3
     Weapon.AmmoUse 100
     Inventory.PickupSound "chaser/pickup"
 

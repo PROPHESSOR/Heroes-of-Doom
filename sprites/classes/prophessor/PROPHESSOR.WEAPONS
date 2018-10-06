@@ -20,6 +20,7 @@ Actor ProphessorKick : Kick {
     Inventory.RestrictedTo "PROPHESSOR"
     Weapon.Kickback 228
     Inventory.PickupSound "prophessor/pickup"
+    Weapon.SelectionOrder 1
 
     States {
         Ready:
@@ -166,7 +167,7 @@ Actor ProphessorPistol : Pistol {
     }
 }
 
-Actor ProphessorShotgun : Weapon {
+Actor ProphessorShotgun : Shotgun {
     +NOALERT
     +INVENTORY.RESTRICTABSOLUTELY
     +WEAPON.AMMO_OPTIONAL
@@ -176,9 +177,7 @@ Actor ProphessorShotgun : Weapon {
     Inventory.RestrictedTo "PROPHESSOR"
     Inventory.PickupSound "prophessor/pickup"
     Inventory.PickupSound "prophessor/pickup"
-    Inventory.PickupMessage "Shotgun"
 
-    Weapon.SelectionOrder 4500
     Weapon.KickBack 80
     Weapon.AmmoUse 1
     Weapon.AmmoGive 8

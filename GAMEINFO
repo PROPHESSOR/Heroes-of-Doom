@@ -5,3 +5,5 @@
 
 STARTUPTITLE    = "Heroes of Doom"
 STARTUPCOLORS   = "FFAA00", "000000"
+IWAD            = "doom2.wad"
+STARTUPSONG     = "D_HERO"

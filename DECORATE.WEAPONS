@@ -147,6 +147,8 @@ Actor Kick : Fist {
 }
 
 Actor EpicSaxGun : Weapon {
+    Weapon.SelectionOrder 2
+
     States {
         Ready:
             MISG A 1 A_WeaponReady
@@ -171,6 +173,8 @@ Actor EpicSaxGun : Weapon {
 }
 
 Actor TeslaStation : Weapon {
+    Weapon.SelectionOrder 2
+
     States {
         Ready:
             MISG A 0 A_WeaponReady
@@ -201,6 +205,8 @@ Actor TeslaStation : Weapon {
 }
 
 Actor CacoRider : Weapon {
+    Weapon.SelectionOrder 2
+
     Weapon.PreferredSkin "CACO"
 
     States {

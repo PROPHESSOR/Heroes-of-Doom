@@ -44,6 +44,7 @@ Actor MarzoLeonKick : Kick {
 
     Inventory.RestrictedTo "MarzoLeon"
     Weapon.Kickback 1000
+    Weapon.SelectionOrder 1
 
     States {
         Ready:

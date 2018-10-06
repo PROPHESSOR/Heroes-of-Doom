@@ -41,6 +41,7 @@ Actor IronDroogKick : Kick {
 
     Inventory.RestrictedTo "IronDroog"
     Weapon.Kickback 500
+    Weapon.SelectionOrder 1
     Inventory.PickupSound "irondroog/pickup"
 
     States {
