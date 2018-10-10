@@ -18,7 +18,7 @@ Intermission MonsterCast {
 
 	Cast {
 		CastClass = "Zombieman"
-		CastName = "Mr. Greenhead"
+		CastName = "Mr. Greenhair"
 		AttackSound = "Missile", 1, "grunt/attack"
 	}
 
@@ -86,7 +86,7 @@ Intermission MonsterCast {
 
 	Cast {
 		CastClass = "Revenant"
-		CastName = "Plahotniuc"
+		CastName = "Huesos"
 		AttackSound = "Missile", 1, "skeleton/attack"
 		AttackSound = "Melee", 1, "skeleton/swing"
 		AttackSound = "Melee", 3, "skeleton/melee"
