@@ -76,25 +76,22 @@ Actor IronDroogChainsaw : Chainsaw {
     Inventory.PickupSound "irondroog/pickup"
 
     States {
-        Ready:
-            ISAW ABCD 2 A_WeaponReady
-            Loop
         Select:
-            ISAW A 0 A_PlaySound("irondroog/weapons/chainsaw/up", CHAN_6)
-            ISAW A 1 A_Raise
+            SAWG A 0 A_PlaySound("irondroog/weapons/chainsaw/up", CHAN_6)
+            SAWG A 1 A_Raise
             Goto Select+1
         Deselect:
-            ISAW A 0 A_StopSound(CHAN_7)
-            ISAW A 1 A_Lower
+            SAWG A 0 A_StopSound(CHAN_7)
+            SAWG A 1 A_Lower
             Loop
         Fire:
-            ISAW ABCD 9 A_PlaySound("irondroog/weapons/chainsaw/up", CHAN_6)
+            SAWG D 9 A_PlaySound("irondroog/weapons/chainsaw/up", CHAN_6)
             Goto Hold
         Hold:
-            ISAW A 0 A_PlaySound("irondroog/weapons/chainsaw/fire", CHAN_7, 1.0, 1.0)
-            ISAW ABCD 1 A_Saw(null, "irondroog/weapons/chainsaw/fire")
-            ISAW B 0 A_ReFire
-            ISAW C 0 A_StopSound(CHAN_7)
+            SAWG A 0 A_PlaySound("irondroog/weapons/chainsaw/fire", CHAN_7, 1.0, 1.0)
+            SAWG AB 1 A_Saw(null, "irondroog/weapons/chainsaw/fire")
+            SAWG B 0 A_ReFire
+            SAWG C 0 A_StopSound(CHAN_7)
             Goto Ready
 
     }
