@@ -34,6 +34,7 @@ irondroog/great             sprites/classes/irondroog/sounds/ISGREAT
 irondroog/stop              sprites/classes/irondroog/sounds/ISSTOP
 irondroog/plasmagun         sprites/classes/irondroog/sounds/ISPLSM
 irondroog/pickuphaha        sprites/classes/irondroog/sounds/ISPCKP
+irondroog/pickupbig         sprites/classes/irondroog/sounds/ISPCKP2
 irondroog/song1             sprites/classes/irondroog/sounds/ISMUS1
 
 irondroog/hod1              sprites/classes/irondroog/sounds/ISHOD1
@@ -43,9 +44,12 @@ irondroog/locked            sprites/classes/irondroog/sounds/ISLOCKED
 
 irondroog/pain1             sprites/classes/irondroog/sounds/ISPLPAIN
 irondroog/pain2             sprites/classes/irondroog/sounds/ISPLPAIN2
+irondroog/pain2             sprites/classes/irondroog/sounds/ISPLPAIN3
+irondroog/pain2             sprites/classes/irondroog/sounds/ISPLPAIN4
 
 irondroog/marzoleon         sprites/classes/irondroog/sounds/ISPLDETH
 irondroog/die2              sprites/classes/irondroog/sounds/ISDIE2
+irondroog/die3              sprites/classes/irondroog/sounds/ISDIE3
 
 irondroog/taunt1            sprites/classes/irondroog/sounds/ITAUNT1
 irondroog/taunt2            sprites/classes/irondroog/sounds/ITAUNT2
@@ -59,6 +63,14 @@ irondroog/taunt9            sprites/classes/irondroog/sounds/ITAUNT9
 irondroog/taunt10           sprites/classes/irondroog/sounds/ITAUNT10
 irondroog/taunt11           sprites/classes/irondroog/sounds/ITAUNT11
 irondroog/taunt12           sprites/classes/irondroog/sounds/ITAUNT12
+irondroog/taunt13           sprites/classes/irondroog/sounds/ITAUNT13
+irondroog/taunt14           sprites/classes/irondroog/sounds/ITAUNT14
+irondroog/taunt15           sprites/classes/irondroog/sounds/ITAUNT15
+irondroog/taunt16           sprites/classes/irondroog/sounds/ITAUNT16
+irondroog/taunt17           sprites/classes/irondroog/sounds/ITAUNT17
+irondroog/taunt18           sprites/classes/irondroog/sounds/ITAUNT18
+irondroog/taunt19           sprites/classes/irondroog/sounds/ITAUNT19
+irondroog/taunt20           sprites/classes/irondroog/sounds/ITAUNT20
 
 irondroog/rage1             sprites/classes/irondroog/sounds/ISRAGE
 irondroog/rage2             sprites/classes/irondroog/sounds/ISRAGE2
@@ -77,7 +89,12 @@ irondroog/fast1             sprites/classes/irondroog/sounds/ISFAST1
 irondroog/fast2             sprites/classes/irondroog/sounds/ISFAST2
 irondroog/fast3             sprites/classes/irondroog/sounds/ISFAST3
 
+irondroog/preston/go1        sprites/classes/irondroog/sounds/IPGO
+irondroog/preston/go2        sprites/classes/irondroog/sounds/IPGO2
+irondroog/preston/check      sprites/classes/irondroog/sounds/IPCHECK
+
 irondroog/kick              sprites/classes/irondroog/sounds/ISKICK
+irondroog/kick2             sprites/classes/irondroog/sounds/ISKIC2
 irondroog/sphere            sprites/classes/irondroog/sounds/ISSPHR
 ending/irondroog            sprites/classes/irondroog/sounds/ISBGDTH2
 ending/irondroog2           sprites/classes/irondroog/sounds/ISBOSDTD
@@ -103,8 +120,15 @@ irondroog/weapons/prostate/up2      sprites/classes/irondroog/sounds/weapons/pla
 irondroog/weapons/prostate/up3      sprites/classes/irondroog/sounds/weapons/plasmagun/ISPUP3
 irondroog/weapons/prostate/up4      sprites/classes/irondroog/sounds/weapons/plasmagun/ISPUP4
 
+irondroog/weapons/vacleaner/up      sprites/classes/irondroog/sounds/weapons/rl/IRPCKP
+
 irondroog/weapons/chainsaw/up       sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWUP
 irondroog/weapons/chainsaw/fire     sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWFIRE
+
+irondroog/weapons/hfucker/up        sprites/classes/irondroog/sounds/weapons/bfg/IHFACT
+irondroog/weapons/hfucker/generic1  sprites/classes/irondroog/sounds/weapons/bfg/IHGEN1
+irondroog/weapons/hfucker/generic2  sprites/classes/irondroog/sounds/weapons/bfg/IHGEN2
+irondroog/weapons/hfucker/generic3  sprites/classes/irondroog/sounds/weapons/bfg/IHGEN3
 
 $random     irondroog/fast      {
     irondroog/fast1
@@ -139,6 +163,14 @@ $random     irondroog/taunt     {
     irondroog/taunt10
     irondroog/taunt11
     irondroog/taunt12
+    irondroog/taunt13
+    irondroog/taunt14
+    irondroog/taunt15
+    irondroog/taunt16
+    irondroog/taunt17
+    irondroog/taunt18
+    irondroog/taunt19
+    irondroog/taunt20
     irondroog/laugh1
     irondroog/laugh2
     irondroog/laugh3
@@ -156,6 +188,7 @@ $random     irondroog/pickup {
     irondroog/plasmagun
     irondroog/shit
     irondroog/pickuphaha
+    irondroog/pickupbig
 }
 
 $random     irondroog/pain  {
@@ -170,12 +203,15 @@ $random     irondroog/pain  {
     irondroog/raur
     irondroog/stop
     irondroog/taunt12
+    irondroog/pain3
+    irondroog/pain4
 }
 
 $random     irondroog/death {
     irondroog/rage1
     irondroog/marzoleon
     irondroog/die2
+    irondroog/die3
 }
 
 $random     irondroog/weapons/prostate/fire {

@@ -53,6 +53,7 @@ marzoleon/taunt2            sprites/classes/marzoleon/sounds/MSWEB
 marzoleon/taunt3            sprites/classes/marzoleon/sounds/MSEDKOL
 marzoleon/taunt4            sprites/classes/marzoleon/sounds/MSCRTR
 marzoleon/taunt5            sprites/classes/marzoleon/sounds/MSALL
+marzoleon/taunt6            sprites/classes/marzoleon/sounds/MSTAUNT2
 
 marzoleon/ugu1              sprites/classes/marzoleon/sounds/MSUGU
 marzoleon/ugu2              sprites/classes/marzoleon/sounds/MSUGU2
@@ -107,6 +108,7 @@ $random marzoleon/taunt {
     marzoleon/taunt3
     marzoleon/taunt4
     marzoleon/taunt5
+    marzoleon/taunt6
 }
 
 $random marzoleon/pickup {
