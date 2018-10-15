@@ -6,9 +6,10 @@
 include ENDING
 
 GameInfo {
-    PlayerClasses = "PROPHESSOR", "IronDroog", "MarzoLeon", "Chaser", "Nomakh"
+    PlayerClasses       = "PROPHESSOR", "IronDroog", "MarzoLeon", "Chaser", "Nomakh"
+    AddEventHandlers    = "onMonsterDie"
 }
 
 Map TITLEMAP "Heroes of Doom" {
-    Sky "RSKY1"
+    Sky = "RSKY1"
 }
