@@ -94,7 +94,7 @@ irondroog/preston/go2        sprites/classes/irondroog/sounds/IPGO2
 irondroog/preston/check      sprites/classes/irondroog/sounds/IPCHECK
 
 irondroog/kick              sprites/classes/irondroog/sounds/ISKICK
-irondroog/kick2             sprites/classes/irondroog/sounds/ISKIC2
+irondroog/kick2             sprites/classes/irondroog/sounds/ISKICK2
 irondroog/sphere            sprites/classes/irondroog/sounds/ISSPHR
 ending/irondroog            sprites/classes/irondroog/sounds/ISBGDTH2
 ending/irondroog2           sprites/classes/irondroog/sounds/ISBOSDTD
@@ -126,9 +126,9 @@ irondroog/weapons/chainsaw/up       sprites/classes/irondroog/sounds/weapons/cha
 irondroog/weapons/chainsaw/fire     sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWFIRE
 
 irondroog/weapons/hfucker/up        sprites/classes/irondroog/sounds/weapons/bfg/IHFACT
-irondroog/weapons/hfucker/generic1  sprites/classes/irondroog/sounds/weapons/bfg/IHGEN1
-irondroog/weapons/hfucker/generic2  sprites/classes/irondroog/sounds/weapons/bfg/IHGEN2
-irondroog/weapons/hfucker/generic3  sprites/classes/irondroog/sounds/weapons/bfg/IHGEN3
+irondroog/weapons/hfucker/generic1  sprites/classes/irondroog/sounds/weapons/bfg/IHFGEN1
+irondroog/weapons/hfucker/generic2  sprites/classes/irondroog/sounds/weapons/bfg/IHFGEN2
+irondroog/weapons/hfucker/generic3  sprites/classes/irondroog/sounds/weapons/bfg/IHFGEN3
 
 $random     irondroog/fast      {
     irondroog/fast1
@@ -232,6 +232,17 @@ $random     irondroog/weapons/prostate/up  {
     irondroog/weapons/prostate/up2
     irondroog/weapons/prostate/up3
     irondroog/weapons/prostate/up4
+}
+
+$random     irondroog/weapons/hfucker/generic {
+    irondroog/weapons/hfucker/generic1
+    irondroog/weapons/hfucker/generic2
+    // irondroog/weapons/hfucker/generic3
+}
+
+$random     irondroog/weapons/hfucker/fuck {
+    irondroog/kick2
+    irondroog/boom
 }
 
 $random     irondroog/exit {

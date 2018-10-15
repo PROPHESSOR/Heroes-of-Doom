@@ -15,6 +15,16 @@ timefreeze/effect1  TIMEFRZ1
 timefreeze/effect2  TIMEFRZ2
 timefreeze/effect3  TIMEFRZ3
 
+// nashgore's randomized blood splats!
+
+bloodsplat1 DSBLUD01
+bloodsplat2 DSBLUD02
+bloodsplat3 DSBLUD03
+
+$random bloodsplat { bloodsplat1 bloodsplat2 bloodsplat3 }
+$limit bloodsplat 1
+$volume bloodsplat 0.5
+
 
 //===========================================================================
 //

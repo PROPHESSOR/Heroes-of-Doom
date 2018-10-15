@@ -1,0 +1,74 @@
+Decal CumSplat1 {
+	pic CSPLAT1
+	shade "BloodDefault"
+	x-scale 0.75
+	y-scale 0.75
+	randomflipx
+	randomflipy
+}
+
+Decal CumSplat2 {
+	pic CSPLAT2
+	shade "BloodDefault"
+	x-scale 0.75
+	y-scale 0.75
+	randomflipx
+	randomflipy
+}
+
+Decal CumSplat3 {
+	pic CSPLAT3
+	shade "BloodDefault"
+	x-scale 0.75
+	y-scale 0.75
+	randomflipx
+	randomflipy
+}
+
+Decal CumSplat4 {
+	pic CSPLAT4
+	shade "BloodDefault"
+	x-scale 0.75
+	y-scale 0.75
+	randomflipx
+	randomflipy
+}
+
+Decal CumSplat5 {
+	pic CSPLAT5
+	shade "BloodDefault"
+	x-scale 0.75
+	y-scale 0.75
+	randomflipx
+	randomflipy
+}
+
+Decal CumSplat6 {
+	pic CSPLAT6
+	shade "BloodDefault"
+	x-scale 0.75
+	y-scale 0.75
+	randomflipx
+	randomflipy
+}
+
+Decal CumSplat7 {
+	pic CSPLAT7
+	shade "BloodDefault"
+	x-scale 0.75
+	y-scale 0.75
+	randomflipx
+	randomflipy
+}
+
+DecalGroup CumSplat {
+	CumSplat1	2
+	CumSplat2	1
+	CumSplat3	5
+	CumSplat4	5
+	CumSplat5	5
+	CumSplat6	5
+	CumSplat7	6
+}
+
+Generator Mayonez_SplatMaker CumSplat

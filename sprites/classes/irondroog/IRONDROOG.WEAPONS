@@ -273,9 +273,39 @@ Actor ProstateBall : PlasmaBall {
     }
 }
 
-Actor IronDroogBFG : BFG9000 {
+#include "sprites/classes/irondroog/IRONDROOG.CUM"
+
+Actor IronDroogBFG : Chainsaw {
     +INVENTORY.RESTRICTABSOLUTELY
 
     Inventory.RestrictedTo "IronDroog"
-    Inventory.PickupSound "irondroog/pickup"
+    Weapon.UpSound ""
+
+    States {
+        Select:
+            TNT1 A 50 A_PlaySound("irondroog/weapons/hfucker/up", CHAN_5)
+            HFKR C 1 A_Raise
+            Goto Select+1
+        Deselect:
+            HFKR C 1 A_Lower
+            Loop
+        Ready:
+            TNT1 A 0 A_PlaySound("weapons/sawup", CHAN_WEAPON)
+            HFKR CD 1 A_WeaponReady
+            Goto Ready+1
+        Fire:
+            HFKR B 15 A_PlaySound("irondroog/weapons/hfucker/generic", CHAN_5)
+            HFKR B 0 A_PlaySound("weapons/sawup", CHAN_WEAPON)
+            Goto Hold
+        Hold:
+            HFKR B 0 A_Recoil(5)
+            HFKR B 2 A_SpawnItemEx("Mayonez_Blood", 0, -10.0, 25.0)
+            HFKR B 0 A_Recoil(-5)
+            HFKR A 1 A_CustomPunch(250, false, 0, "CumSplat", 64, 0, 0, "", "weapons/sawhit", "")
+            HFKR AA 1 A_SpawnItemEx("Mayonez_FlyingBloodTrail", -10, 0, 25, 5, 0, 2)
+            HFKR A 1 A_Saw
+            TNT1 A 0 A_Refire
+            
+            Goto Ready
+    }
 }
