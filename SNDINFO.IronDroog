@@ -120,7 +120,10 @@ irondroog/weapons/prostate/up2      sprites/classes/irondroog/sounds/weapons/pla
 irondroog/weapons/prostate/up3      sprites/classes/irondroog/sounds/weapons/plasmagun/ISPUP3
 irondroog/weapons/prostate/up4      sprites/classes/irondroog/sounds/weapons/plasmagun/ISPUP4
 
-irondroog/weapons/vacleaner/up      sprites/classes/irondroog/sounds/weapons/rl/IRPCKP
+irondroog/weapons/vcleaner/pickup   sprites/classes/irondroog/sounds/weapons/rl/IRPCKP
+irondroog/weapons/vcleaner/up       sprites/classes/irondroog/sounds/weapons/rl/IVUP
+irondroog/weapons/vcleaner/start    sprites/classes/irondroog/sounds/weapons/rl/IVSTART
+irondroog/weapons/vcleaner/loop     sprites/classes/irondroog/sounds/weapons/rl/IVLOOP
 
 irondroog/weapons/chainsaw/up       sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWUP
 irondroog/weapons/chainsaw/fire     sprites/classes/irondroog/sounds/weapons/chainsaw/ISSAWFIRE
