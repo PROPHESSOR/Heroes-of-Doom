@@ -154,12 +154,6 @@ Intermission HeroCast {
 	}
 
 	Cast {
-		CastClass   = "Chaser"
-		CastName    = "Chaser"
-		AttackSound = "Melee", 1, "chaser/taunt"
-	}
-
-	Cast {
 		CastClass   = "Nomakh"
 		CastName    = "Nomakh Thunder"
 		AttackSound = "Melee", 1, "nomakh/taunt"

@@ -18,24 +18,20 @@ Script "HeroicKick" NET {
 Script "CustomTaunt" (int forceheroe) NET {
 	//print(s:"Force heroe option: ", i:forceheroe);
 	if(!forceheroe && CheckInventory("PROPHESSORTag") || forceheroe == 1) {
-		//print(s:"PROPHESSOR");
 		int tauntid = GetCVar("hod_customtaunt_prophessor");
+
 		PlaySound(0, StrParam(s:"prophessor/taunt", i:tauntid), CHAN_VOICE, 1.0);
 	} else if(!forceheroe && CheckInventory("IronDroogTag") || forceheroe == 2) {
-		//print(s:"Iron Droog");
 		int tauntid = GetCVar("hod_customtaunt_irondroog");
+
 		PlaySound(0, StrParam(s:"irondroog/taunt", i:tauntid), CHAN_VOICE, 1.0);
 	} else if(!forceheroe && CheckInventory("MarzoLeonTag") || forceheroe == 3) {
-		//print(s:"MarzoLeon");
 		int tauntid = GetCVar("hod_customtaunt_marzoleon");
+
 		PlaySound(0, StrParam(s:"marzoleon/taunt", i:tauntid), CHAN_VOICE, 1.0);
-	} else if(!forceheroe && CheckInventory("ChaserTag") || forceheroe == 4) {
-		//print(s:"Chaser");
-		int tauntid = GetCVar("hod_customtaunt_chaser");
-		PlaySound(0, StrParam(s:"chaser/taunt", i:tauntid), CHAN_VOICE, 1.0);
 	} else if(!forceheroe && CheckInventory("NomakhTag") || forceheroe == 5) {
-		//print(s:"Nomakh");
 		int tauntid = GetCVar("hod_customtaunt_nomakh");
+
 		PlaySound(0, StrParam(s:"nomakh/taunt", i:tauntid), CHAN_VOICE, 1.0);
 	} else {
 		print(s:"[Custom Taunt Script Error]: Unknown Heroe");

@@ -6,7 +6,7 @@
 include ENDING
 
 GameInfo {
-    PlayerClasses       = "PROPHESSOR", "IronDroog", "MarzoLeon", "Chaser", "Nomakh"
+    PlayerClasses       = "PROPHESSOR", "IronDroog", "MarzoLeon", "Nomakh"
     AddEventHandlers    = "onMonsterDie"
 }
 

@@ -61,6 +61,7 @@ prophessor/weapons/chainsaw/up              sprites/classes/prophessor/sounds/we
 prophessor/weapons/chainsaw/down            sprites/classes/prophessor/sounds/weapons/chainsaw/DSTSAWRD
 prophessor/weapons/chainsaw/loop            sprites/classes/prophessor/sounds/weapons/chainsaw/DSTSAWCT
 
+prophessor/weapons/bfg/ball                 sprites/classes/prophessor/sounds/weapons/bfg/DSCFGBL
 
 $random     prophessor/taunt {
     prophessor/0fps
