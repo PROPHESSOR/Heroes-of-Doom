@@ -221,6 +221,7 @@ Actor MarzoLeon: DoomPlayer 15027 {
     Speed 1
 
     Player.DisplayName "MarzoLeon"
+	Player.Face "MTF"
     Player.InvulnerabilityMode "Reflective"
     Player.JumpZ 10
     Player.UseRange 64
