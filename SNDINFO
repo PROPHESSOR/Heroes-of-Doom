@@ -26,6 +26,5 @@ $random menu/quit2 {
     prophessor/exit
     irondroog/exit
     marzoleon/exit
-    chaser/exit
     nomakh/exit
 }
