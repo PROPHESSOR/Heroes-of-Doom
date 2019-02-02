@@ -9,7 +9,7 @@ version "3.5"
 
 class onMonsterDie : EventHandler {
     override void WorldThingDied(WorldEvent event) {
-        if(event.Thing.bIsMonster && event.Thing.Target) {
+        if(event.Thing.bIsMonster && event.Thing.Target && random(1, 5) == 3) {
             event.Thing.Target.GiveInventory("HeroicTaunt", 1);
         }
     }
