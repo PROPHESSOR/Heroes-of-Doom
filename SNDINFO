@@ -21,6 +21,8 @@ bloodsplat1 DSBLUD01
 bloodsplat2 DSBLUD02
 bloodsplat3 DSBLUD03
 
+DSPEDTH     DSPEDTH
+
 $random bloodsplat { bloodsplat1 bloodsplat2 bloodsplat3 }
 $limit bloodsplat 1
 $volume bloodsplat 0.5

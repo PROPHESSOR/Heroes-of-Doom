@@ -92,7 +92,7 @@ Actor NomakhPistol : Pistol {
             HRNF A 0 A_PlaySound("nomakh/weapons/pistol/fire",0)
             HRNF A 0 A_Recoil(1)
             HRNF A 0 A_ZoomFactor(0.7)
-            
+
             HRNF A 0 A_FireBullets(2.0, 0.75, 1, 60, "BulletPuff")
 
             HRNF A 0 A_Light2
@@ -107,10 +107,9 @@ Actor NomakhPistol : Pistol {
             HRNR B 1 A_ZoomFactor(0.995)
             HRNR C 1 A_ZoomFactor(1)
             HRNR C 0 A_Light0
-            HRNR DEFGHI 1
-            HRNG A 1
-            HRNG BC 1
-            HRNG A 1
+            HRNR CCDD 1
+            HRNG C 1
+            HRNG B 1
             HRNG A 3 A_ReFire
             Goto Ready
         Spawn:
@@ -158,7 +157,7 @@ Actor NomakhSSG : SuperShotgun {
     Obituary "%o was blown away and smeared on wall by %k using Nomakh's 4x4 shotgun."
 
     States {
-        Spawn: 
+        Spawn:
             SSHG X -1
             Stop
         Ready:
@@ -176,7 +175,7 @@ Actor NomakhSSG : SuperShotgun {
             Loop
         Fire:
             TNT1 A 0 A_PlaySound("nomakh/weapons/ssg/Deploy",5,0.65)
-            
+
             SSH4 A 15
 
             SSF4 A 2 Bright
@@ -204,10 +203,10 @@ Actor NomakhSSG : SuperShotgun {
             SSHO F 1
             SSHO EDCBA 1
             SSHN GFEDCBA 1
-            SSHG A 0 A_CheckReload 
+            SSHG A 0 A_CheckReload
             SSHG A 4 A_PlaySound("nomakh/cybr", CHAN_7, 1.0)
             Goto Reload
-        Reload:	
+        Reload:
             SSHN ABDEG 1
             SSHO ABDEIK 1
             SSHO M 1 A_PlaySound("nomakh/weapons/ssg/Open",5,0.3)
@@ -231,7 +230,7 @@ Actor NomakhSSG : SuperShotgun {
         Flash:
             TNT1 A 3 Bright
             TNT1 A 2 Bright
-            Goto LightDone 
+            Goto LightDone
         }
 }
 

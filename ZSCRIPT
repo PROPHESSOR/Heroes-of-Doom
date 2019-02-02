@@ -5,7 +5,7 @@
  *https://opensource.org/licenses/MIT
  */
 
-version "3.5"
+version "3.2"
 
 class onMonsterDie : EventHandler {
     override void WorldThingDied(WorldEvent event) {

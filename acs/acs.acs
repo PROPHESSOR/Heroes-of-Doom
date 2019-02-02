@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2018 PROPHESSOR
- * 
+ *
  * This software is released under the MIT License.
  * https://opensource.org/licenses/MIT
  */
@@ -15,25 +15,25 @@ Script "HeroicKick" NET {
 	GiveInventory("HeroicKick", 1);
 }
 
-Script "CustomTaunt" (int forceheroe) NET {
-	//print(s:"Force heroe option: ", i:forceheroe);
-	if(!forceheroe && CheckInventory("PROPHESSORTag") || forceheroe == 1) {
+Script "CustomTaunt" (int forcehero) NET {
+	//print(s:"Force hero option: ", i:forcehero);
+	if(!forcehero && CheckInventory("PROPHESSORTag") || forcehero == 1) {
 		int tauntid = GetCVar("hod_customtaunt_prophessor");
 
-		PlaySound(0, StrParam(s:"prophessor/taunt", i:tauntid), CHAN_VOICE, 1.0);
-	} else if(!forceheroe && CheckInventory("IronDroogTag") || forceheroe == 2) {
+		PlaySound(0, StrParam(s:"prophessor/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
+	} else if(!forcehero && CheckInventory("IronDroogTag") || forcehero == 2) {
 		int tauntid = GetCVar("hod_customtaunt_irondroog");
 
-		PlaySound(0, StrParam(s:"irondroog/taunt", i:tauntid), CHAN_VOICE, 1.0);
-	} else if(!forceheroe && CheckInventory("MarzoLeonTag") || forceheroe == 3) {
+		PlaySound(0, StrParam(s:"irondroog/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
+	} else if(!forcehero && CheckInventory("MarzoLeonTag") || forcehero == 3) {
 		int tauntid = GetCVar("hod_customtaunt_marzoleon");
 
-		PlaySound(0, StrParam(s:"marzoleon/taunt", i:tauntid), CHAN_VOICE, 1.0);
-	} else if(!forceheroe && CheckInventory("NomakhTag") || forceheroe == 5) {
+		PlaySound(0, StrParam(s:"marzoleon/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
+	} else if(!forcehero && CheckInventory("NomakhTag") || forcehero == 5) {
 		int tauntid = GetCVar("hod_customtaunt_nomakh");
 
-		PlaySound(0, StrParam(s:"nomakh/taunt", i:tauntid), CHAN_VOICE, 1.0);
+		PlaySound(0, StrParam(s:"nomakh/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
 	} else {
-		print(s:"[Custom Taunt Script Error]: Unknown Heroe");
+		print(s:"[Custom Taunt Script Error]: Unknown hero");
 	}
 }
