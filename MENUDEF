@@ -7,7 +7,9 @@
 
 OptionMenu "HODOptions" {
     Title "Heroes of Doom Options"
-	
+
+    StaticText " "
+    Option "Enable autotaunts on kill", "hod_autotaunts_enabled", "ONOFF"
 	StaticText " "
 	StaticText "Custom taunts"
 	StaticText " "
@@ -21,10 +23,6 @@ OptionMenu "HODOptions" {
     StaticText " "
 	Slider "MarzoLeon", "hod_customtaunt_marzoleon", 1, 5, 1
 	Command "Test", "pukename CustomTaunt always 3"
-
-    StaticText " "
-	Slider "Chaser", "hod_customtaunt_chaser", 1, 14, 1
-	Command "Test", "pukename CustomTaunt always 4"
 
     StaticText " "
 	Slider "Nomakh", "hod_customtaunt_nomakh", 1, 30, 1

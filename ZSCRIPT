@@ -9,7 +9,7 @@ version "3.2"
 
 class onMonsterDie : EventHandler {
     override void WorldThingDied(WorldEvent event) {
-        if(event.Thing.bIsMonster && event.Thing.Target && random(1, 5) == 3) {
+        if(CVar.GetCVar("hod_autotaunts_enabled", players[consoleplayer]).GetBool() && event.Thing.bIsMonster && event.Thing.Target && random(1, 5) == 3) {
             event.Thing.Target.GiveInventory("HeroicTaunt", 1);
         }
     }

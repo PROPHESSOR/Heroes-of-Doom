@@ -37,3 +37,73 @@ Script "CustomTaunt" (int forcehero) NET {
 		print(s:"[Custom Taunt Script Error]: Unknown hero");
 	}
 }
+
+
+function str heroPrefix(void) {
+	if(CheckInventory("PROPHESSORTag")) {
+	    return "prophessor";
+    } else if(CheckInventory("IronDroogTag")) {
+		return "irondroog";
+	} else if(CheckInventory("MarzoLeonTag")) {
+		return "marzoleon";
+	} else if(CheckInventory("NomakhTag")) {
+		return "nomakh";
+	} else {
+		print(s:"[heroPrefix Function Error]: Unknown hero");
+	}
+}
+
+
+Script "LevelStatsNotifier" ENTER {
+    /**
+     * Taken from the Doom RPG Remake Project
+     * Copyright (c) DRRP-Team 2017-2019
+     */
+
+    int  monsterstotal,
+         secretstotal       = GetLevelInfo(LEVELINFO_TOTAL_SECRETS);
+
+    bool monsters = false,
+         secrets  = false;
+
+    if (secretstotal == 0)  secrets = true;
+
+    while (true) {
+        monsterstotal       = GetLevelInfo(LEVELINFO_TOTAL_MONSTERS);
+
+        int monsterskilled  = GetLevelInfo(LEVELINFO_KILLED_MONSTERS);
+        int secretsfound    = GetLevelInfo(LEVELINFO_FOUND_SECRETS);
+
+        if (monsterstotal && monsterskilled == monsterstotal && !monsters) {
+            SetFont("BIGFONT");
+            HudMessage("Sector clear!"; HUDMSG_TYPEON | HUDMSG_LOG, 18, CR_GRAY, 1.5, 0.82, 3.0, 0.005, 1.0);
+            LocalAmbientSound(StrParam(s:heroPrefix(), s:"sectorclear"), 115);
+            monsters = true;
+        }
+
+        if (secretsfound == secretstotal && !secrets) {
+            SetFont("BIGFONT");
+            HudMessage("You have found all secrets!"; HUDMSG_TYPEON | HUDMSG_LOG, 18, CR_GRAY, 1.5, 0.82, 3.0, 0.005, 1.0);
+            LocalAmbientSound(StrParam(s:heroPrefix(), s:"secretsfound"), 115);
+            secrets = true;
+        }
+
+        if (monsters && secrets) break;
+
+        Delay(17);
+    }
+}
+
+str lastweapon = "";
+
+Script "GotoKick" (void) {
+    lastweapon = GetWeapon();
+
+    SetWeapon(StrParam(s:heroPrefix(), s:"kick"));
+}
+
+Script "ReturnKick" (void) {
+    if (!strlen(lastweapon)) Terminate;
+
+    SetWeapon(lastweapon);
+}

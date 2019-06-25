@@ -41,7 +41,7 @@ Actor IronDroogKick : Kick {
 
     Inventory.RestrictedTo "IronDroog"
     Weapon.Kickback 500
-    Weapon.SelectionOrder 1
+    Weapon.SelectionOrder 9999
     Inventory.PickupSound "irondroog/pickup"
 
     States {
@@ -64,7 +64,8 @@ Actor IronDroogKick : Kick {
             KICK H 4 A_CustomPunch(20, false, 0, "BulletPuff", 64, 0, 0, "", "irondroog/kick", "weapon/kickmiss")
             KICK I 3 A_Recoil(2)
             KICK G 1
-            KICK B 1 A_TakeInventory("IronDroogKick")
+            KICK B 1 ACS_NamedExecuteAlways("ReturnKick", 0)
+            KICK B 0 A_TakeInventory("IronDroogKick")
             Stop
     }
 }

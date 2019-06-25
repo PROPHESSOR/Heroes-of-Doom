@@ -20,7 +20,7 @@ Actor ProphessorKick : Kick {
     Inventory.RestrictedTo "PROPHESSOR"
     Weapon.Kickback 228
     Inventory.PickupSound "prophessor/pickup"
-    Weapon.SelectionOrder 1
+    Weapon.SelectionOrder 9999
 
     States {
         Ready:
@@ -42,7 +42,8 @@ Actor ProphessorKick : Kick {
             KICK Q 1 A_CustomPunch(11, false, 0, "BulletPuff", 64, 0, 0, "", "prophessor/kick", "weapon/kickmiss")
             KICK R 3 A_Recoil(4)
             KICK S 1 
-            KICK T 1 A_TakeInventory("ProphessorKick")
+            KICK T 1 ACS_NamedExecuteAlways("ReturnKick", 0)
+            KICK T 0 A_TakeInventory("ProphessorKick")
             Stop
     }
 }
@@ -361,7 +362,7 @@ Actor BRG9000Ball {
         Flying:
             TNT1 A 0 A_ChangeVelocity(0, 0, -0.1, CVF_REPLACE)
             TNT1 A 0 A_AlertMonsters
-            TNT1 A 0 A_PlaySoundEx("prophessor/weapons/bfg/ball", "Voice", 1) // TODO: Плохо обращаться к звукам других классов
+            TNT1 A 0 A_PlaySoundEx("prophessor/weapons/bfg/ball", "Voice", 1)
             BFS1 AB 1 Bright A_SpawnItemEx("BRGResearchRail", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER)
             Loop
         Death:

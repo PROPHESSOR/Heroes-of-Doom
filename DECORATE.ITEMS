@@ -25,11 +25,14 @@ Actor SpheresSpawner replaces MegaSphere {
 Actor AllahBarrel : ExplosiveBarrel replaces ExplosiveBarrel {
   +BOSS
 
+  Mass 1
+  Health 1
+
   States {
       Death:
         BEXP A 10 Bright A_PlaySound("DSPEDTH", CHAN_AUTO, 1.0)
         BEXP B 10 Bright A_Scream
-        BEXP C 10 Bright
+        BEXP C 10 Bright A_SpawnItemEx("Rocket", 0, 0, 0, 0, 0, -5.0)
         BEXP DD 5 Bright A_Explode
         BEXP E 15 Bright
         TNT1 A 1050 Bright A_BarrelDestroy

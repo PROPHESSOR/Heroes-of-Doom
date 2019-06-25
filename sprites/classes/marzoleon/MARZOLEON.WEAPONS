@@ -44,7 +44,7 @@ Actor MarzoLeonKick : Kick {
 
     Inventory.RestrictedTo "MarzoLeon"
     Weapon.Kickback 1000
-    Weapon.SelectionOrder 1
+    Weapon.SelectionOrder 9999
 
     States {
         Ready:
@@ -66,7 +66,8 @@ Actor MarzoLeonKick : Kick {
             KICK H 4 A_CustomPunch(20, false, 0, "BulletPuff", 64, 0, 0, "", "marzoleon/fist", "weapon/kickmiss")
             KICK I 3 A_Recoil(7)
             KICK G 1
-            KICK B 1 A_TakeInventory("MarzoLeonKick")
+            KICK B 1 ACS_NamedExecuteAlways("ReturnKick", 0)
+            KICK B 0 A_TakeInventory("MarzoLeonKick")
             Stop
     }
 }
