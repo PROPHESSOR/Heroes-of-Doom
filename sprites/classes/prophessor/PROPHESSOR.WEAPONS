@@ -68,6 +68,7 @@ Actor ProphessorChainsaw : Chainsaw {
             Loop
         Select:
             TSWG A 0 A_PlaySound("prophessor/weapons/chainsaw/up")
+            TSWG A 0 A_PlaySound("prophessor/taunt30", CHAN_VOICE)
             TSWG D 1 A_Raise
             Goto Select+1
         Deselect:
@@ -77,6 +78,7 @@ Actor ProphessorChainsaw : Chainsaw {
         Fire:
             TSWG A 0 A_JumpIfNoAmmo("NoAmmo")
             TSWG A 0 A_PlaySound("weapons/sawhit")
+            TSWG A 0 A_PlaySound("prophessor/sawfire", CHAN_VOICE)
             TSWG A 0 A_FireCustomMissile("ProphessorChainsawDisk", 0, 1, 0, 3)
             TSWG DG 4
             Goto Ready

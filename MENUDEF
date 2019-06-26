@@ -13,7 +13,7 @@ OptionMenu "HODOptions" {
 	StaticText " "
 	StaticText "Custom taunts"
 	StaticText " "
-	Slider "PROPHESSOR", "hod_customtaunt_prophessor", 1, 7, 1
+	Slider "PROPHESSOR", "hod_customtaunt_prophessor", 1, 31, 1
 	Command "Test", "pukename CustomTaunt always 1"
 
     StaticText " "

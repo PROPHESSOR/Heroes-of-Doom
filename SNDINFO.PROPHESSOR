@@ -14,29 +14,51 @@
 $playersound    prophessor  male    *death      sprites/classes/prophessor/sounds/PSDIE
 $playersound    prophessor  male    *xdeath     sprites/classes/prophessor/sounds/PSDIE
 $playersound    prophessor  male    *gibbed     psslop
-$playersound    prophessor  male    *pain100    sprites/classes/prophessor/sounds/PSLND2
+$playeralias    prophessor  male    *pain100    prophessor/pain
 $playersounddup prophessor  male    *pain75     *pain100
 $playersounddup prophessor  male    *pain50     *pain100
 $playersounddup prophessor  male    *pain25     *pain100
-$playersound    prophessor  male    *grunt      sprites/classes/prophessor/sounds/PSLND1
+$playeralias    prophessor  male    *grunt      prophessor/land
 $playersounddup prophessor  male    *land       *grunt
 $playersound    prophessor  male    *jump       sprites/classes/prophessor/sounds/PSTAUNT4
 $playersound    prophessor  male    *fist       sprites/classes/prophessor/sounds/PSFIST
 $playersound    prophessor  male    *usefail    sprites/classes/prophessor/sounds/PSUSE1
 
 prophessor/sphere           sprites/classes/prophessor/sounds/PSSPHR
-prophessor/0fps             sprites/classes/prophessor/sounds/PS0FPS
 prophessor/secret           sprites/classes/prophessor/sounds/PSSECRET
 prophessor/o                sprites/classes/prophessor/sounds/PSO
 prophessor/fist             sprites/classes/prophessor/sounds/PSFIST
-prophessor/kick             sprites/classes/prophessor/sounds/PSKICK
+prophessor/kick1            sprites/classes/prophessor/sounds/PSKICK
 prophessor/armor            sprites/classes/prophessor/sounds/PSARMOR
 prophessor/die              sprites/classes/prophessor/sounds/PSDIE
 prophessor/ahrinet          sprites/classes/prophessor/sounds/PSAHR
-
+prophessor/notbad           sprites/classes/prophessor/sounds/PSNBAD
 
 prophessor/hren1            sprites/classes/prophessor/sounds/PSUSE1
 prophessor/hren2            sprites/classes/prophessor/sounds/PSUSE2
+
+prophessor/crap1            sprites/classes/prophessor/sounds/PSCRAP1
+prophessor/crap2            sprites/classes/prophessor/sounds/PSCRAP2
+prophessor/crap3            sprites/classes/prophessor/sounds/PSCRAP3
+
+prophessor/pickup1          sprites/classes/prophessor/sounds/PSPICK1
+prophessor/pickup2          sprites/classes/prophessor/sounds/PSPICK2
+prophessor/pickup3          sprites/classes/prophessor/sounds/PSPICK3
+
+prophessor/damage1          sprites/classes/prophessor/sounds/PSDAM1
+prophessor/damage2          sprites/classes/prophessor/sounds/PSDAM2
+prophessor/damage3          sprites/classes/prophessor/sounds/PSDAM3
+prophessor/damage4          sprites/classes/prophessor/sounds/PSDAM4
+prophessor/damage5          sprites/classes/prophessor/sounds/PSDAM5
+prophessor/damage6          sprites/classes/prophessor/sounds/PSDAM6
+prophessor/damage7          sprites/classes/prophessor/sounds/PSLND2
+
+prophessor/kill1            sprites/classes/prophessor/sounds/PSKILL1
+prophessor/kill2            sprites/classes/prophessor/sounds/PSKILL2
+prophessor/kill3            sprites/classes/prophessor/sounds/PSKILL3
+
+prophessor/secret1          sprites/classes/prophessor/sounds/PSSECRET1
+prophessor/secret2          sprites/classes/prophessor/sounds/PSSECRET2
 
 prophessor/taunt1           sprites/classes/prophessor/sounds/PSTAUNT1
 prophessor/taunt2           sprites/classes/prophessor/sounds/PSTAUNT2
@@ -45,9 +67,40 @@ prophessor/taunt4           sprites/classes/prophessor/sounds/PSTAUNT4
 prophessor/taunt5           sprites/classes/prophessor/sounds/PSTAUNT5
 prophessor/taunt6           sprites/classes/prophessor/sounds/PSTAUNT6
 prophessor/taunt7           sprites/classes/prophessor/sounds/PSTAUNT7
+prophessor/taunt8           sprites/classes/prophessor/sounds/PSTAUNT8
+prophessor/taunt9           sprites/classes/prophessor/sounds/PSTAUNT9
+prophessor/taunt10           sprites/classes/prophessor/sounds/PSTAUNT10
+prophessor/taunt11           sprites/classes/prophessor/sounds/PSTAUNT11
+prophessor/taunt12           sprites/classes/prophessor/sounds/PSTAUNT12
+prophessor/taunt13           sprites/classes/prophessor/sounds/PSTAUNT13
+prophessor/taunt14           sprites/classes/prophessor/sounds/PSTAUNT14
+prophessor/taunt15           sprites/classes/prophessor/sounds/PSTAUNT15
+prophessor/taunt16           sprites/classes/prophessor/sounds/PSTAUNT16
+prophessor/taunt17           sprites/classes/prophessor/sounds/PSTAUNT17
+prophessor/taunt18           sprites/classes/prophessor/sounds/PSTAUNT18
+prophessor/taunt19           sprites/classes/prophessor/sounds/PSTAUNT19
+prophessor/taunt20           sprites/classes/prophessor/sounds/PSTAUNT20
+prophessor/taunt21           sprites/classes/prophessor/sounds/PSTAUNT21
+prophessor/taunt22           sprites/classes/prophessor/sounds/PSTAUNT22
+prophessor/taunt23           sprites/classes/prophessor/sounds/PSTAUNT23
+prophessor/taunt24           sprites/classes/prophessor/sounds/PSTAUNT24
+prophessor/taunt25           sprites/classes/prophessor/sounds/PSTAUNT25
+prophessor/taunt26           sprites/classes/prophessor/sounds/PSTAUNT26
+prophessor/taunt27           sprites/classes/prophessor/sounds/PSTAUNT27
+prophessor/taunt28           sprites/classes/prophessor/sounds/PSTAUNT28
+prophessor/taunt29           sprites/classes/prophessor/sounds/PSTAUNT29
+prophessor/taunt30           sprites/classes/prophessor/sounds/PSTAUNT30
+prophessor/taunt31           sprites/classes/prophessor/sounds/PSTAUNT31
 
 prophessor/land1            sprites/classes/prophessor/sounds/PSLND1
 prophessor/land2            sprites/classes/prophessor/sounds/PSLND2
+
+prophessor/oof1             sprites/classes/prophessor/sounds/PSOOF
+prophessor/oof2             sprites/classes/prophessor/sounds/PSUF
+
+prophessor/sawfire1         sprites/classes/prophessor/sounds/PSSAWFIRE
+prophessor/sawfire2         sprites/classes/prophessor/sounds/PSSAWFIRE2
+prophessor/sawfire3         sprites/classes/prophessor/sounds/PSSAWFIRE3
 
 prophessor/weapons/shotgun/reload           sprites/classes/prophessor/sounds/weapons/shotgun/DSASHUP
 prophessor/weapons/shotgun/fire             sprites/classes/prophessor/sounds/weapons/shotgun/DSASGFR
@@ -64,7 +117,6 @@ prophessor/weapons/chainsaw/loop            sprites/classes/prophessor/sounds/we
 prophessor/weapons/bfg/ball                 sprites/classes/prophessor/sounds/weapons/bfg/DSCFGBL
 
 $random     prophessor/taunt {
-    prophessor/0fps
     prophessor/taunt1
     prophessor/taunt2
     prophessor/taunt3
@@ -72,18 +124,98 @@ $random     prophessor/taunt {
     prophessor/taunt5
     prophessor/taunt6
     prophessor/taunt7
+    prophessor/taunt8
+    prophessor/taunt9
+    prophessor/taunt10
+    prophessor/taunt11
+    prophessor/taunt12
+    prophessor/taunt13
+    prophessor/taunt14
+    prophessor/taunt15
+    prophessor/taunt16
+    prophessor/taunt17
+    prophessor/taunt18
+    prophessor/taunt19
+    prophessor/taunt20
+    prophessor/taunt21
+    prophessor/taunt22
+    prophessor/taunt23
+    prophessor/taunt24
+    prophessor/taunt25
+    prophessor/taunt26
+    prophessor/taunt27
+    prophessor/taunt28
+    prophessor/taunt29
+    prophessor/taunt30
+    prophessor/taunt31
+    prophessor/crap1
+    prophessor/crap2
+    prophessor/crap3
+    prophessor/sawfire1
+    prophessor/sawfire2
+    prophessor/sawfire3
+}
+
+$random     prophessor/pain {
+    prophessor/damage1
+    prophessor/damage2
+    prophessor/damage3
+    prophessor/damage4
+    prophessor/damage5
+    prophessor/damage6
+    prophessor/damage7
+}
+
+$random     prophessor/kills {
+    prophessor/notbad
+    prophessor/kill1
+    prophessor/kill2
+    prophessor/kill3
+}
+
+$random     prophessor/secrets {
+    prophessor/notbad
+    prophessor/secret1
+    prophessor/secret2
 }
 
 $random     prophessor/land {
     prophessor/land1
     prophessor/land2
+    prophessor/oof1
+    prophessor/oof2
 }
 
 $random     prophessor/pickup {
     prophessor/o
     prophessor/armor
+    prophessor/pickup1
+    prophessor/pickup2
+    prophessor/pickup3
+    prophessor/taunt2
+}
+
+$random     prophessor/kick {
+    prophessor/kick1
+    prophessor/taunt8
+    prophessor/taunt11
+}
+
+$random     prophessor/sawfire {
+    prophessor/sawfire1
+    prophessor/sawfire2
+    prophessor/sawfire3
 }
 
 $random     prophessor/exit {
     prophessor/taunt4
+    prophessor/taunt8
+    prophessor/taunt15
+    prophessor/taunt17
+    prophessor/taunt18
+    prophessor/taunt23
+    prophessor/taunt24
+    prophessor/taunt25
+    prophessor/taunt26
+    prophessor/taunt27
 }

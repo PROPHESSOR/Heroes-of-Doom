@@ -8,49 +8,49 @@
 #include "zcommon.acs"
 
 Script "HeroicTaunt" NET {
-	GiveInventory("HeroicTaunt", 1);
+    GiveInventory("HeroicTaunt", 1);
 }
 
 Script "HeroicKick" NET {
-	GiveInventory("HeroicKick", 1);
+    GiveInventory("HeroicKick", 1);
 }
 
 Script "CustomTaunt" (int forcehero) NET {
-	//print(s:"Force hero option: ", i:forcehero);
-	if(!forcehero && CheckInventory("PROPHESSORTag") || forcehero == 1) {
-		int tauntid = GetCVar("hod_customtaunt_prophessor");
+    // print(s:"Force hero option: ", i:forcehero);
+    if(!forcehero && CheckInventory("PROPHESSORTag") || forcehero == 1) {
+        int tauntid = GetCVar("hod_customtaunt_prophessor");
 
-		PlaySound(0, StrParam(s:"prophessor/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
-	} else if(!forcehero && CheckInventory("IronDroogTag") || forcehero == 2) {
-		int tauntid = GetCVar("hod_customtaunt_irondroog");
+        PlaySound(0, StrParam(s:"prophessor/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
+    } else if(!forcehero && CheckInventory("IronDroogTag") || forcehero == 2) {
+        int tauntid = GetCVar("hod_customtaunt_irondroog");
 
-		PlaySound(0, StrParam(s:"irondroog/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
-	} else if(!forcehero && CheckInventory("MarzoLeonTag") || forcehero == 3) {
-		int tauntid = GetCVar("hod_customtaunt_marzoleon");
+        PlaySound(0, StrParam(s:"irondroog/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
+    } else if(!forcehero && CheckInventory("MarzoLeonTag") || forcehero == 3) {
+        int tauntid = GetCVar("hod_customtaunt_marzoleon");
 
-		PlaySound(0, StrParam(s:"marzoleon/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
-	} else if(!forcehero && CheckInventory("NomakhTag") || forcehero == 5) {
-		int tauntid = GetCVar("hod_customtaunt_nomakh");
+        PlaySound(0, StrParam(s:"marzoleon/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
+    } else if(!forcehero && CheckInventory("NomakhTag") || forcehero == 5) {
+        int tauntid = GetCVar("hod_customtaunt_nomakh");
 
-		PlaySound(0, StrParam(s:"nomakh/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
-	} else {
-		print(s:"[Custom Taunt Script Error]: Unknown hero");
-	}
+        PlaySound(0, StrParam(s:"nomakh/taunt", i:tauntid), CHAN_NOPAUSE, 1.0);
+    } else {
+        print(s:"[Custom Taunt Script Error]: Unknown hero");
+    }
 }
 
 
 function str heroPrefix(void) {
-	if(CheckInventory("PROPHESSORTag")) {
-	    return "prophessor";
+    if(CheckInventory("PROPHESSORTag")) {
+        return "prophessor";
     } else if(CheckInventory("IronDroogTag")) {
-		return "irondroog";
-	} else if(CheckInventory("MarzoLeonTag")) {
-		return "marzoleon";
-	} else if(CheckInventory("NomakhTag")) {
-		return "nomakh";
-	} else {
-		print(s:"[heroPrefix Function Error]: Unknown hero");
-	}
+        return "irondroog";
+    } else if(CheckInventory("MarzoLeonTag")) {
+        return "marzoleon";
+    } else if(CheckInventory("NomakhTag")) {
+        return "nomakh";
+    } else {
+        print(s:"[heroPrefix Function Error]: Unknown hero");
+    }
 }
 
 
@@ -77,14 +77,14 @@ Script "LevelStatsNotifier" ENTER {
         if (monsterstotal && monsterskilled == monsterstotal && !monsters) {
             SetFont("BIGFONT");
             HudMessage("Sector clear!"; HUDMSG_TYPEON | HUDMSG_LOG, 18, CR_GRAY, 1.5, 0.82, 3.0, 0.005, 1.0);
-            LocalAmbientSound(StrParam(s:heroPrefix(), s:"sectorclear"), 115);
+            LocalAmbientSound(StrParam(s:heroPrefix(), s:"/kills"), 115);
             monsters = true;
         }
 
         if (secretsfound == secretstotal && !secrets) {
             SetFont("BIGFONT");
             HudMessage("You have found all secrets!"; HUDMSG_TYPEON | HUDMSG_LOG, 18, CR_GRAY, 1.5, 0.82, 3.0, 0.005, 1.0);
-            LocalAmbientSound(StrParam(s:heroPrefix(), s:"secretsfound"), 115);
+            LocalAmbientSound(StrParam(s:heroPrefix(), s:"/secrets"), 115);
             secrets = true;
         }
 
