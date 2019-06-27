@@ -86,23 +86,39 @@ Actor MarzoLeonChainsaw : Chainsaw {
             ISAW A 1 A_Raise
             Loop
         Deselect:
+            ISAW A 0 {
+                A_TakeInventory("QuadDamage", 1);
+                A_TakeInventory("Regeneration", 1);
+            }
             ISAW A 1 A_Lower
             Loop
         Ready:
             ISAW ABCD 2 A_WeaponReady
             Loop
         Fire:
+            ISAW A 0 {
+                A_GiveInventory("QuadDamage", 1);
+                A_GiveInventory("Regeneration", 1);
+            }
             ISAW D 0 A_PlaySound("marzoleon/haha", CHAN_5, 1.0)
             ISAW D 25 A_PlaySound("weapons/sawfull", CHAN_WEAPON, 0.8)
             Goto Hold
         Hold:
-            ISAW EF 2 A_Saw("weapons/sawfull", "weapons/sawhit", 25)
+            ISAW A 0 {
+                A_GiveInventory("QuadDamage", 1);
+                A_GiveInventory("Regeneration", 1);
+            }
+            ISAW EF 2 A_Saw("weapons/sawfull", "weapons/sawhit", 6)
             ISAW AAA 0 A_SetAngle(FRandom(2.2, -2.2) + Angle)
             ISAW AAA 0 A_Recoil(-2.0)
             ISAW AAA 0 A_Quake(6, 12, 0, 128, "weapons/sawhit")
-            ISAW EF 2 A_Saw("weapons/sawfull", "weapons/sawhit", 25)
+            ISAW EF 2 A_Saw("weapons/sawfull", "weapons/sawhit", 6)
             ISAW AAA 0 A_Recoil(-2.0)
             ISAW B 0 A_ReFire
+            ISAW A 0 {
+                A_TakeInventory("QuadDamage", 1);
+                A_TakeInventory("Regeneration", 1);
+            }
             Goto Ready
     }
 }

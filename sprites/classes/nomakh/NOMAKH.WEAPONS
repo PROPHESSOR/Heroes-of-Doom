@@ -204,23 +204,28 @@ Actor NomakhSSG : SuperShotgun {
 
             SSH4 A 15
 
-            SSF4 A 2 Bright
-            SSF4 A 0 A_GunFlash
-            SSF4 A 0 A_AlertMonsters
-            SSF4 A 0 A_ChangeVelocity (Cos(Pitch) * -116, 0, Sin(Pitch) * 116,CVF_RELATIVE)
-            SSF4 A 0 A_Quake(9,18,0,64,none)
+            SSF4 A 2 Bright {
+                A_AlertMonsters;
+                A_ChangeVelocity(Cos(Pitch) * -116, 0, Sin(Pitch) * 116, CVF_RELATIVE);
+                A_Quake(9, 18, 0, 64, NONE);
+                A_PlaySound("nomakh/weapons/ssg/Fire", 1);
+                A_PlaySound("nomakh/weapons/ssg/Alt", 6);
+                A_PlaySound("nomakh/boom", CHAN_VOICE);
+                A_FireBullets(25, 7.5, 128, 15, "BulletPuff");
+            }
 
-            SSF4 A 0 A_PlaySound("nomakh/weapons/ssg/Fire",1,1.0)
-            SSF4 A 0 A_PlaySound("nomakh/weapons/ssg/Alt",6,1.0)
-            SSF4 A 0 A_PlaySound("nomakh/boom",7,1.0)
-            SSF4 A 0 A_FireBullets(25, 7.5, 128, 15, "BulletPuff")
-
-            SSH4 B 1 A_ZoomFactor(0.9)
-            SSH4 B 0 A_SetPitch(Pitch-6)
-            SSH4 D 1 A_ZoomFactor(0.8)
-            SSH4 D 0 A_SetPitch(Pitch-4)
-            SSH4 F 1 A_ZoomFactor(0.7)
-            SSH4 F 0 A_SetPitch(Pitch-1)
+            SSH4 B 1 {
+                A_ZoomFactor(0.9);
+                A_SetPitch(Pitch - 6);
+            }
+            SSH4 D 1 {
+                A_ZoomFactor(0.8);
+                A_SetPitch(Pitch - 4);
+            }
+            SSH4 F 1 {
+                A_ZoomFactor(0.7);
+                A_SetPitch(Pitch - 1);
+            }
             SSH4 H 1 A_ZoomFactor(0.5)
             SSH4 J 1 A_ZoomFactor(0.3)
             SSH4 LM 1
@@ -235,28 +240,24 @@ Actor NomakhSSG : SuperShotgun {
         Reload:
             SSHN ABDEG 1
             SSHO ABDEIK 1
-            SSHO M 1 A_PlaySound("nomakh/weapons/ssg/Open",5,0.3)
+            SSHO M 1 A_PlaySound("nomakh/weapons/ssg/Open", CHAN_5, 0.3)
             SSHO NOQRTUWX 1
             SSHL A 3
             SSHL BCDE 1
-            SSHL F 1 A_PlaySound("nomakh/weapons/ssg/Load",6,0.2)
+            SSHL F 1 A_PlaySound("nomakh/weapons/ssg/Load", CHAN_6, 0.2)
             SSHL GHIJ 1
             SSHL K 2
             SSHL LMNO 1
-            SSHL P 1 A_PlaySound("nomakh/weapons/ssg/Load",5,0.2)
+            SSHL P 1 A_PlaySound("nomakh/weapons/ssg/Load", CHAN_5, 0.2)
             SSHL QRSTU 1
             SSHL V 2
             SSHC ABDE 1
-            SSHO R 0 A_PlaySound("nomakh/weapons/ssg/Close",6,0.3)
+            SSHO R 0 A_PlaySound("nomakh/weapons/ssg/Close", CHAN_6, 0.3)
             SSHO RQONKI 1
             SSHN GFDCB 1
             SSHG A 2 A_GiveInventory("NomakhSSGReloadCounter", 1)
             SSHG A 0 A_JumpIfInventory("NomakhSSGReloadCounter", 4, "Ready")
             Loop
-        Flash:
-            TNT1 A 3 Bright
-            TNT1 A 2 Bright
-            Goto LightDone
         }
 }
 
