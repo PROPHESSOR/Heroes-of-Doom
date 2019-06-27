@@ -52,7 +52,7 @@ Actor ProphessorChainsaw : Chainsaw {
     +INVENTORY.RESTRICTABSOLUTELY
 
     Inventory.RestrictedTo "PROPHESSOR"
-    Inventory.PickupSound "prophessor/pickup"
+    Inventory.PickupSound ""
 
     Weapon.AmmoType "ProphessorChainsawAmmo"
     Weapon.AmmoUse 1

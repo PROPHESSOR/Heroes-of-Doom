@@ -124,6 +124,31 @@ Actor NomakhShotgun : Shotgun {
 
     Inventory.RestrictedTo "Nomakh"
     Inventory.PickupSound "nomakh/pickup"
+
+    States {
+        Ready:
+            SHTI ABCDEFGHIJK 1 A_WeaponReady
+            Loop
+        Deselect:
+            SHSS ABCD 1
+            SHSS AAAAAAAAAA 0 A_Lower(12)
+            Loop
+        Select:
+            TNT1 A 0 A_PlaySound("nomakh/shotgunwitheggs", CHAN_VOICE)
+            SHSS AAAAAAAAAA 0 A_Raise(12)
+            SHSS DCBA 1
+            Loop
+        Fire:
+            SHTF A 2
+            SHTF B 3 A_FireShotgun
+            SHTF CDE 2
+            SHTG ABCDEFGHIJKLMNODCB 1
+            SHTG A 5 A_ReFire
+            Goto Ready
+        Spawn:
+            SHTC A -1
+            Stop
+    }
 }
 
 /*

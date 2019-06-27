@@ -90,6 +90,8 @@ nomakh/taunt28                  sprites/classes/nomakh/sounds/NSTAUNT28
 nomakh/taunt29                  sprites/classes/nomakh/sounds/NSTAUNT29
 nomakh/taunt30                  sprites/classes/nomakh/sounds/NSTAUNT30
 
+nomakh/shotgunwitheggs          sprites/classes/nomakh/sounds/NSSHOTGUN
+
 nomakh/weapons/chaingun/start               sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTAT
 nomakh/weapons/chaingun/stop                sprites/classes/nomakh/sounds/weapons/chaingun/DSTMSTOP
 nomakh/weapons/chaingun/fire                sprites/classes/nomakh/sounds/weapons/chaingun/DSTMFIRE
