@@ -71,6 +71,9 @@ irondroog/taunt17           sprites/classes/irondroog/sounds/ITAUNT17
 irondroog/taunt18           sprites/classes/irondroog/sounds/ITAUNT18
 irondroog/taunt19           sprites/classes/irondroog/sounds/ITAUNT19
 irondroog/taunt20           sprites/classes/irondroog/sounds/ITAUNT20
+irondroog/taunt21           sprites/classes/irondroog/sounds/ITAUNT21
+irondroog/taunt22           sprites/classes/irondroog/sounds/ITAUNT22
+irondroog/taunt23           sprites/classes/irondroog/sounds/ITAUNT23
 
 irondroog/rage1             sprites/classes/irondroog/sounds/ISRAGE
 irondroog/rage2             sprites/classes/irondroog/sounds/ISRAGE2
@@ -89,9 +92,23 @@ irondroog/fast1             sprites/classes/irondroog/sounds/ISFAST1
 irondroog/fast2             sprites/classes/irondroog/sounds/ISFAST2
 irondroog/fast3             sprites/classes/irondroog/sounds/ISFAST3
 
-irondroog/preston/go1        sprites/classes/irondroog/sounds/IPGO
-irondroog/preston/go2        sprites/classes/irondroog/sounds/IPGO2
-irondroog/preston/check      sprites/classes/irondroog/sounds/IPCHECK
+irondroog/preston/go1       sprites/classes/irondroog/sounds/IPGO
+irondroog/preston/go2       sprites/classes/irondroog/sounds/IPGO2
+irondroog/preston/check     sprites/classes/irondroog/sounds/IPCHECK
+
+irondroog/kill1             sprites/classes/irondroog/sounds/ISKILL1
+irondroog/kill2             sprites/classes/irondroog/sounds/ISKILL2
+irondroog/kill3             sprites/classes/irondroog/sounds/ISKILL3
+
+irondroog/secrets1          sprites/classes/irondroog/sounds/ISSECRETS1
+irondroog/secrets2          sprites/classes/irondroog/sounds/ISSECRETS2
+irondroog/secrets3          sprites/classes/irondroog/sounds/ISSECRETS3
+irondroog/secrets4          sprites/classes/irondroog/sounds/ISSECRETS4
+irondroog/secrets5          sprites/classes/irondroog/sounds/ISSECRETS5
+
+irondroog/complete1         sprites/classes/irondroog/sounds/ISSECKILL1
+irondroog/complete2         sprites/classes/irondroog/sounds/ISSECKILL2
+irondroog/complete3         sprites/classes/irondroog/sounds/ISSECKILL3
 
 irondroog/kick              sprites/classes/irondroog/sounds/ISKICK
 irondroog/kick2             sprites/classes/irondroog/sounds/ISKICK2
@@ -174,6 +191,9 @@ $random     irondroog/taunt     {
     irondroog/taunt18
     irondroog/taunt19
     irondroog/taunt20
+    irondroog/taunt21
+    irondroog/taunt22
+    irondroog/taunt23
     irondroog/laugh1
     irondroog/laugh2
     irondroog/laugh3
@@ -253,4 +273,24 @@ $random     irondroog/exit {
     ending/irondroog2
     irondroog/taunt5
     irondroog/pickuphaha
+}
+
+$random     irondroog/kills {
+    irondroog/kill1
+    irondroog/kill2
+    irondroog/kill3
+}
+
+$random     irondroog/secrets {
+    irondroog/secrets1
+    irondroog/secrets2
+    irondroog/secrets3
+    irondroog/secrets4
+    irondroog/secrets5
+}
+
+$random     irondroog/complete {
+    irondroog/complete1
+    irondroog/complete2
+    irondroog/complete3
 }

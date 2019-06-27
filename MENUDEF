@@ -17,7 +17,7 @@ OptionMenu "HODOptions" {
 	Command "Test", "pukename CustomTaunt always 1"
 
     StaticText " "
-	Slider "Iron Droog", "hod_customtaunt_irondroog", 1, 12, 1
+	Slider "Iron Droog", "hod_customtaunt_irondroog", 1, 23, 1
 	Command "Test", "pukename CustomTaunt always 2"
 
     StaticText " "
