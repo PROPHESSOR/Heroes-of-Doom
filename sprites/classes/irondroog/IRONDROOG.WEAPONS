@@ -287,6 +287,7 @@ Actor IronDroogPlasmagun : PlasmaRifle {
 
 Actor ProstateBall : PlasmaBall {
     +SEEKERMISSILE
+    +FORCEXYBILLBOARD
 
     SeeSound "irondroog/weapons/prostate/hit"
     DeathSound "irondroog/weapons/prostate/hit"
@@ -294,7 +295,7 @@ Actor ProstateBall : PlasmaBall {
 
     States {
         Spawn:
-            SPIR P 6 Bright A_SeekerMissile(360, 90, SMF_LOOK | SMF_PRECISE | SMF_CURSPEED)
+            SPIR P 6 Bright A_SeekerMissile(360, 90, SMF_LOOK | SMF_PRECISE | SMF_CURSPEED, 256)
             Loop
         Death:
             SPIR QRSTU 4 Bright
