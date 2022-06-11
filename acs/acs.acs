@@ -107,3 +107,15 @@ Script "ReturnKick" (void) {
 
     SetWeapon(lastweapon);
 }
+
+Script "onMonsterKill" KILL {
+    if(!CheckFlag(0, "ISMONSTER")) {
+        Terminate;
+	}
+
+	SetActivatorToTarget(0);
+
+    if(GetCVar("hod_autotaunts_enabled") && random(1, 5) == 3) {
+        GiveInventory("HeroicTaunt", 1);
+    }
+}

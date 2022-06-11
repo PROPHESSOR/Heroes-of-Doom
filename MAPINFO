@@ -7,7 +7,7 @@ include ENDING
 
 GameInfo {
     PlayerClasses       = "PROPHESSOR", "IronDroog", "MarzoLeon", "Nomakh"
-    AddEventHandlers    = "onMonsterDie"
+    ForceKillScripts    = true
 }
 
 Map TITLEMAP "Heroes of Doom" {
