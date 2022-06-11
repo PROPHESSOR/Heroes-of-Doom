@@ -333,6 +333,65 @@ Actor NomakhRL : RocketLauncher {
 
     Inventory.RestrictedTo "Nomakh"
     Inventory.PickupSound "nomakh/pickup"
+
+    States {
+        Ready:
+            MI6R A 1 A_WeaponReady
+            Loop
+        Deselect:
+            MI6R A 1 A_Lower
+            Loop
+        Select:
+            MI6R A 1 A_Raise
+            Loop
+        Fire:
+            MI6R B 8 A_GunFlash
+            MI6R B 12 A_FireProjectile("NomakhRocket")
+            MI6R B 0 A_ReFire
+            Goto Ready
+        Flash:
+            MI6F A 3 Bright A_Light1
+            MI6F B 4 Bright
+            MI6F CD 4 Bright A_Light2
+            Goto LightDone
+    }
+}
+
+Actor NomakhRocket : Rocket {
+    States {
+        Spawn:
+            MI6L A 10 Bright A_SetScale(1.5)
+            MI6L A 0 Bright SetDamage(30)
+            MI6L A 10 Bright A_SetScale(2.0)
+            MI6L A 0 Bright SetDamage(40)
+            MI6L A 10 Bright A_SetScale(2.5)
+            MI6L A 0 Bright SetDamage(50)
+            MI6L A 10 Bright A_SetScale(3.0)
+            MI6L A 0 Bright SetDamage(60)
+            MI6L A 10 Bright A_SetScale(3.5)
+            MI6L A 0 Bright SetDamage(70)
+            MI6L A 10 Bright A_SetScale(4.0)
+            MI6L A 0 Bright SetDamage(80)
+            MI6L A 10 Bright A_SetScale(4.5)
+            MI6L A 0 Bright SetDamage(90)
+            MI6L A 10 Bright A_SetScale(5.0)
+            MI6L A 0 Bright SetDamage(100)
+            MI6L A 10 Bright A_SetScale(5.5)
+            MI6L A 0 Bright SetDamage(110)
+            MI6L A 10 Bright A_SetScale(6.0)
+            MI6L A 0 Bright SetDamage(120)
+            MI6L A 10 Bright A_SetScale(6.5)
+            MI6L A 0 Bright SetDamage(130)
+            Goto SpawnLoop
+        SpawnLoop:
+            MI6L A 1 Bright
+            Loop
+        Death:
+            MI6L B 8 Bright A_Explode
+            MI6L C 6 Bright
+            MI6L D 4 Bright
+            Stop
+    }
 }
 
 Actor NomakhPlasmagun : PlasmaRifle {
