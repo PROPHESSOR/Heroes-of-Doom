@@ -26,13 +26,13 @@ Actor IronDroogFist : Fist {
         Fire:
             MUPX B 4
             MUPX C 5 A_CustomPunch(10, false, 0, null, 64, 0)
-            KICK H 0 A_CheckLOF(2)
+            KICK H 0 A_CheckLOF(2, 0, 64)
             KICK H 0 A_Jump(256, 2)
             KICK H 0 A_PlayWeaponSound("irondroog/boom")
             MUPX B 4
             MUPX A 4
             MUPX D 4 A_CustomPunch(10, false, 0, null, 64, 0)
-            KICK H 0 A_CheckLOF(2)
+            KICK H 0 A_CheckLOF(2, 0, 64)
             KICK H 0 A_Jump(256, 2)
             KICK H 0 A_PlayWeaponSound("irondroog/boom")
             MUPX E 5
