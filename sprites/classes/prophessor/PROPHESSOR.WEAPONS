@@ -61,11 +61,11 @@ Actor ProphessorChainsaw : Chainsaw {
     States {
         Ready:
             TSWG A 0 A_JumpIfNoAmmo("NoAmmo")
-            TSWG A 2 A_WeaponReady
-            TSWG B 2 A_Saw("prophessor/weapons/chainsaw/loop", "weapons/sawhit", 5, null, SF_NOUSEAMMO)
-            TSWG C 2 A_WeaponReady
+            TSWG AB 1 A_WeaponReady
+            TSWG C 2 A_Saw("prophessor/weapons/chainsaw/loop", "weapons/sawhit", 5, null, SF_NOUSEAMMO)
+            TSWG EF 1 A_WeaponReady
             TSWG E 2 A_Saw("prophessor/weapons/chainsaw/loop", "weapons/sawhit", 5, null, SF_NOUSEAMMO)
-            TSWG F 2 A_WeaponReady
+            TSWG CB 1 A_WeaponReady
             Loop
         Select:
             TSWG A 0 A_PlaySound("prophessor/weapons/chainsaw/up")
@@ -240,6 +240,21 @@ Actor ProphessorSSG : SuperShotgun {
 
     Inventory.RestrictedTo "PROPHESSOR"
     Inventory.PickupSound "prophessor/pickup"
+
+    States {
+        Fire:
+            SHT2 A 1
+            SHT2 A 5 A_FireShotgun2
+            SHT2 B 5
+            SHT2 C 5 A_CheckReload
+            SHT2 D 5 A_OpenShotgun2
+            SHT2 E 5
+            SHT2 F 5 A_LoadShotgun2
+            SHT2 G 4
+            SHT2 H 4 A_CloseShotgun2
+            SHT2 A 3 A_ReFire
+            Goto Ready
+    }
 }
 
 Actor ProphessorChaingun : Chaingun {
