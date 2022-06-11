@@ -130,7 +130,11 @@ Actor Kick : Fist {
             KICK E 1 A_PlaySound("weapon/kick", CHAN_5, 1.0, 0.0)
             KICK F 1
             KICK G 1 
-            KICK H 4 A_CustomPunch(10, false, 0, "BulletPuff", 64, 0, 0, "", "weapon/kickdown", "weapon/kickmiss")
+            KICK H 4 A_CustomPunch(10, false, 0, "BulletPuff", 64, 0)
+            KICK H 0 A_CheckLOF(3)
+            KICK H 0 A_PlayWeaponSound("weapon/kickmiss")
+            KICK H 0 A_Jump(256, 2)
+            KICK H 0 A_PlayWeaponSound("weapon/kickdown")
             KICK I 3 A_Recoil(3)
             KICK G 1 
             KICK B 1 A_TakeInventory("Kick")
