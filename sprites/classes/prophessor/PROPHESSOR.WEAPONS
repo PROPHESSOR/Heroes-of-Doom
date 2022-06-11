@@ -200,7 +200,7 @@ Actor ProphessorShotgun : Weapon {
             SMAG A 1 A_Lower
             Loop
         Select:
-            TNT1 AAAAAAA 0 A_Raise(12)
+            TNT1 AAAAAAAAAAAAAA 0 A_Raise
             ASGW A 1
             ASGR ABCDE 1
             Loop
