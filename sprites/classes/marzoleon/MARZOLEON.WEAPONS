@@ -355,4 +355,22 @@ Actor MarzoLeonBFG : BFG9000 {
 
     Inventory.RestrictedTo "MarzoLeon"
     Inventory.PickupSound "marzoleon/pickup"
+
+    States {
+        Fire:
+            BFGG A 20 A_BFGSound
+            BFGG B 10 A_GunFlash
+            BFGG B 10 A_FireProjectile("MarzoLeonBFGBall", 0, 1)
+            BFGG B 10 A_FireProjectile("MarzoLeonBFGBall", 0, 0)
+            BFGG B 10 A_FireProjectile("MarzoLeonBFGBall", 0, 0)
+            BFGG B 20 A_ReFire
+            Goto Ready
+    }
+}
+
+Actor MarzoLeonBFGBall : BFGBall {
+    +DOOMBOUNCE
+    -NOGRAVITY
+
+    Translation "112:127=250:254", "224:231=169:169"
 }
