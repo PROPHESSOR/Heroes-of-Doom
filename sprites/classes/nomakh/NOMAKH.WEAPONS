@@ -40,7 +40,7 @@ Actor NomakhKick : Kick {
             KICK G 1 // A_CustomPunch(0, false, 0, "BulletPuff", 64, 0)
             KICK H 3
             KICK H 1 A_CustomPunch(20, false, 0, "BulletPuff", 64, 0)
-            KICK H 0 A_CheckLOF(3)
+            KICK H 0 A_CheckLOF(3, 0, 64)
             KICK H 0 A_PlayWeaponSound("weapon/kickmiss")
             KICK H 0 A_Jump(256, 2)
             KICK H 0 A_PlayWeaponSound("weapon/kickdown")
