@@ -70,8 +70,19 @@ Actor TimeFreezeSound {
     }
 }
 
-Actor Buddha : PowerBuddha {
-    Powerup.Duration -30
+Actor Buddha : CustomInventory
+{
+    States
+	{
+	Spawn:
+		TNT1 A -1
+		Stop
+	Pickup:
+		TNT1 A 0 SetPlayerProperty(False, 1, PROP_Buddha)
+		TNT1 A 1050 A_RailWait
+		TNT1 A 0 SetPlayerProperty(False, 0, PROP_Buddha)
+		Stop
+	}
 }
 
 Actor Rage : PowerDoubleFiringSpeed {
