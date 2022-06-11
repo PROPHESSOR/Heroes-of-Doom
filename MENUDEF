@@ -6,36 +6,71 @@
  */
 
 OptionMenu "HODOptions" {
-    Title "Heroes of Doom Options"
+  Title "Heroes of Doom Options"
 
-    StaticText " "
-    Option "Enable autotaunts on kill", "hod_autotaunts_enabled", "ONOFF"
-	StaticText " "
-	StaticText "Custom taunts"
-	StaticText " "
-	Slider "PROPHESSOR", "hod_customtaunt_prophessor", 1, 31, 1
-	Command "Test", "pukename CustomTaunt always 1"
+  StaticText " "
+  Option "Enable autotaunts on kill", "hod_autotaunts_enabled", "ONOFF"
+  StaticText " "
+  StaticText "Custom taunts"
+  StaticText " "
+  Slider "PROPHESSOR", "hod_customtaunt_prophessor", 1, 31, 1
+  Command "Test", "pukename CustomTaunt always 1"
 
-    StaticText " "
-	Slider "Iron Droog", "hod_customtaunt_irondroog", 1, 23, 1
-	Command "Test", "pukename CustomTaunt always 2"
+  StaticText " "
+  Slider "Iron Droog", "hod_customtaunt_irondroog", 1, 23, 1
+  Command "Test", "pukename CustomTaunt always 2"
 
-    StaticText " "
-	Slider "MarzoLeon", "hod_customtaunt_marzoleon", 1, 5, 1
-	Command "Test", "pukename CustomTaunt always 3"
+  StaticText " "
+  Slider "MarzoLeon", "hod_customtaunt_marzoleon", 1, 5, 1
+  Command "Test", "pukename CustomTaunt always 3"
 
-    StaticText " "
-	Slider "Nomakh", "hod_customtaunt_nomakh", 1, 30, 1
-	Command "Test", "pukename CustomTaunt always 5"
+  StaticText " "
+  Slider "Nomakh", "hod_customtaunt_nomakh", 1, 30, 1
+  Command "Test", "pukename CustomTaunt always 5"
 
-	StaticText " "
-	StaticText "Customize controls"
+  StaticText " "
+  StaticText "Customize controls"
     Control "Kick", "kickem"
     Control "Taunt", "brutaltaunt"
     Control "Custom taunt", "advtaunt"
 }
 
-AddOptionMenu "OptionsMenu" {
-	StaticText " "
-	Submenu "Heroes of Doom", "HODOptions"
+// GZDoom-only
+/* AddOptionMenu "OptionsMenu" {
+  StaticText " "
+  Submenu "Heroes of Doom", "HODOptions"
+} */
+
+// Zandronum-compatible
+OptionMenu "OptionsMenu" {
+  Title "OPTIONS"
+  Submenu "Multiplayer Options",		"ZA_MultiplayerOptions" // [TP]
+
+  StaticText " " // [TP]
+
+  Submenu "Heroes of Doom", "HODOptions"
+
+  StaticText " "
+
+  Submenu "Customize Controls",		"CustomizeControls"
+  Submenu "Mouse options",			"MouseOptions"
+  Submenu "Joystick options",			"JoystickOptions"
+
+  StaticText " "
+
+  Submenu "Player Setup",				"PlayerMenu"
+  Submenu "Gameplay Options",			"GameplayOptions"
+  Submenu "Compatibility Options",	"CompatibilityOptions"
+  Submenu "Automap Options",			"AutomapOptions"
+  Submenu "HUD Options",				"HUDOptions"
+  Submenu "Miscellaneous Options",	"MiscOptions"
+  Submenu "Sound Options",			"SoundOptions"
+  Submenu "Display Options",			"VideoOptions"
+  Submenu "Set video mode",			"VideoModeMenu"
+
+  StaticText " "
+
+  SafeCommand "Reset to defaults",	"reset2defaults"
+  SafeCommand	"Reset to last saved",	"reset2saved"
+  Command "Go to console",			"menuconsole"
 }
