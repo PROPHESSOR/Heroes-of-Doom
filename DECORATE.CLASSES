@@ -150,7 +150,8 @@ Actor IronDroog : DoomPlayer 15026 {
     Player.StartItem "IronDroogFist"
     Player.StartItem "IronDroogTag"
     
-    Player.StartItem "Shell", 24
+    Player.StartItem "Shell", 48
+    Player.StartItem "Clip", 10
     
     States {
         Spawn:
