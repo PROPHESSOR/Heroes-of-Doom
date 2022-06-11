@@ -348,6 +348,42 @@ Actor MarzoLeonPlasmagun : PlasmaRifle {
 
     Inventory.RestrictedTo "MarzoLeon"
     Inventory.PickupSound "marzoleon/pickup"
+    Translation "192:199=250:254", "200:207=254:254"
+
+    States {
+        Fire:
+            PLSG A 0 A_PlaySound("weapons/plasmaf", CHAN_7, 1.0, 0.0)
+            PLSG A 1 A_FireProjectile("MarzoLeonPlasmaBall", 0, 1)
+            PLSG A 2 A_GunFlash
+            PLSG B 20 A_ReFire
+            Goto Ready
+    }
+}
+
+Actor MarzoLeonPlasmaBall : PlasmaBall {
+    +SEEKERMISSILE
+    +FORCEXYBILLBOARD
+    +DOOMBOUNCE
+    -NOGRAVITY
+
+    Scale 1
+    Gravity 0.1
+    Mass 12
+    Friction 0.1
+    VSpeed 100
+    BounceFactor 1.0
+    WallBounceFactor 1.0
+    BounceCount 5
+    Translation "192:199=250:254", "200:207=254:254"
+
+    SeeSound "bloodsplat"
+    WallBounceSound "bloodsplat"
+
+    States {
+        Spawn:
+            PLSS AB 6 Bright A_SeekerMissile(90, 1, SMF_LOOK | SMF_PRECISE, 10)
+            Loop
+    }
 }
 
 Actor MarzoLeonBFG : BFG9000 {
@@ -355,11 +391,13 @@ Actor MarzoLeonBFG : BFG9000 {
 
     Inventory.RestrictedTo "MarzoLeon"
     Inventory.PickupSound "marzoleon/pickup"
+    Translation "112:127=250:254", "224:231=169:169"
 
     States {
         Fire:
             BFGG A 20 A_BFGSound
             BFGG B 10 A_GunFlash
+            BFGG B 0 A_PlaySound("marzoleon/jump", CHAN_5, 1.0, 0)
             BFGG B 10 A_FireProjectile("MarzoLeonBFGBall", 0, 1)
             BFGG B 10 A_FireProjectile("MarzoLeonBFGBall", 0, 0)
             BFGG B 10 A_FireProjectile("MarzoLeonBFGBall", 0, 0)
@@ -372,5 +410,7 @@ Actor MarzoLeonBFGBall : BFGBall {
     +DOOMBOUNCE
     -NOGRAVITY
 
+    Mass 12
+    Friction 0.1
     Translation "112:127=250:254", "224:231=169:169"
 }
