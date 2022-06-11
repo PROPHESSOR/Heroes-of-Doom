@@ -50,6 +50,7 @@ Actor ProphessorKick : Kick {
 
 Actor ProphessorChainsaw : Chainsaw {
     +INVENTORY.RESTRICTABSOLUTELY
+    +WEAPON.DONTBOB
 
     Inventory.RestrictedTo "PROPHESSOR"
     Inventory.PickupSound ""
@@ -213,6 +214,11 @@ Actor ProphessorShotgun : Shotgun {
             SMAG FA 2
             TNT1 A 0 A_ReFire
             Goto Reload
+        Flash:
+            SMAF A 1 Bright A_Light1
+            SMAF B 2 Bright A_Light2
+            SMAF A 0 A_Light0 
+            Stop
         Empty:
             SMAG A 10 A_PlaySound("prophessor/weapons/shotgun/click", CHAN_WEAPON)
             Goto Ready
