@@ -89,7 +89,7 @@ Actor NomakhPistol : Weapon {
             HRNG A 0 A_Lower
             Loop
         Select:
-            HRNG AAAAAAA 0 A_Raise(12)
+            HRNG AAAAAAAAAAAAAA 0 A_Raise
             HRNG ABCABC 2
             Loop
         Fire:
@@ -171,13 +171,13 @@ Actor NomakhSSG : Weapon {
             SSH4 B 1 A_WeaponReady
             Loop
         Select:
-            SSH4 BBBBBBBBBB 0 A_Raise(12)
+            SSH4 BBBBBBBBBBBBBBBBBBBB 0 A_Raise
             SSH4 MKIGEC 1
             Loop
         Deselect:
             SSHG A 0 A_ZoomFactor(1)
             SSH4 BDFHJL 1
-            SSH4 MMMMMMMM 0 A_Lower(12)
+            SSH4 MMMMMMMMMMMMMMMM 0 A_Lower
             Loop
         Fire:
             TNT1 A 0 A_PlaySound("nomakh/weapons/ssg/Deploy",5,0.65)
