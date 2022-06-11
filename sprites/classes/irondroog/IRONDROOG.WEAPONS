@@ -166,18 +166,14 @@ Actor IronDroogSSG : SuperShotgun {
             LCSG X 3 Bright A_SetPitch(Pitch - 5.0 - FRandom(0.0, 5.0))
             LCSG Y 4 Bright A_Recoil(FRandom(3.5, 7.0))
             LCSG X 3 Bright A_Recoil(FRandom(-2.0, -7.0))
-            LCSG A 8
-            LCSG B 5
-            LCSG C 4 A_CheckReload
-            LCSG D 3 A_PlaySound ("weapons/sshoto", CHAN_7)
-            LCSG E 3
-            LCSG F 3
-            LCSG G 2
-            LCSG H 2
-            LCSG I 2
-            LCSG J 2
-            LCSG K 2
-            TNT1 AA 15 A_PlaySound ("weapons/sshotl", CHAN_6)
+            LCSG A 6
+            LCSG B 4
+            LCSG C 3 A_CheckReload
+            LCSG D 2 A_PlaySound ("weapons/sshoto", CHAN_7)
+            LCSG E 2
+            LCSG F 2
+            LCSG GHIJK 1
+            TNT1 AA 10 A_PlaySound ("weapons/sshotl", CHAN_6)
             LCSG L 1 A_PlaySound ("weapons/sshoto", CHAN_WEAPON)
             LCSG M 1
             LCSG N 3 A_PlaySound ("irondroog/weapons/ssg/load", CHAN_7)
