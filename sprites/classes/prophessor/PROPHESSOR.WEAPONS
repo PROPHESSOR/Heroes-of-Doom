@@ -326,7 +326,7 @@ Actor ProphessorBFG : BFG9000 {
             WTFG A 0 A_BFGSound
             WTFG ABCDEFGHIJKLMNOPQ 2
             WTFG RST 4 A_GunFlash
-            WTFG U 1 A_FireProjectile("BRG9000Ball", 0, true, 0, 1)
+            WTFG U 1 A_FireCustomMissile("BRG9000Ball", 0, true, 0, 1)
             BFGF B 0 Bright A_SetBlend("FFFFFF", 0.5, 1)
             BFGF B 0 Bright A_GiveInventory("TimeFreeze")
             BFGF B 0 Bright A_SpawnItemEx("TimeFreezeSound")
